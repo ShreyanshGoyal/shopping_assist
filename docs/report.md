@@ -112,7 +112,28 @@ product — and asks. It commits to a full shortlist once the requirement set is
 drained. This converts later but at a better rank, which the six-to-one
 arithmetic favours.
 
-## 3. Method: two benchmarks
+## 3. Mapping to the four pillars
+
+The problem statement specifies four pillars. Each maps to a component, and each
+claim below has a measurement behind it rather than an assertion.
+
+| pillar | component | evidence |
+|---|---|---|
+| **I. Intent routing and hybrid pipeline** | Four retrieval routes — stated category, catalog-mined vocabulary, rare-term lexical, and dense embeddings — fused into one reranker, with an LLM semantic ranking tier above it | dense worth +0.16 on the LLM customer; listwise +0.085; route weights swept with both holdout halves |
+| **II. Dialog strategy** | The frame: a sticky product-type slot, accumulating attributes, subtracting negatives. Intent override demotes superseded statements rather than erasing them | drift eliminated — bucket collapse went from 17 of 24 sessions to zero; override scenario scores HR 1.000, MRR 0.950 |
+| **III. Self-evolution** | The frame *is* the distilled context; the raw transcript is never searched after the drift finding. Slate width adapts to confidence | withholding validated by the six-to-one rank-versus-turn arithmetic; adaptive widening tested and rejected at −0.034 |
+| **IV. Evaluation** | Two benchmarks reported side by side, holdout validation on both halves, nine pre-registered experiments | 0.9746 scripted / 0.299 LLM customer for the same configuration; splits 0.9748 and 0.9700 |
+
+Pillar II's "proactive guidance" deserves a direct answer, because it is the one
+place this submission does something counter-intuitive. The scripted simulator
+acts only on `ask_attribute` and never reads the question text, and the open
+probe `other` matches any undisclosed requirement while a named attribute matches
+only its own type. The optimal questioning policy against this evaluator is
+therefore a constant, and four attempts at something more adaptive all scored
+worse (§6). We report that rather than shipping a more impressive-looking policy
+that measurably loses.
+
+## 4. Method: two benchmarks
 
 The organiser's evaluator determines the official score. But a customer that
 quotes catalog text can be satisfied by matching wording, so a high score there
@@ -144,7 +165,7 @@ It also found a defect the official evaluator could not see. Across 24 sessions,
 customer typed *"I do not want shirts at all, I want shoes!"*. That drove the
 frame rebuild.
 
-## 4. Results
+## 5. Results
 
 | tier | scripted (200) | LLM customer (120) | requires |
 |---|---|---|---|
@@ -183,7 +204,7 @@ overrules a confident retrieval. Worth **+0.085**, taking rank-1 placement from
 the submitted configuration scores 0.9748 and 0.9700 — the score is not riding
 noise in a particular sample.
 
-## 5. What we falsified
+## 6. What we falsified
 
 The second benchmark's real value was killing our own plausible ideas. Each of
 the following was measured against a pre-registered acceptance bar and rejected
@@ -215,7 +236,7 @@ instead of bounded authority. Same shortlist, same model family, opposite result
 (−0.020), and re-weighting category against dense evidence (no configuration beat
 the current one on both holdout halves).
 
-## 6. Measured ceilings
+## 7. Measured ceilings
 
 We stopped when the ceiling could be demonstrated, not when ideas ran out.
 
@@ -236,7 +257,7 @@ dozens of catalog products. The practical ceiling is about **0.992**, the
 remainder being the intent-override lockout, which prevents any session in that
 scenario from converting before turn three.
 
-## 7. Feasibility, cost and latency
+## 8. Feasibility, cost and latency
 
 **Submitted configuration:**
 
@@ -260,7 +281,7 @@ roughly **1.06M input and 35k output tokens**; caching means repeat runs pay onl
 for diverged turns. No credential is stored in the repository — the client mints
 an OAuth token through the gcloud CLI on demand.
 
-## 8. Reproducibility
+## 9. Reproducibility
 
 ```bash
 python3 -m evaluator.local_evaluator
@@ -275,7 +296,7 @@ variables with no credential present emits a warning and runs the offline path,
 and a full 200-session run under those conditions completes at the offline score.
 Every number in this report maps to a command, listed in the submission README.
 
-## 9. Limitations, and what more time would buy
+## 10. Limitations, and what more time would buy
 
 **The language-model benchmark is not a leaderboard predictor.** The organiser
 confirmed that final results are generated exactly as the published local
@@ -302,9 +323,10 @@ generalisable form of the observation that made the exact-quote matcher work,
 which should help the terse and occasion-led customers who share little
 vocabulary with catalog text.
 
-## 10. Team contributions
+## 11. Team contributions
 
-Solo entry. *(Replace with per-member contributions if submitting as a team.)*
+Solo entry. All design, implementation, experimentation and analysis by the
+submitting participant.
 
 ---
 

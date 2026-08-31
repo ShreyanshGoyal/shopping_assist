@@ -130,6 +130,25 @@ and, where noted, a credential.
 `NOTES.md` carries the full experimental record, including every negative result
 with its diagnosis.
 
+## Repository map
+
+| path | what it is |
+|---|---|
+| `submission/` | the graded bundle: `agent.py`, `src/`, requirements, this README |
+| `src/` | the agent — frame, retrieval routes, ranking, policy, optional tiers |
+| `sim/` | the language-model customer benchmark: harness, personas, model client |
+| `tools/` | diagnostics and sweeps; every table in the report maps to one |
+| `results/scripted/` | organiser-evaluator runs, full per-session detail |
+| `results/llm_customer/` | benchmark runs, including every rejected experiment |
+| `results/README.md` | index mapping each result file to the claim it supports |
+| `docs/report.md` | the written report |
+| `docs/webinar_notes.md` | organiser's technical session, transcribed |
+| `NOTES.md` | full experimental record, including every negative result |
+
+If you only read three things: this README's results table, `docs/report.md` §6
+for what was falsified, and `results/README.md` to check any number against its
+source file.
+
 ## Limitations
 
 **The remaining scripted points are irreducible.** Five of 200 sessions convert
