@@ -142,7 +142,7 @@ Hold on **0.9746**. End.
 ## Capturing the LLM-customer session
 
 The 1:20–2:50 segment needs a recorded session with visible frame state. Either
-replay a stored transcript from `sim_n120_hedge.json` with an added state print,
+replay a stored transcript from `results/llm_customer/sim_n120_hedge.json` with an added state print,
 or run one live — a live run costs a few hundred tokens and shows real latency.
 Pick a `use_case_led` session that converts, since that scenario went from 0.541
 to 0.700 and is the clearest illustration of what the tiers buy.

@@ -23,6 +23,9 @@ from __future__ import annotations
 import collections
 import json
 import re
+from pathlib import Path
+
+RESULTS = Path("results")
 
 from evaluator import local_evaluator as ev
 from starter.agent import Agent
@@ -125,9 +128,10 @@ def main() -> None:
     print(f"\nSESSIONS NOT CONVERTING AT RANK 1: {len(imperfect)}")
     for record in imperfect:
         print(f"  {record['sample_id']}  {record['scenario']:16s} turn={record['turn']} rank={record['rank']}")
-    with open("ask_audit.json", "w", encoding="utf-8") as handle:
+    RESULTS.mkdir(exist_ok=True)
+    with open(RESULTS / "ask_audit.json", "w", encoding="utf-8") as handle:
         json.dump(imperfect, handle, indent=2)
-    print("\n  full transcripts written to ask_audit.json")
+    print("\n  full transcripts written to results/ask_audit.json")
 
 
 if __name__ == "__main__":

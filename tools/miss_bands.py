@@ -5,7 +5,7 @@ ten from thirty can only rescue targets that retrieval ranks 11-30, so that band
 is the size of the proposed lever; anything deeper is out of reach for this
 mechanism regardless of how good the model is.
 
-    python3 -m tools.miss_bands sim_n120_listwise.json
+    python3 -m tools.miss_bands results/llm_customer/sim_n120_listwise.json
 """
 from __future__ import annotations
 
@@ -32,7 +32,7 @@ def band_of(position: int | None) -> str:
 
 
 def main() -> None:
-    path = sys.argv[1] if len(sys.argv) > 1 else "sim_n120_listwise.json"
+    path = sys.argv[1] if len(sys.argv) > 1 else "results/llm_customer/sim_n120_listwise.json"
     sessions = [s for s in json.load(open(path))["sessions"] if not s.get("aborted")]
     agent = ShoppingAgent("data/catalog.jsonl")
 

@@ -23,7 +23,7 @@ CONFIGS = [
 
 
 def main() -> None:
-    path = sys.argv[1] if len(sys.argv) > 1 else "sim_n120_dense.json"
+    path = sys.argv[1] if len(sys.argv) > 1 else "results/llm_customer/sim_n120_dense.json"
     limit = int(sys.argv[2]) if len(sys.argv) > 2 else 119
     sessions = [s for s in json.load(open(path))["sessions"] if not s.get("aborted")][:limit]
     agent = ShoppingAgent("data/catalog.jsonl")

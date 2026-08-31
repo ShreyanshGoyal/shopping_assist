@@ -10,7 +10,7 @@ separates the two failure modes the score cannot distinguish:
 Costs nothing: the customer turns are replayed from the recording, and the
 extractor's model calls hit the response cache from the original run.
 
-    python3 -m tools.diagnose sim_n120_dense.json
+    python3 -m tools.diagnose results/llm_customer/sim_n120_dense.json
 """
 from __future__ import annotations
 
@@ -27,7 +27,7 @@ DEEP = 5000   # how far down the ranking to look for the target
 
 
 def main() -> None:
-    path = sys.argv[1] if len(sys.argv) > 1 else "sim_n120_dense.json"
+    path = sys.argv[1] if len(sys.argv) > 1 else "results/llm_customer/sim_n120_dense.json"
     sessions = [s for s in json.load(open(path))["sessions"] if not s.get("aborted")]
     agent = ShoppingAgent("data/catalog.jsonl")
 
