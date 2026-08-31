@@ -1,184 +1,180 @@
 # Demo video — shooting script
 
-**Target 3:30 · screen capture with voice-over · YouTube, public**
+**~3:30 · screen capture with voice-over · YouTube, public · no slides needed**
 
-Read the **SAY** lines aloud. They are written to be spoken, not read silently.
-Everything in `code` is a command to paste — have them ready in a scratch file so
-nothing is typed on camera.
+Read the **SAY** lines out loud. They're written the way people actually talk, so
+say them naturally — pause where the line breaks, don't rush the numbers.
+
+Everything in `code` is pasted, never typed on camera.
 
 ---
 
 ## Before you press record
 
-- [ ] Terminal font 16pt or larger, window roughly 1920×1080
-- [ ] `.env` closed, Cloud console tab closed, no key or project id anywhere on screen
+- [ ] Terminal font 16pt+, window about 1920×1080
+- [ ] `.env` closed, Cloud console closed
+- [ ] Do Not Disturb on
 - [ ] Commands pre-typed in a scratch file
-- [ ] `cd` into the repository already
-- [ ] `Cmd + Shift + 5` → Options → Microphone → **your mic** → Record
+- [ ] `Cmd + Shift + 5` → Options → **Microphone: your mic** → Record
 
 ---
 
-# 1 · The problem — 0:20
+# 1 · Setup — 0:20
 
-**SHOW** — a terminal, nothing running yet.
+**SHOW** — empty terminal.
 
 **SAY**
 
-> A customer wants one specific product out of fifty thousand.
-> They won't tell you which one.
-> You get ten turns of conversation to find it.
+> Okay, so — someone's shopping, and they've got one specific product in mind.
+> It's somewhere in a catalog of fifty thousand.
 >
-> The starter kit scores about ten percent.
+> They're not going to tell you which one. You just get ten turns of conversation
+> to figure it out.
+>
+> The starter code they give you gets about ten percent of them.
 
 ---
 
-# 2 · The score — 0:50
+# 2 · The score — 0:45
 
-**RUN**
+**RUN** `python3 -m tools.scorecard`
 
-```
-python3 -m tools.scorecard
-```
-
-**SHOW** — let the scorecard sit on screen. Point at the TechnicalScore row.
+**SHOW** — let it sit. Point at the TechnicalScore row, then the tokens line.
 
 **SAY**
 
-> This is the organiser's evaluator. Two hundred sessions.
+> This is their evaluator, all two hundred sessions.
 >
-> Zero point nine seven, against a baseline of point one one.
-> Hit rate of one — it finds the product every time.
+> Point nine seven. The baseline's point one one.
+> And hit rate is one — it finds the product in every single session.
 >
-> And look at the bottom line. Zero tokens. No network. No API key.
-> This is the Python standard library. It runs on a laptop in twenty seconds.
+> The bit I'd point at though is down here. Zero tokens. No network. No API key.
+> This is just the Python standard library. Whole thing runs in twenty seconds
+> on a laptop.
 
 ---
 
-# 3 · One session — 0:40
+# 3 · One conversation — 0:40
 
-**RUN**
+**RUN** `python3 -m tools.trace_session --sample public_0001`
 
-```
-python3 -m tools.trace_session --sample public_0001
-```
-
-**SHOW** — point at the FUNNEL line, then at the single product shown.
+**SHOW** — point at the FUNNEL line, then the single product.
 
 **SAY**
 
-> Here's one session. The customer names a category.
+> Here's what one session looks like.
 >
-> Fifty thousand products, down to a bucket of three hundred and twenty-nine,
-> down to one recommendation.
+> Customer says what kind of thing they want. Fifty thousand products,
+> down to a bucket of three twenty-nine, down to one.
 >
-> Notice it shows a single product, not ten.
-> Under this metric, rank is worth about six times a turn — so padding the list
-> to look thorough actually loses points. It waits until it's confident.
+> And notice — it only shows one product. Not ten.
 >
-> Turn one. Rank one.
+> That's deliberate. The way they score this, getting rank one matters about six
+> times more than saving a turn. So padding your list out to look thorough
+> actually costs you. It waits until it's sure.
+>
+> Turn one, rank one.
 
 ---
 
-# 4 · The honest question — 1:20  ← the important one
+# 4 · The catch — 1:20  ← this is the one that matters
 
-**SAY** *(before running anything)*
+**SAY** *(nothing running yet)*
 
-> But here's the problem with that number.
+> Here's my problem with that score though.
 >
-> The customer in that evaluator is a program. It quotes the product's own
-> description back at you. So a high score might just mean I matched their
-> wording — not that anything understood anything.
+> The customer in their evaluator isn't a person, and it isn't an AI.
+> It's a little program — and it quotes the product's own description
+> straight back at you.
 >
-> So I built a second benchmark to find out.
-> Same products, same scoring. But the customer is a language model,
-> told never to quote the listing.
+> So point nine seven might just mean I got good at matching their wording.
+> Which isn't the same as understanding anything.
+>
+> So I built a second one to check. Same products, same scoring —
+> but this time the customer's a language model, and it's told
+> never to quote the listing.
 
-**RUN**
+**RUN** `python3 -m tools.show_llm_session --scenario use_case_led`
 
-```
-python3 -m tools.show_llm_session --scenario use_case_led
-```
-
-**SHOW** — read the customer's turns aloud from the screen. Take your time here.
+**SHOW** — read her turns off the screen. Slow down here.
 
 **SAY**
 
-> She says she's going to the beach with her cousins, and wants
-> wrist things that won't get ruined swimming.
+> So she says she's off to the beach with her cousins, and she wants —
+> her words — wrist things that won't get ruined when they go swimming.
 >
-> Nothing in that sentence appears in the catalog.
+> None of that is in the catalog. Not one word.
 >
-> The agent shows bracelets. She says they look too fancy, the metal would ruin
-> in the ocean. It narrows. She asks for woven string ones with a beachy vibe.
-> Then — a pack of about twenty, with ocean waves.
+> It shows her bracelets. She says no, too fancy, the metal would wreck
+> in seawater. So it narrows. She asks for woven string ones,
+> something beachy. Closer. Then she says — a pack, about twenty,
+> ocean waves on them.
 >
-> Turn four. Rank one. A twenty-one piece surfer wave bracelet, waterproof.
+> Turn four. Rank one. Twenty-one piece surfer wave bracelet, waterproof.
 
 ---
 
-# 5 · What that cost — 0:30
+# 5 · What it cost — 0:35
 
-**SHOW** — the tier table, as a slide or a rendered markdown preview.
+**RUN** `python3 -m tools.tiers`
 
-| tier | official | paraphrasing customer |
-|---|---|---|
-| lexical (submitted) | **0.9746** | 0.348 |
-| + dense retrieval | 0.9724 | 0.7054 |
-| + listwise reranking | 0.8740 | **0.7903** |
+**SHOW** — the table. Point at the top row, both numbers.
 
 **SAY**
 
-> Here's what that second benchmark showed.
+> And this is what that second benchmark told me.
 >
-> The same agent scores point nine seven against the customer who quotes,
-> and point three four against the one who doesn't.
-> Most of my score was word matching.
+> Same agent. Point nine seven against the customer that quotes,
+> point three five against the one that doesn't.
+> So yeah — most of my score really was word matching.
 >
-> Dense retrieval and reranking close that gap. But look at the columns —
-> they move in opposite directions. What helps against a real customer
-> costs points against this evaluator.
+> Adding proper search and reranking fixes it. Gets it up to point seven nine.
 >
-> I submit the offline version, because that's what gets scored.
-> But I report both numbers. Only one of them is about understanding.
+> But look at the two columns. They go in opposite directions.
+> The stuff that helps a real customer actively costs me points on the
+> thing that's actually being graded.
+>
+> So I ship the offline one, because that's what gets scored.
+> But I'm reporting both. Only one of them's about understanding.
 
 ---
 
-# 6 · The ceiling — 0:20
+# 6 · Where it stops — 0:20
 
 **SAY**
 
-> That benchmark also killed nine of my own ideas. Every one measured,
-> every one with a diagnosed reason it failed.
+> That benchmark also killed nine of my own ideas. All measured,
+> all with a reason they failed.
 >
-> And it showed me where the ceiling is. If I hand the agent the correct
-> category, rank-one placement nearly doubles. But that category is only
-> guessable about half the time — because the catalog files a crew-neck t-shirt
-> under Underwear Undershirts.
+> And it showed me where the ceiling is. If I just hand the agent
+> the right category, rank one nearly doubles. But you can only guess
+> that category about half the time — because this catalog files
+> a crew-neck t-shirt under Underwear Undershirts.
 >
-> That's not a retrieval problem. That's the data.
+> That's not a search problem. That's the data.
 
 ---
 
 # 7 · Close — 0:10
 
-**SHOW** — the scorecard again, or the clean-machine run.
+**RUN** `python3 -m tools.scorecard`
 
 **SAY**
 
-> Runs offline, on a laptop, for nothing.
-> Zero point nine seven four six.
+> Runs offline, on a laptop, costs nothing.
+> Point nine seven four six.
 
-**Hold two seconds. Stop recording.**
+**Hold two seconds. Stop.**
 
 ---
 
 ## After
 
-- [ ] Watch it back once — check no key, path, or console is visible
-- [ ] Export 1080p
-- [ ] Upload to YouTube, **visibility: Public**
-- [ ] Paste the link into Devpost → Project Media → Video demo link
+- [ ] Watch it back — no key, no path, no console visible
+- [ ] Trim the ends in QuickTime (`Cmd + T`, then `Cmd + S`)
+- [ ] YouTube, **visibility: Public**
+- [ ] Link into Devpost → Project Media → Video demo link
 
-## If you run long
+## Running long?
 
-Cut section 6 first. Sections 4 and 5 are the entry — everything else is setup.
+Cut section 6. Sections 4 and 5 are the submission — everything else is setup.
