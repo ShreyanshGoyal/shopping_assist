@@ -25,7 +25,10 @@ experiments against a pre-registered acceptance bar.
 | `sim_n120_listwise.json` | 0.7481 | listwise without the hedge |
 | `sim_n120_dense.json` | 0.7054 | retrieval only |
 | `sim_n120_model.json` | 0.5453 | before the dense track |
-| `sim_n52_tier1.json` | 0.2994 | submitted config, n=54 (stopped for budget) |
+| `sim_n120_tier1.json` | 0.3479 | submitted config: lexical only |
+
+`sim_n52_tier1.json` is a superseded 54-session partial of the same run, kept
+only because the report's earlier revisions cite it.
 
 Rejected experiments, each paired against `sim_n60_hedge.json` (0.8002):
 

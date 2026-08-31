@@ -122,7 +122,7 @@ claim below has a measurement behind it rather than an assertion.
 | **I. Intent routing and hybrid pipeline** | Four retrieval routes — stated category, catalog-mined vocabulary, rare-term lexical, and dense embeddings — fused into one reranker, with an LLM semantic ranking tier above it | dense worth +0.16 on the LLM customer; listwise +0.085; route weights swept with both holdout halves |
 | **II. Dialog strategy** | The frame: a sticky product-type slot, accumulating attributes, subtracting negatives. Intent override demotes superseded statements rather than erasing them | drift eliminated — bucket collapse went from 17 of 24 sessions to zero; override scenario scores HR 1.000, MRR 0.950 |
 | **III. Self-evolution** | The frame *is* the distilled context; the raw transcript is never searched after the drift finding. Slate width adapts to confidence | withholding validated by the six-to-one rank-versus-turn arithmetic; adaptive widening tested and rejected at −0.034 |
-| **IV. Evaluation** | Two benchmarks reported side by side, holdout validation on both halves, nine pre-registered experiments | 0.9746 scripted / 0.299 LLM customer for the same configuration; splits 0.9748 and 0.9700 |
+| **IV. Evaluation** | Two benchmarks reported side by side, holdout validation on both halves, nine pre-registered experiments | 0.9746 scripted / 0.348 LLM customer for the same configuration; splits 0.9748 and 0.9700 |
 
 Pillar II's "proactive guidance" deserves a direct answer, because it is the one
 place this submission does something counter-intuitive. The scripted simulator
@@ -169,21 +169,21 @@ frame rebuild.
 
 | tier | scripted (200) | LLM customer (120) | requires |
 |---|---|---|---|
-| **1 — lexical, submitted** | **0.9746** | **0.299** (n=54) | nothing |
+| **1 — lexical, submitted** | **0.9746** | **0.348** | nothing |
 | 2 — + dense retrieval | 0.9724 | 0.7054 | numpy, onnxruntime, tokenizers |
 | 3 — + model extraction and listwise rerank | 0.8740 | **0.7903** | network, credential |
 
 **The tiers move in opposite directions, and that is the central finding.** The
 submitted configuration scores **0.9746 against a customer who quotes product
-text and 0.299 against one who paraphrases** — the same agent, the same targets,
+text and 0.348 against one who paraphrases** — the same agent, the same targets,
 the same metric. Against the quoting customer, exact-match machinery is
 near-optimal and every model-based layer can only overrule an answer that was
 already right. Against the paraphrasing one, those layers are the difference
-between 0.299 and 0.790.
+between 0.348 and 0.790.
 
-The tier-1 language-model figure is measured over 54 sessions rather than 120:
-the run was stopped part-way to preserve remaining API budget, and the partial
-result is reported at its true sample size rather than extrapolated.
+All three tiers are measured over the same stratified sessions — 120, 119 and
+120 after aborted sessions are excluded — so the column is directly comparable
+row to row.
 
 Two components carry the generalisation result:
 
@@ -309,13 +309,13 @@ never reads it. We consider that a property of the benchmark rather than of
 conversational search, and it is the largest gap between what this task rewards
 and what a real shopping assistant needs.
 
-**The tier-1 language-model figure rests on 54 sessions, not 120.** The run was
-stopped part-way to stay inside the remaining API budget. The other two tiers are
-measured at n=119 and n=120, so the comparison is sound but that one cell is
-noisier than its neighbours.
+**The language-model benchmark uses one customer model.** Every session is played
+by Gemini 3.5 Flash Lite. A different model would paraphrase differently, and the
+absolute numbers would move; the ordering between tiers is what the design
+supports, not the exact values.
 
-**With more time**, in order of expected value: complete the tier-1 measurement
-to 120 sessions; port
+**With more time**, in order of expected value: run the benchmark with a second
+customer model to separate the agent's behaviour from one simulator's idiom; port
 listwise reranking to a local quantised model so the +0.085 survives without a
 network, completing the three-tier story with no external dependency; and index
 the demand side — precompute plausible customer phrasings per product, a
