@@ -1,6 +1,6 @@
 # Shopping Copilot — Devpost description
 
-## What we built
+## What this is
 
 A multi-turn shopping agent that finds one hidden product in a frozen 50,000-item
 Amazon catalog within ten turns — and a second, adversarial benchmark built to
@@ -14,7 +14,7 @@ third-party package, no model file, no network call, no credential, zero tokens.
 
 ## 1. The discovery: the customer is a program, and it quotes
 
-The organiser ships the evaluator, so we read it before writing anything. The
+The organiser ships the evaluator, so it came first, before any code. The
 simulated customer is not a language model. `intent_card()` derives everything it
 will ever say from the target product's own metadata — the first material word in
 its text, the first colour, verbatim bullets from its `features` and `details`,
@@ -30,20 +30,20 @@ Two structural consequences followed, both measured:
   two extra turns it costs lose 0.0002. The baseline's instinct — pad the
   shortlist, convert early — is backwards.
 
-So we built an interpretable offline scorer: category routing, typed constraint
+Hence an interpretable offline scorer: category routing, typed constraint
 slots, exact-quote matching against normalised catalog text, a popularity prior
 (targets are real purchase records, and removing that prior costs 0.015), and a
 confidence-gated slate that withholds rather than padding. That reached 0.9746
 against a practical ceiling of ~0.992, the remainder being the intent-override
 lockout and genuine ties.
 
-**We disclose this openly.** Identifying the environment's dynamics is standard
+**This is disclosed openly.** Identifying the environment's dynamics is standard
 practice in any simulated benchmark, and the alternative — describing it vaguely
 and hoping nobody reads the code — would be worse on every axis.
 
 ## 2. The honest question: does 0.975 measure understanding?
 
-It measures wording. So we built the thing that would tell us: **an LLM-customer
+It measures wording. Hence the thing that would settle it: **an LLM-customer
 benchmark**. Same target products, same metric formulas, same ten-turn limit —
 but the customer is played by Gemini 3.5 Flash Lite, instructed never to quote
 the listing and to describe the product in its own words, across six behavioural
@@ -57,7 +57,7 @@ The first run answered the question:
 | language-model | 0.589 | 0.229 |
 
 Hit rate held — category routing is real product behaviour — but **MRR collapsed
-from 0.985 to 0.229**. Most of our score was exact wording, exactly as suspected.
+from 0.985 to 0.229**. Most of the score was exact wording, exactly as suspected.
 
 The benchmark then found a bug the official one could not see: across 24 sessions,
 **17 collapsed into "Shirts T-Shirts"**, the catalog's largest bucket, while the
@@ -103,16 +103,16 @@ The tiers move in opposite directions, and that is the finding. **The submitted
 configuration scores 0.9746 against a customer who quotes product text and 0.348
 against one who paraphrases** — the same agent, the same targets, the same
 metric. Dense retrieval alone more than doubles the second number; listwise
-reranking takes it to 0.790. We submit the offline configuration anyway, because
+reranking takes it to 0.790. The offline configuration is the one submitted, because
 the organiser confirmed final results are generated exactly as the published
-evaluator — but we report both columns, because only one of them is about
+evaluator — but both columns are reported, because only one of them is about
 understanding.
 
-## 4. What we falsified
+## 4. What was falsified
 
-The benchmark's real value was killing our own good ideas. Every one below was
-plausible, several came from the problem statement's own suggested directions,
-and all were measured and rejected with a diagnosed cause.
+The benchmark's real value was killing good ideas. Every one below was plausible,
+several came from the problem statement's own suggested directions, and all were
+measured and rejected with a diagnosed cause.
 
 **Four attempts at smarter clarification questions:**
 
@@ -126,8 +126,8 @@ and all were measured and rejected with a diagnosed cause.
 The open probe survives on a derived argument: it matches *any* undisclosed
 requirement while a named attribute matches only its own type, so it dominates by
 construction — and the simulator never reads the question text at all. Against
-this evaluator, the optimal questioning policy is a constant. We report that
-rather than shipping something that looks clever and scores worse.
+this evaluator, the optimal questioning policy is a constant. That is reported
+here rather than shipping something that looks clever and scores worse.
 
 **Three attempts at better ranking:** a cross-encoder reranker twice (−0.047,
 then −0.015 after fixing the blend) and adaptive slate widening (−0.034). The
@@ -137,7 +137,7 @@ bounded authority. Same shortlist, same model family, opposite result.
 
 ## 5. Measured ceilings
 
-We stopped when we could show where the ceiling was, not when we ran out of ideas.
+Work stopped at the point the ceiling could be shown, not at the point ideas ran out.
 
 **Category resolution is the dominant lever and is largely unreachable.** An
 oracle test — handing the agent the target's true category — takes rank-1

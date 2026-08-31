@@ -56,7 +56,7 @@ Point at three things on screen:
 ## 1:20–2:50 — The honest question
 
 > "But that customer is a program, and it quotes the product's own description
-> back at us. So we asked whether 0.975 measures understanding — and built a
+> back at you. So the question became whether 0.975 measures understanding — and a
 > second benchmark to find out."
 
 **Show:** `sim/personas.py` briefly — the six scenarios and five writing styles.
@@ -71,7 +71,7 @@ Point at three things on screen:
 | scripted | 0.975 | 0.985 |
 | language-model | 0.589 | 0.229 |
 
-> "Hit rate held. MRR collapsed. Most of our score was wording."
+> "Hit rate held. MRR collapsed. Most of that score was wording."
 
 **Now the payoff — play one LLM-customer session**, a `use_case_led` one, which
 is the hardest scenario. Read two or three turns aloud in the customer's own
@@ -88,7 +88,7 @@ words. On screen, surface:
 
 ---
 
-## 2:50–3:35 — What we measured, and where the ceiling is
+## 2:50–3:35 — The measurements, and where the ceiling is
 
 **Show the two-benchmark tier table:**
 
@@ -103,14 +103,14 @@ words. On screen, surface:
 
 **Show the falsification table** — four questioning attempts, each with its cause.
 
-> "The benchmark's real value was killing our own ideas. Four attempts at smarter
+> "The benchmark's real value was killing good ideas. Four attempts at smarter
 > clarification questions, all measured worse. The open probe wins by a derived
 > argument: it matches any undisclosed requirement, and the simulator never reads
 > the question text at all."
 
 **Show the oracle ceiling:**
 
-> "We stopped because we could show where the ceiling is. Handing the agent the
+> "Work stopped at the point the ceiling could be shown. Handing the agent the
 > target's true category takes rank-1 from 34.5% to 61.3%. But that category is
 > inferable only about half the time — the catalog files a crew-neck t-shirt
 > under Underwear Undershirts. That is arbitrary filing, not a retrieval failure."

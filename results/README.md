@@ -13,7 +13,7 @@ taken on trust.
 | `results_extractor_only.json` | 0.9316 | + model extraction |
 | `results_listwise.json` | 0.8740 | + listwise reranking |
 
-## `llm_customer/` — our adversarial benchmark
+## `llm_customer/` — the adversarial benchmark
 
 Stratified sessions with a language-model customer. `n120` files are the
 reportable measurements at four sessions per cell; `n60` files are paired

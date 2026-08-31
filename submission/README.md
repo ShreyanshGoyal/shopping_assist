@@ -40,9 +40,10 @@ structurally impossible here.
 ## Results
 
 Two benchmarks. The **scripted evaluator** is the organiser's, and it is what
-determines the official score. The **language-model customer** is ours: the same
-sessions and the same metric formulas, but the customer is played by a model that
-paraphrases, hedges and complains instead of quoting catalog text. It exists
+determines the official score. The **language-model customer** was built for this
+project: the same sessions and the same metric formulas, but the customer is
+played by a model that paraphrases, hedges and complains instead of quoting
+catalog text. It exists
 because the first version of this agent scored 0.975 against the scripted
 customer while relying almost entirely on matching its exact wording.
 

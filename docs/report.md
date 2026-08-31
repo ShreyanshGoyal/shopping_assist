@@ -19,15 +19,15 @@ third-party package, no model file, no network call, no credential, zero tokens,
 about half a millisecond per turn. It was verified on a fresh clone with a stock
 interpreter, credentials removed and network unavailable.
 
-The more interesting result is not that number. It is that we built a second
-benchmark to find out whether that number meant anything, discovered it largely
-did not, and spent the remaining effort on what the second benchmark revealed.
+The more interesting result is not that number. It is what happened when a second
+benchmark was built to test whether that number meant anything: it largely did
+not, and the remaining effort went into what that benchmark revealed.
 
 ---
 
 ## 1. What the task actually is
 
-The organiser publishes the evaluator, so we read it before writing code.
+The organiser publishes the evaluator, so it was read before any code was written.
 
 The simulated customer is not a language model. `intent_card()` derives
 everything it will ever say from the target product's own metadata: the first
@@ -36,7 +36,7 @@ material word appearing in its text, the first colour, verbatim bullets from its
 `customer_reply()` takes the agent's `ask_attribute` and returns up to two
 requirements not yet disclosed — and it never receives the agent's prose at all.
 
-Three properties follow, each of which we measured rather than assumed.
+Three properties follow, each measured rather than assumed.
 
 **Category routing is unusually powerful.** The opening turn names the two most
 specific levels of the target's category path. There are 1,115 such nodes across
@@ -56,9 +56,10 @@ and an empty answer to it proves nothing remains. Audited across 200 sessions:
 415 open probes, all productive or structurally interrupted; 14 named asks, all
 14 returning nothing.
 
-We disclose this analysis openly. Identifying a simulated environment's dynamics
+This analysis is disclosed openly. Identifying a simulated environment's dynamics
 is ordinary practice in any benchmark of this kind, and it is discoverable from
-the code we were given; describing it vaguely would be worse on every axis.
+the code participants are given; describing it vaguely would be worse on every
+axis.
 
 ## 2. Architecture
 
@@ -130,8 +131,8 @@ acts only on `ask_attribute` and never reads the question text, and the open
 probe `other` matches any undisclosed requirement while a named attribute matches
 only its own type. The optimal questioning policy against this evaluator is
 therefore a constant, and four attempts at something more adaptive all scored
-worse (§6). We report that rather than shipping a more impressive-looking policy
-that measurably loses.
+worse (§6). That is reported here rather than shipping a more impressive-looking
+policy that measurably loses.
 
 ## 4. Method: two benchmarks
 
@@ -139,7 +140,7 @@ The organiser's evaluator determines the official score. But a customer that
 quotes catalog text can be satisfied by matching wording, so a high score there
 does not demonstrate understanding.
 
-We therefore built an **adversarial second benchmark**: the same target products,
+Hence an **adversarial second benchmark**: the same target products,
 the same metric formulas, the same ten-turn limit, but the customer is played by
 Gemini 3.5 Flash Lite and instructed never to quote the listing. Six behavioural
 scenarios — including two the scripted simulator cannot express, a shopper who
@@ -204,9 +205,9 @@ overrules a confident retrieval. Worth **+0.085**, taking rank-1 placement from
 the submitted configuration scores 0.9748 and 0.9700 — the score is not riding
 noise in a particular sample.
 
-## 6. What we falsified
+## 6. What was falsified
 
-The second benchmark's real value was killing our own plausible ideas. Each of
+The second benchmark's real value was killing plausible ideas. Each of
 the following was measured against a pre-registered acceptance bar and rejected
 with a diagnosed cause. All remain in the repository behind environment flags.
 
@@ -238,7 +239,7 @@ the current one on both holdout halves).
 
 ## 7. Measured ceilings
 
-We stopped when the ceiling could be demonstrated, not when ideas ran out.
+Work stopped when the ceiling could be demonstrated, not when ideas ran out.
 
 **Category resolution is the dominant lever and is largely unreachable.** An
 oracle test — handing the agent the target's true category — takes rank-1
@@ -305,9 +306,9 @@ not use. It is reported because it is what exposed this agent's dependence on
 exact wording, and what falsified nine subsequent ideas that looked sound.
 
 **Question wording cannot help under this evaluator**, because the simulator
-never reads it. We consider that a property of the benchmark rather than of
-conversational search, and it is the largest gap between what this task rewards
-and what a real shopping assistant needs.
+never reads it. That is a property of the benchmark rather than of conversational
+search, and it is the largest gap between what this task rewards and what a real
+shopping assistant needs.
 
 **The language-model benchmark uses one customer model.** Every session is played
 by Gemini 3.5 Flash Lite. A different model would paraphrase differently, and the
