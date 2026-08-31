@@ -1,148 +1,184 @@
-# Demo video — shot list and narration
+# Demo video — shooting script
 
-Target 3:30. Screen capture with voice-over. Upload to YouTube, **set to public**,
-link from the Devpost description.
+**Target 3:30 · screen capture with voice-over · YouTube, public**
 
-Record at 1920×1080. Terminal at a large font — 16pt minimum, judges may watch on
-a laptop. Have every command pre-typed in a scratch file so nothing is typed live.
-
----
-
-## 0:00–0:20 — The problem
-
-**Show:** the problem statement's session example, or a single slide with the
-scoring formula.
-
-> "A customer wants one specific product out of fifty thousand. They will not tell
-> you which. You get ten turns of conversation, and you are scored on whether you
-> find it, how high you rank it, and how few turns you take."
-
-Cut to the weak baseline number on screen: **0.1067**.
+Read the **SAY** lines aloud. They are written to be spoken, not read silently.
+Everything in `code` is a command to paste — have them ready in a scratch file so
+nothing is typed on camera.
 
 ---
 
-## 0:20–1:20 — The scripted evaluator, and one transcript
+## Before you press record
 
-**Show:** a terminal, repository root.
+- [ ] Terminal font 16pt or larger, window roughly 1920×1080
+- [ ] `.env` closed, Cloud console tab closed, no key or project id anywhere on screen
+- [ ] Commands pre-typed in a scratch file
+- [ ] `cd` into the repository already
+- [ ] `Cmd + Shift + 5` → Options → Microphone → **your mic** → Record
 
-```bash
-python3 -m evaluator.local_evaluator
+---
+
+# 1 · The problem — 0:20
+
+**SHOW** — a terminal, nothing running yet.
+
+**SAY**
+
+> A customer wants one specific product out of fifty thousand.
+> They won't tell you which one.
+> You get ten turns of conversation to find it.
+>
+> The starter kit scores about ten percent.
+
+---
+
+# 2 · The score — 0:50
+
+**RUN**
+
+```
+python3 -m tools.scorecard
 ```
 
-Let it run — it takes about twenty seconds, which is worth showing rather than
-cutting, because the speed is part of the claim. Land on the output.
+**SHOW** — let the scorecard sit on screen. Point at the TechnicalScore row.
 
-> "That is the organiser's evaluator, unmodified, on all two hundred public
-> sessions. **0.9746**, hit rate 1.0. No API key, no network, no model file —
-> standard library only, zero tokens."
+**SAY**
 
-**Then show one transcript** so the score is not just a number:
+> This is the organiser's evaluator. Two hundred sessions.
+>
+> Zero point nine seven, against a baseline of point one one.
+> Hit rate of one — it finds the product every time.
+>
+> And look at the bottom line. Zero tokens. No network. No API key.
+> This is the Python standard library. It runs on a laptop in twenty seconds.
 
-```bash
-python3 -m tools.trace_session --sample public_0003
+---
+
+# 3 · One session — 0:40
+
+**RUN**
+
+```
+python3 -m tools.trace_session --sample public_0001
 ```
 
-Point at three things on screen:
-- Turn 1: **the agent shows a single product** — the target, at rank 1. "It is
-  confident, so it does not pad. Rank is worth about six times a turn under this
-  metric."
-- Turn 3: the customer says *"Actually, ignore my earlier preference."* The
-  target **stays at rank 1**.
-- The lock note: "override sessions cannot score before turn three. It was
-  already correct before it was allowed to be."
+**SHOW** — point at the FUNNEL line, then at the single product shown.
+
+**SAY**
+
+> Here's one session. The customer names a category.
+>
+> Fifty thousand products, down to a bucket of three hundred and twenty-nine,
+> down to one recommendation.
+>
+> Notice it shows a single product, not ten.
+> Under this metric, rank is worth about six times a turn — so padding the list
+> to look thorough actually loses points. It waits until it's confident.
+>
+> Turn one. Rank one.
 
 ---
 
-## 1:20–2:50 — The honest question
+# 4 · The honest question — 1:20  ← the important one
 
-> "But that customer is a program, and it quotes the product's own description
-> back at you. So the question became whether 0.975 measures understanding — and a
-> second benchmark to find out."
+**SAY** *(before running anything)*
 
-**Show:** `sim/personas.py` briefly — the six scenarios and five writing styles.
+> But here's the problem with that number.
+>
+> The customer in that evaluator is a program. It quotes the product's own
+> description back at you. So a high score might just mean I matched their
+> wording — not that anything understood anything.
+>
+> So I built a second benchmark to find out.
+> Same products, same scoring. But the customer is a language model,
+> told never to quote the listing.
 
-> "Same targets, same metrics, same ten turns. But the customer is a language
-> model told never to quote the listing."
+**RUN**
 
-**Show the gap table on screen:**
+```
+python3 -m tools.show_llm_session --scenario use_case_led
+```
 
-| customer | score | MRR |
+**SHOW** — read the customer's turns aloud from the screen. Take your time here.
+
+**SAY**
+
+> She says she's going to the beach with her cousins, and wants
+> wrist things that won't get ruined swimming.
+>
+> Nothing in that sentence appears in the catalog.
+>
+> The agent shows bracelets. She says they look too fancy, the metal would ruin
+> in the ocean. It narrows. She asks for woven string ones with a beachy vibe.
+> Then — a pack of about twenty, with ocean waves.
+>
+> Turn four. Rank one. A twenty-one piece surfer wave bracelet, waterproof.
+
+---
+
+# 5 · What that cost — 0:30
+
+**SHOW** — the tier table, as a slide or a rendered markdown preview.
+
+| tier | official | paraphrasing customer |
 |---|---|---|
-| scripted | 0.975 | 0.985 |
-| language-model | 0.589 | 0.229 |
+| lexical (submitted) | **0.9746** | 0.348 |
+| + dense retrieval | 0.9724 | 0.7054 |
+| + listwise reranking | 0.8740 | **0.7903** |
 
-> "Hit rate held. MRR collapsed. Most of that score was wording."
+**SAY**
 
-**Now the payoff — play one LLM-customer session**, a `use_case_led` one, which
-is the hardest scenario. Read two or three turns aloud in the customer's own
-words. On screen, surface:
-- the **frame state** — product type, accumulated attributes, negatives — so the
-  structure is visible rather than asserted;
-- a **listwise promotion**: retrieval had no clear leader, the model read the
-  shopper's raw words and promoted its pick to rank 1.
-
-> "The frame is why this does not drift. Product type is a slot that has to be
-> contradicted, not a tally that can be outvoted. Before this, seventeen of
-> twenty-four sessions collapsed into the catalog's biggest category while the
-> customer typed 'I want shoes, not shirts'."
-
----
-
-## 2:50–3:35 — The measurements, and where the ceiling is
-
-**Show the two-benchmark tier table:**
-
-| tier | scripted | LLM customer |
-|---|---|---|
-| 1 — lexical, submitted | **0.9746** | — |
-| 2 — + dense retrieval | 0.9724 | 0.7054 |
-| 3 — + listwise rerank | 0.8740 | **0.7903** |
-
-> "The tiers move in opposite directions. The layer worth +0.085 against a
-> paraphrasing customer costs 0.098 against a quoting one."
-
-**Show the falsification table** — four questioning attempts, each with its cause.
-
-> "The benchmark's real value was killing good ideas. Four attempts at smarter
-> clarification questions, all measured worse. The open probe wins by a derived
-> argument: it matches any undisclosed requirement, and the simulator never reads
-> the question text at all."
-
-**Show the oracle ceiling:**
-
-> "Work stopped at the point the ceiling could be shown. Handing the agent the
-> target's true category takes rank-1 from 34.5% to 61.3%. But that category is
-> inferable only about half the time — the catalog files a crew-neck t-shirt
-> under Underwear Undershirts. That is arbitrary filing, not a retrieval failure."
+> Here's what that second benchmark showed.
+>
+> The same agent scores point nine seven against the customer who quotes,
+> and point three four against the one who doesn't.
+> Most of my score was word matching.
+>
+> Dense retrieval and reranking close that gap. But look at the columns —
+> they move in opposite directions. What helps against a real customer
+> costs points against this evaluator.
+>
+> I submit the offline version, because that's what gets scored.
+> But I report both numbers. Only one of them is about understanding.
 
 ---
 
-## 3:35–3:50 — Close
+# 6 · The ceiling — 0:20
 
-**Show:** the clean-machine run — fresh clone, stock Python, credentials stripped.
+**SAY**
 
-> "Runs offline on a laptop. Zero tokens on the graded path, half a millisecond
-> per turn, verified from a fresh clone on a stock interpreter with no network."
-
-Hold on **0.9746**. End.
+> That benchmark also killed nine of my own ideas. Every one measured,
+> every one with a diagnosed reason it failed.
+>
+> And it showed me where the ceiling is. If I hand the agent the correct
+> category, rank-one placement nearly doubles. But that category is only
+> guessable about half the time — because the catalog files a crew-neck t-shirt
+> under Underwear Undershirts.
+>
+> That's not a retrieval problem. That's the data.
 
 ---
 
-## Recording checklist
+# 7 · Close — 0:10
 
-- [ ] Terminal font ≥16pt, light-on-dark, window at 1920×1080
-- [ ] Commands pre-typed in a scratch file, pasted not typed
-- [ ] `.env` **closed** and not visible in any editor tab or shell history
-- [ ] No API key, project id, or billing page visible at any point
-- [ ] Tables prepared as slides or a rendered markdown preview, not raw text
-- [ ] One rehearsal pass for timing before the take
-- [ ] Export 1080p, upload to YouTube, **visibility: Public**
-- [ ] Paste the link into the Devpost description
+**SHOW** — the scorecard again, or the clean-machine run.
 
-## Capturing the LLM-customer session
+**SAY**
 
-The 1:20–2:50 segment needs a recorded session with visible frame state. Either
-replay a stored transcript from `results/llm_customer/sim_n120_hedge.json` with an added state print,
-or run one live — a live run costs a few hundred tokens and shows real latency.
-Pick a `use_case_led` session that converts, since that scenario went from 0.541
-to 0.700 and is the clearest illustration of what the tiers buy.
+> Runs offline, on a laptop, for nothing.
+> Zero point nine seven four six.
+
+**Hold two seconds. Stop recording.**
+
+---
+
+## After
+
+- [ ] Watch it back once — check no key, path, or console is visible
+- [ ] Export 1080p
+- [ ] Upload to YouTube, **visibility: Public**
+- [ ] Paste the link into Devpost → Project Media → Video demo link
+
+## If you run long
+
+Cut section 6 first. Sections 4 and 5 are the entry — everything else is setup.
