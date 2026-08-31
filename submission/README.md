@@ -179,11 +179,12 @@ behind environment flags with their results recorded.
 **The language-model benchmark is not a leaderboard predictor.** It measures
 robustness to a customer the official evaluation does not use. It is reported
 because it is what exposed this agent's dependence on exact wording, and what
-falsified eight subsequent ideas that looked sound.
+falsified nine subsequent ideas that looked sound.
 
 ## Contributions
 
-Solo entry. 
+Solo entry. All design, implementation, experimentation and analysis by the
+submitting participant.
 
 ## Disclosure
 
