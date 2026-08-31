@@ -1,0 +1,877 @@
+{
+  "customer": "vertex:gemini-3.5-flash-lite",
+  "overall": {
+    "sample_count": 6,
+    "hit_rate_at_10": 0.833333,
+    "mrr": 0.229167,
+    "mttc": 5.833333,
+    "efficiency": 0.516667,
+    "technical_score": 0.58875
+  },
+  "by_scenario": {
+    "brand_led": {
+      "sample_count": 1,
+      "hit_rate_at_10": 1.0,
+      "mrr": 0.333333,
+      "mttc": 6.0,
+      "efficiency": 0.5,
+      "technical_score": 0.7
+    },
+    "decisive": {
+      "sample_count": 1,
+      "hit_rate_at_10": 1.0,
+      "mrr": 0.5,
+      "mttc": 4.0,
+      "efficiency": 0.7,
+      "technical_score": 0.79
+    },
+    "indifferent": {
+      "sample_count": 1,
+      "hit_rate_at_10": 1.0,
+      "mrr": 0.166667,
+      "mttc": 3.0,
+      "efficiency": 0.8,
+      "technical_score": 0.71
+    },
+    "vague": {
+      "sample_count": 3,
+      "hit_rate_at_10": 0.666667,
+      "mrr": 0.125,
+      "mttc": 7.333333,
+      "efficiency": 0.366667,
+      "technical_score": 0.444167
+    }
+  },
+  "by_style": {
+    "esl": {
+      "sample_count": 4,
+      "hit_rate_at_10": 1.0,
+      "mrr": 0.260417,
+      "mttc": 4.5,
+      "efficiency": 0.65,
+      "technical_score": 0.708125
+    },
+    "plain": {
+      "sample_count": 1,
+      "hit_rate_at_10": 1.0,
+      "mrr": 0.333333,
+      "mttc": 6.0,
+      "efficiency": 0.5,
+      "technical_score": 0.7
+    },
+    "terse": {
+      "sample_count": 1,
+      "hit_rate_at_10": 0.0,
+      "mrr": 0.0,
+      "mttc": 11.0,
+      "efficiency": 0.0,
+      "technical_score": 0.0
+    }
+  },
+  "wall_clock_seconds": 39.2,
+  "token_usage": {
+    "prompt_tokens": 32132,
+    "completion_tokens": 696,
+    "calls": 34,
+    "served_from_cache": 0
+  },
+  "sessions": [
+    {
+      "sample_id": "public_0029",
+      "scenario": "decisive",
+      "maps_to": "buying",
+      "style": "esl",
+      "target": "B01IAKCZEK",
+      "hit": true,
+      "first_hit_turn": 4,
+      "best_rank": 2,
+      "reciprocal_rank": 0.5,
+      "transcript": [
+        {
+          "turn": 1,
+          "customer": "I looking for flat sandal, but it must have really soft bottom like yoga mat. Can you help me find?",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B08513YB2T",
+            "B0BH113WW9",
+            "B07Z6J5N6Y",
+            "B0BT8T2FQ3",
+            "B0B9ZYDDZ1",
+            "B0BKL2R1WX",
+            "B07FDB7GMZ",
+            "B08134XNNB",
+            "B077276QGC",
+            "B016OT9D3K"
+          ],
+          "shown_titles": [
+            "Crocs Unisex-Adult Classic Clog",
+            "Hanes Boxer Briefs, Cool Dri Moisture-Wicking Underwear, Cotton No-Ride-up for Men, Multi-Packs Available",
+            "Amazon Essentials Women's Cotton Bikini Brief Underwear (Available in Plus Size), Multipacks",
+            "Fruit of the Loom Men's Eversoft Cotton Stay Tucked Crew T-Shirt",
+            "Buffway Slim Minimalist Front Pocket RFID Blocking Leather Wallets for Men Women",
+            "Crocs Unisex-Adult Classic Tie Dye Clogs",
+            "adidas Men's Adilette Shower Slide",
+            "Women's Walking Shoes Sock Sneakers - Mesh Slip On Air Cushion Lady Girls Modern Jazz Dance Easy Shoes Platfor",
+            "wirarpa Women's High Waisted Cotton Underwear Ladies Soft Full Briefs Panties Multipack",
+            "Hanes Men\u2019s Short Sleeve Graphic T-shirt Collection"
+          ]
+        },
+        {
+          "turn": 2,
+          "customer": "None of those are what I need, those are mostly underwear and clogs! I just want that stretchy fabric strap kind with the yoga mat cushion inside.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B08134XNNB"
+          ],
+          "shown_titles": [
+            "Women's Walking Shoes Sock Sneakers - Mesh Slip On Air Cushion Lady Girls Modern Jazz Dance Easy Shoes Platfor"
+          ]
+        },
+        {
+          "turn": 3,
+          "customer": "No, sneaker is not what I want, I need open flat sandal with soft yoga mat inside and stretchy fabric straps.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B01MQUDPPO"
+          ],
+          "shown_titles": [
+            "Iflex Scrubs for Women, Yoga-Inspired Knit Waistband Scrub Pants CK002"
+          ]
+        },
+        {
+          "turn": 4,
+          "customer": "Those are pants, not shoes! I want the flat sandal that uses real yoga mat material for the footbed and has stretchy cloth straps going around the foot.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B08513YB2T",
+            "B01IAKCZEK",
+            "B089Y37G5Y",
+            "B01MQUDPPO",
+            "B07C2XPZ6D",
+            "B0BN6CCHB7",
+            "B0BPCC1KBT",
+            "B00UHLFR32",
+            "B0895GRVYV",
+            "B07R7PH27H"
+          ],
+          "shown_titles": [
+            "Crocs Unisex-Adult Classic Clog",
+            "Sanuk Yoga Sling 2 Light Natural 5 B (M)",
+            "FUNKYMONKEY Women's Comfort Slides Double Buckle Adjustable EVA Flat Sandals",
+            "Iflex Scrubs for Women, Yoga-Inspired Knit Waistband Scrub Pants CK002",
+            "Emmalise Women's Basic Casual Long Camisole Adjustable Strap Cami Layering Top",
+            "Skechers Men's Go Max-Athletic Air Mesh Slip on Walking Shoe Sneaker",
+            "Hanes Womens Wireless Bra, Full-Coverage Pullover Stretch-Knit Bra, Smoothing T-Shirt Bra",
+            "Fruit of the Loom Men's Extended Sizes Jersey Knit Sleep Pant (1 & 2 Packs)",
+            "YATHON Casual Dresses for Women Sleeveless Cotton Summer Beach Dress A Line Spaghetti Strap Sundresses with Po",
+            "ZOOSIXX High Waisted Leggings for Women - Tummy Control Soft Athletic Slim Pants for Yoga Workout Running Cycl"
+          ],
+          "hit_rank": 2
+        }
+      ]
+    },
+    {
+      "sample_id": "public_0005",
+      "scenario": "vague",
+      "maps_to": "browsing",
+      "style": "esl",
+      "target": "B074G1JP8Z",
+      "hit": true,
+      "first_hit_turn": 5,
+      "best_rank": 8,
+      "reciprocal_rank": 0.125,
+      "transcript": [
+        {
+          "turn": 1,
+          "customer": "Hello! I just look around for some shoes for winter, not sure yet what I want.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B08513YB2T",
+            "B0BH113WW9",
+            "B07Z6J5N6Y",
+            "B0BT8T2FQ3",
+            "B0B9ZYDDZ1",
+            "B07FDB7GMZ",
+            "B0BKL2R1WX",
+            "B08134XNNB",
+            "B077276QGC",
+            "B016OT9D3K"
+          ],
+          "shown_titles": [
+            "Crocs Unisex-Adult Classic Clog",
+            "Hanes Boxer Briefs, Cool Dri Moisture-Wicking Underwear, Cotton No-Ride-up for Men, Multi-Packs Available",
+            "Amazon Essentials Women's Cotton Bikini Brief Underwear (Available in Plus Size), Multipacks",
+            "Fruit of the Loom Men's Eversoft Cotton Stay Tucked Crew T-Shirt",
+            "Buffway Slim Minimalist Front Pocket RFID Blocking Leather Wallets for Men Women",
+            "adidas Men's Adilette Shower Slide",
+            "Crocs Unisex-Adult Classic Tie Dye Clogs",
+            "Women's Walking Shoes Sock Sneakers - Mesh Slip On Air Cushion Lady Girls Modern Jazz Dance Easy Shoes Platfor",
+            "wirarpa Women's High Waisted Cotton Underwear Ladies Soft Full Briefs Panties Multipack",
+            "Hanes Men\u2019s Short Sleeve Graphic T-shirt Collection"
+          ]
+        },
+        {
+          "turn": 2,
+          "customer": "No, those are just sandals and underwear, I need something for the snow.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B08513YB2T",
+            "B0BH113WW9",
+            "B077276QGC",
+            "B08134XNNB",
+            "B09V5RTXG9",
+            "B0825RFGR9",
+            "B08L13LJ5M",
+            "B00UHLFR32",
+            "B00E1ITZIA",
+            "B099DMTCXV"
+          ],
+          "shown_titles": [
+            "Crocs Unisex-Adult Classic Clog",
+            "Hanes Boxer Briefs, Cool Dri Moisture-Wicking Underwear, Cotton No-Ride-up for Men, Multi-Packs Available",
+            "wirarpa Women's High Waisted Cotton Underwear Ladies Soft Full Briefs Panties Multipack",
+            "Women's Walking Shoes Sock Sneakers - Mesh Slip On Air Cushion Lady Girls Modern Jazz Dance Easy Shoes Platfor",
+            "#followme Microfleece Men\u2019s Buffalo Plaid Pajama Pants with Pockets",
+            "TRENDOUX Winter Gloves for Men Women - Upgraded Touch Screen Cold Weather Thermal Warm Knit Glove for Running ",
+            "BULLIANT Men's Belt, Slide Ratchet Belt For Men Dress Pant Shirt Oxfords,trim To Fit",
+            "Fruit of the Loom Men's Extended Sizes Jersey Knit Sleep Pant (1 & 2 Packs)",
+            "Crocs Men's Santa Cruz Loafer | Comfortable Men's Loafers | Slip On Shoes, Navy/Stucco, 10 US Men",
+            "Crocs Unisex-Adult Men's and Women's Classic Slide Sandals"
+          ]
+        },
+        {
+          "turn": 3,
+          "customer": "Still no, I want boots that keep water out and have good grip on ice.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B0BH113WW9",
+            "B0825RFGR9",
+            "B0BSQ9TCYC",
+            "B09V5RTXG9",
+            "B00E1ITZIA",
+            "B099DMTCXV",
+            "B07NZZGR2D",
+            "B09YTZ1H4D",
+            "B094S49FB2",
+            "B003WSZXPO"
+          ],
+          "shown_titles": [
+            "Hanes Boxer Briefs, Cool Dri Moisture-Wicking Underwear, Cotton No-Ride-up for Men, Multi-Packs Available",
+            "TRENDOUX Winter Gloves for Men Women - Upgraded Touch Screen Cold Weather Thermal Warm Knit Glove for Running ",
+            "Arctix Women's Essential Insulated Bib Overalls",
+            "#followme Microfleece Men\u2019s Buffalo Plaid Pajama Pants with Pockets",
+            "Crocs Men's Santa Cruz Loafer | Comfortable Men's Loafers | Slip On Shoes, Navy/Stucco, 10 US Men",
+            "Crocs Unisex-Adult Men's and Women's Classic Slide Sandals",
+            "TOMS Women's Canvas Classics Seasonal",
+            "USHTH Black Waterproof Rain Boot Shoe Cover with reflector (1 Pair) (Medium)",
+            "ZOOGS Printed Kids Toddler Rain Boots for Girls",
+            "Crocs Men's and Women's Athens Flip Flop | Water Shoes | Beach Sandals"
+          ]
+        },
+        {
+          "turn": 4,
+          "customer": "These are rain covers and gloves, not boots. I need some warm boots for snow that go up a bit on the leg.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B08513YB2T",
+            "B0BH113WW9",
+            "B0825RFGR9",
+            "B0BSQ9TCYC",
+            "B09TSLQ3B5",
+            "B09V5RTXG9",
+            "B077276QGC",
+            "B094S49FB2",
+            "B09YTZ1H4D",
+            "B0C277G9FW"
+          ],
+          "shown_titles": [
+            "Crocs Unisex-Adult Classic Clog",
+            "Hanes Boxer Briefs, Cool Dri Moisture-Wicking Underwear, Cotton No-Ride-up for Men, Multi-Packs Available",
+            "TRENDOUX Winter Gloves for Men Women - Upgraded Touch Screen Cold Weather Thermal Warm Knit Glove for Running ",
+            "Arctix Women's Essential Insulated Bib Overalls",
+            "Wrangler Men\u2019s 13MWZ Cowboy Cut Original Fit Jean",
+            "#followme Microfleece Men\u2019s Buffalo Plaid Pajama Pants with Pockets",
+            "wirarpa Women's High Waisted Cotton Underwear Ladies Soft Full Briefs Panties Multipack",
+            "ZOOGS Printed Kids Toddler Rain Boots for Girls",
+            "USHTH Black Waterproof Rain Boot Shoe Cover with reflector (1 Pair) (Medium)",
+            "Loritta 5 Pairs Womens Wool Socks Thick Knit Vintage Winter Warm Cozy Crew Socks Gifts"
+          ]
+        },
+        {
+          "turn": 5,
+          "customer": "Those are still just pants and socks. I really want some furry winter boots that are good for cold weather.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B08513YB2T",
+            "B0825RFGR9",
+            "B0BH113WW9",
+            "B0BSQ9TCYC",
+            "B094S49FB2",
+            "B09V5RTXG9",
+            "B09F6PH42T",
+            "B074G1JP8Z",
+            "B0773KDDW5",
+            "B08KG2NMLH"
+          ],
+          "shown_titles": [
+            "Crocs Unisex-Adult Classic Clog",
+            "TRENDOUX Winter Gloves for Men Women - Upgraded Touch Screen Cold Weather Thermal Warm Knit Glove for Running ",
+            "Hanes Boxer Briefs, Cool Dri Moisture-Wicking Underwear, Cotton No-Ride-up for Men, Multi-Packs Available",
+            "Arctix Women's Essential Insulated Bib Overalls",
+            "ZOOGS Printed Kids Toddler Rain Boots for Girls",
+            "#followme Microfleece Men\u2019s Buffalo Plaid Pajama Pants with Pockets",
+            "Arctic Quest Ladies Softshell Ski Overalls",
+            "GLOBALWIN Women's Waterproof Winter Boots Snow Boots For Women",
+            "Voovix Men' Snow Boots Winter Warm Fur Lined Waterproof Non Slip Lightweight Outdoor Shoes",
+            "Women's 3 in 1 Fleece Hat, Scarf and Gloves Set - Neck Warmer, Hand Gloves and Beanie | Winter Scarf, Gloves, "
+          ],
+          "hit_rank": 8
+        }
+      ]
+    },
+    {
+      "sample_id": "public_0042",
+      "scenario": "vague",
+      "maps_to": "browsing",
+      "style": "esl",
+      "target": "B01LWOGORL",
+      "hit": true,
+      "first_hit_turn": 6,
+      "best_rank": 4,
+      "reciprocal_rank": 0.25,
+      "transcript": [
+        {
+          "turn": 1,
+          "customer": "Hello! I am just looking around today, not really sure what I want yet. Can you help me see some watches?",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B0BSQ9TCYC"
+          ],
+          "shown_titles": [
+            "Arctix Women's Essential Insulated Bib Overalls"
+          ]
+        },
+        {
+          "turn": 2,
+          "customer": "No, this is woman pants, I want for man. And I need a wrist watch, not clothes.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B000EQU0NW"
+          ],
+          "shown_titles": [
+            "Citizen Eco-Drive Corso Quartz Mens Watch, Stainless Steel with Leather strap, Classic, Brown (Model: BM8242-0"
+          ]
+        },
+        {
+          "turn": 3,
+          "customer": "That one is too fancy with leather, I want something with a metal band. And digital numbers, not hands.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B000EQU0NW"
+          ],
+          "shown_titles": [
+            "Citizen Eco-Drive Corso Quartz Mens Watch, Stainless Steel with Leather strap, Classic, Brown (Model: BM8242-0"
+          ]
+        },
+        {
+          "turn": 4,
+          "customer": "You showed me the same leather one again. I want a digital watch with a metal band, looking simple and gold color.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B000EQU0NW"
+          ],
+          "shown_titles": [
+            "Citizen Eco-Drive Corso Quartz Mens Watch, Stainless Steel with Leather strap, Classic, Brown (Model: BM8242-0"
+          ]
+        },
+        {
+          "turn": 5,
+          "customer": "Still showing the wrong leather watch. I need a gold digital watch with a stretchy metal band.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B000EQU0NW"
+          ],
+          "shown_titles": [
+            "Citizen Eco-Drive Corso Quartz Mens Watch, Stainless Steel with Leather strap, Classic, Brown (Model: BM8242-0"
+          ]
+        },
+        {
+          "turn": 6,
+          "customer": "Why you keep showing me this brown leather one? I want a gold digital watch with a stretch metal band.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B000EQU0NW",
+            "B0009P834G",
+            "B007R9WURS",
+            "B01LWOGORL",
+            "B0007X9F7O",
+            "B0068C8SUI",
+            "B00GN55U8S",
+            "B00BLZWMG8",
+            "B00YPOXCAC",
+            "B0050SB6TQ"
+          ],
+          "shown_titles": [
+            "Citizen Eco-Drive Corso Quartz Mens Watch, Stainless Steel with Leather strap, Classic, Brown (Model: BM8242-0",
+            "Casio Women's 'Classic' Quartz Resin Casual Watch, Color:Black (Model: LQ139A-1)",
+            "Fossil Women's Riley Quartz Stainless Steel Multifunction Watch, Color: Rose Gold Glitz (Model: ES2811)",
+            "Timex Men's Classic Digital Watch",
+            "Skagen Men's 233XLTMB Grenen Black Titanium Mesh Watch",
+            "Kenneth Cole REACTION Men's RK5108 Box Set East to West Interchange Watch",
+            "Skagen Women's SKW2187 Leonora Stainless Steel Rose Gold-Tone Watch",
+            "Skagen Women's SKW2051 Asta Stainless Steel Mesh Watch",
+            "Timex Men's TW5K95300F5 GPS Premium Digital Display Quartz Watch",
+            "Citizen Men's AR1124-59E Stiletto Eco Drive Watch"
+          ],
+          "hit_rank": 4
+        }
+      ]
+    },
+    {
+      "sample_id": "public_0169",
+      "scenario": "vague",
+      "maps_to": "browsing",
+      "style": "terse",
+      "target": "B0829R9M5G",
+      "hit": false,
+      "first_hit_turn": null,
+      "best_rank": null,
+      "reciprocal_rank": 0.0,
+      "transcript": [
+        {
+          "turn": 1,
+          "customer": "Just looking around. Need some new pants.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B08513YB2T",
+            "B0BH113WW9",
+            "B07Z6J5N6Y",
+            "B0BT8T2FQ3",
+            "B07FDB7GMZ",
+            "B0B9ZYDDZ1",
+            "B0BKL2R1WX",
+            "B08134XNNB",
+            "B077276QGC",
+            "B016OT9D3K"
+          ],
+          "shown_titles": [
+            "Crocs Unisex-Adult Classic Clog",
+            "Hanes Boxer Briefs, Cool Dri Moisture-Wicking Underwear, Cotton No-Ride-up for Men, Multi-Packs Available",
+            "Amazon Essentials Women's Cotton Bikini Brief Underwear (Available in Plus Size), Multipacks",
+            "Fruit of the Loom Men's Eversoft Cotton Stay Tucked Crew T-Shirt",
+            "adidas Men's Adilette Shower Slide",
+            "Buffway Slim Minimalist Front Pocket RFID Blocking Leather Wallets for Men Women",
+            "Crocs Unisex-Adult Classic Tie Dye Clogs",
+            "Women's Walking Shoes Sock Sneakers - Mesh Slip On Air Cushion Lady Girls Modern Jazz Dance Easy Shoes Platfor",
+            "wirarpa Women's High Waisted Cotton Underwear Ladies Soft Full Briefs Panties Multipack",
+            "Hanes Men\u2019s Short Sleeve Graphic T-shirt Collection"
+          ]
+        },
+        {
+          "turn": 2,
+          "customer": "None of those are pants. Need stretchy pull-on denim.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B09V5RTXG9"
+          ],
+          "shown_titles": [
+            "#followme Microfleece Men\u2019s Buffalo Plaid Pajama Pants with Pockets"
+          ]
+        },
+        {
+          "turn": 3,
+          "customer": "Those are pajamas, not jeans. Needs to feel soft and stretchy, mostly cotton.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B09V5RTXG9"
+          ],
+          "shown_titles": [
+            "#followme Microfleece Men\u2019s Buffalo Plaid Pajama Pants with Pockets"
+          ]
+        },
+        {
+          "turn": 4,
+          "customer": "Still showing me men's sleep pants. Want women's stretchy knit jeggings, cheap.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B0BQDTGHMZ"
+          ],
+          "shown_titles": [
+            "Signature by Levi Strauss & Co. Gold Label Women's Modern Skinny Jeans (Standard and Plus)"
+          ]
+        },
+        {
+          "turn": 5,
+          "customer": "Those have a zipper. Need the kind you just pull on.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B01MQUDPPO"
+          ],
+          "shown_titles": [
+            "Iflex Scrubs for Women, Yoga-Inspired Knit Waistband Scrub Pants CK002"
+          ]
+        },
+        {
+          "turn": 6,
+          "customer": "Those are scrubs. Want soft cotton denim leggings with no buttons.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B07B5N27VT",
+            "B074KJ49F2",
+            "B0BGHFN87N",
+            "B07PQQQ8ZL",
+            "B097F2JXYB",
+            "B09YSQQWKM",
+            "B07K72NMGW",
+            "B09TRH5PLV",
+            "B07HHDW5TD",
+            "B09SHQLF98"
+          ],
+          "shown_titles": [
+            "Curvify Pull on Skinny Jeans | High Waist Jeggings | Butt Lift Denim Leggings",
+            "Leggings Depot Premium Quality Women's Cotton Blend Stretch Pull-on Jeggings with Pockets",
+            "Sweater Cardigans for Women Autumn Solid Long Sleeve Knit Cardigan Slim fit Button Down Light Jacket Coat with",
+            "Women Thigh High Socks Extra Long Cotton Knit Warm Thick Tall Long Boot Stockings Leg Warmers",
+            "melupa Summer Pants for Women Casual Pockets Cotton Linen Wide Leg Trousers Loose Elastic Waist Capris Beach C",
+            "Plus/Junior Size Colombian Design Butt Lift Levanta Cola Stretch Skinny Jeans",
+            "guyueqiqin Women's Casual Cardigan Sweaters Cozy Open Front Long Sleeve Knit Coat with Pockets(M,Beige)",
+            "KUDICO Womens High Waist Wide Leg Shorts Plus Size Casual Elastic Shorts Loose Fit Summer Beach Holiday Shorts",
+            "Ulanda Women's Loose Casual Denim Pull-On Pants with Drawstring Waist Cropped Jeans Plus Size",
+            "WEUIE Long Sleeve Henley Shirts for Men Casual V Neck Button Up Tee Shirt Collarless T-Shirt for Work Lounge G"
+          ]
+        },
+        {
+          "turn": 7,
+          "customer": "Still not quite right. Need the basic cotton knit ones that just slip on.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B09QT4M6NS",
+            "B09JZLMRNM",
+            "B07H7BWMQF",
+            "B01KIJ8MAC",
+            "B0B31JFX4H",
+            "B01MUBHNOR",
+            "B0B7WY3DYM",
+            "B09B1Z1MPX",
+            "B07C2XPZ6D",
+            "B08YDYR4BK"
+          ],
+          "shown_titles": [
+            "CG JEANS Women's Soft and Fit Skinny Jeans Stretch Comfort Mid Rise in Juniors and Plus Size",
+            "Mens Beefy Long Sleeve Henley T-Shirt V Neck Front Placket Tees Fashion Casual Slim Fit Basic Shirt Top",
+            "Lacozy Women's Off Shoulder Long Sleeve Oversized Pullover Sweater Knit Jumper Loose Tunic Tops",
+            "Long Jeggings for Women Skinny Stretch Fitted Pull On Jeggings Pants, Pockets",
+            "Women's Rainbow Striped Color Block Hoodie Sweater Long Sleeve V Neck Casual Hollow Out Knit Pullover Tops",
+            "Curvify 764 Women's Butt-Lifting Skinny Jeans | High-Rise Waist, Brazilian Style",
+            "Wide Leg Jeans for Women Mid Rise Stretchy Distressed Washed Denim Jeans Bootcut 70s Hippie Cowboy Jeans",
+            "Womens Summer Kimono Cardigan Loose Open Front Boho Floral Print Irregular Flowy Beach Wear Coverup Tops Light",
+            "Emmalise Women's Basic Casual Long Camisole Adjustable Strap Cami Layering Top",
+            "MEISITE Womens Juniors Denim Shorts High Waist Ripped Hole Washed Distressed Short Jeans"
+          ]
+        },
+        {
+          "turn": 8,
+          "customer": "None of those. Looking for the basic stretchy ones from the everyday budget brand.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B077276QGC",
+            "B0C5RLJDSF",
+            "B09QZQKSDR",
+            "B0BWRSD1W3",
+            "B088H3MH35",
+            "B082YN2GYP",
+            "B075CJR281",
+            "B0BHHT186C",
+            "B0CCL7YMNY",
+            "B07R5D462C"
+          ],
+          "shown_titles": [
+            "wirarpa Women's High Waisted Cotton Underwear Ladies Soft Full Briefs Panties Multipack",
+            "Hanes Women's Value, Crew Soft Moisture-Wicking Socks, Available in 10 and 14-Packs",
+            "LARSD Strappy Sports Bras for Women Wireless Yoga Tank Bra Criss Cross Back Longline Workout Bra Padded Yoga T",
+            "Men's Short Sleeve T-Shirt and Shorts Set 2 Piece Summer Outfits Fashion Stripe Color Block Tracksuits Casual ",
+            "Kyerivs Women Summer Round Neck Sleeveless Ribbed Knitted Tank Tops Casual Slim Basic Solid Crop Tops",
+            "BTFBM Women Summer Short Sleeve Shirts Crew Neck Color Block Irregular Striped Print Loose Soft Casual Tee Top",
+            "Women Winter Knit Boot Cuffs Socks Knee Leg Warmers Socks Button Crochet",
+            "BYIMONN Womens Halloween Pumpkin Sweatshirt Crewneck Graphic Casual Funny Letter Print Long Sleeve Loose Fashi",
+            "KINLONSAIR Women Casual Long Sleeve Tunic V-Neck Slim Fit T Shirts Basic Tee Tops Crew Neck Ribbed Knit Solid ",
+            "IZOD Men's Comfort Stretch Straight Fit Jean"
+          ]
+        },
+        {
+          "turn": 9,
+          "customer": "Way off. Just show me the basic pull-on knit jeggings from the budget brand.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B077276QGC",
+            "B0C3S19FMB",
+            "B0BPCC1KBT",
+            "B07QLPDDNC",
+            "B09HMQRZ69",
+            "B0BJ69275M",
+            "B08SGMYN83",
+            "B09WR6D62H",
+            "B09D75F31V",
+            "B0B3MQ2L7B"
+          ],
+          "shown_titles": [
+            "wirarpa Women's High Waisted Cotton Underwear Ladies Soft Full Briefs Panties Multipack",
+            "MISSACTIVER Women Square Sweetheart Neck Asymmetrical Hem Knit Sweater Solid Long Sleeve Slim Fit Knit Pullove",
+            "Hanes Womens Wireless Bra, Full-Coverage Pullover Stretch-Knit Bra, Smoothing T-Shirt Bra",
+            "Bulouin Yoga Leggings for Women Workout High Waist 4 Way Stretch Capris Tummy Control Yoga Pants with Pockets",
+            "Oversized Denim Jacket Distressed Boyfriend Jean Coat Plus Size Long Sleeve Jeans Trucker Jackets with Vest fo",
+            "MISSACTIVER Women Square Sweetheart Neck Asymmetrical Hem Knit Sweater Solid Long Sleeve Slim Fit Knit Pullove",
+            "Toddler Baby Girls Rainbow Princess Dress Ruffle A-line Twirly Skater Sundress Wedding Pageant Birthday Casual",
+            "Mens Big and Tall Tee Shirts, Summer Casual Retro Distressed Map Printed T-Shirt Vintage Crewneck Short Sleeve",
+            "Ysoea Women's Casual T-Shirt Dresses Long Sleeve Round Neck Pullover Blouse Loose Fit Mini Short Dress",
+            "Womens Tops Casual, 3/4 Sleeve Shirts Tie Dye T Shirts Graphic Tees Comfy Hawaiian Tunic Blouses Lightweight H"
+          ]
+        },
+        {
+          "turn": 10,
+          "customer": "Still wrong. Give up.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B077276QGC",
+            "B0BB7F1PX3",
+            "B09V5RTXG9",
+            "B08S6WVVRN",
+            "B0C8WM9W2N",
+            "B0895GRVYV",
+            "B08ZHYRZRW",
+            "B08GPJY45B",
+            "B098GXBCTG",
+            "B0924Z541X"
+          ],
+          "shown_titles": [
+            "wirarpa Women's High Waisted Cotton Underwear Ladies Soft Full Briefs Panties Multipack",
+            "Fall Jackets for Women Fashion Petite to Plus Size Full Zip Down Puffer Jacket Long Length Stand Collar Long P",
+            "#followme Microfleece Men\u2019s Buffalo Plaid Pajama Pants with Pockets",
+            "KIWI RATA Women Workout Scrunched Booty Leggings, High-Waist Tummy Control Butt Lifting Textured Tights Lounge",
+            "Ladies Tops and Blouses 3/4 Sleeve Lace Blouses Ethnic Floral Shirt V Neck Elegant Hollow Tops for Women Tee S",
+            "YATHON Casual Dresses for Women Sleeveless Cotton Summer Beach Dress A Line Spaghetti Strap Sundresses with Po",
+            "WINESTER & COMPANY Women's Top - Casual V-Neck Long Sleeve Slim Fit Workout Active Tunic T Shirt Tee Tshirt",
+            "NACHILA Women's Bamboo Viscose T-Shirt Soft Short Sleeve Lounge Top Casual Pajamas Tops Stretch Pjs Shirt S-XL",
+            "EDENNAOMI Women's Casual Crop Top - Short Sleeve French Terry Elastic Hem Loose Fit Cropped T Shirt Pullover",
+            "GLASS TWO Women's Biker Shorts - Basic Stretch 3\" Casual Pants Yoga Sports Workout Running Active Bike Legging"
+          ]
+        }
+      ]
+    },
+    {
+      "sample_id": "public_0082",
+      "scenario": "brand_led",
+      "maps_to": "buying",
+      "style": "plain",
+      "target": "B09BPZCWDP",
+      "hit": true,
+      "first_hit_turn": 6,
+      "best_rank": 3,
+      "reciprocal_rank": 0.3333333333333333,
+      "transcript": [
+        {
+          "turn": 1,
+          "customer": "Hi there! I'm looking to buy some new jewelry from Hicarer.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B08513YB2T",
+            "B0BH113WW9",
+            "B07Z6J5N6Y",
+            "B0BT8T2FQ3",
+            "B07FDB7GMZ",
+            "B0B9ZYDDZ1",
+            "B0BKL2R1WX",
+            "B08134XNNB",
+            "B077276QGC",
+            "B016OT9D3K"
+          ],
+          "shown_titles": [
+            "Crocs Unisex-Adult Classic Clog",
+            "Hanes Boxer Briefs, Cool Dri Moisture-Wicking Underwear, Cotton No-Ride-up for Men, Multi-Packs Available",
+            "Amazon Essentials Women's Cotton Bikini Brief Underwear (Available in Plus Size), Multipacks",
+            "Fruit of the Loom Men's Eversoft Cotton Stay Tucked Crew T-Shirt",
+            "adidas Men's Adilette Shower Slide",
+            "Buffway Slim Minimalist Front Pocket RFID Blocking Leather Wallets for Men Women",
+            "Crocs Unisex-Adult Classic Tie Dye Clogs",
+            "Women's Walking Shoes Sock Sneakers - Mesh Slip On Air Cushion Lady Girls Modern Jazz Dance Easy Shoes Platfor",
+            "wirarpa Women's High Waisted Cotton Underwear Ladies Soft Full Briefs Panties Multipack",
+            "Hanes Men\u2019s Short Sleeve Graphic T-shirt Collection"
+          ]
+        },
+        {
+          "turn": 2,
+          "customer": "Those aren't what I'm looking for at all, those are mostly shoes and underwear. I want a bunch of those waterproof braided beach bracelets they make.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B089Y37G5Y"
+          ],
+          "shown_titles": [
+            "FUNKYMONKEY Women's Comfort Slides Double Buckle Adjustable EVA Flat Sandals"
+          ]
+        },
+        {
+          "turn": 3,
+          "customer": "That's still a sandal, not jewelry. I'm looking for a big set of those colorful string ones you can wear on your wrist or ankle.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B089Y37G5Y"
+          ],
+          "shown_titles": [
+            "FUNKYMONKEY Women's Comfort Slides Double Buckle Adjustable EVA Flat Sandals"
+          ]
+        },
+        {
+          "turn": 4,
+          "customer": "That's just more sandals. I need the multi-pack of woven cord bracelets with the ocean and flower designs.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B07PYB8F1G"
+          ],
+          "shown_titles": [
+            "Hanes Women's Signature Breathe Cotton Brief Underwear 6-Pack"
+          ]
+        },
+        {
+          "turn": 5,
+          "customer": "That's underwear, not a bracelet. I just want that big pack of adjustable woven beach bracelets from Hicarer.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B089Y37G5Y"
+          ],
+          "shown_titles": [
+            "FUNKYMONKEY Women's Comfort Slides Double Buckle Adjustable EVA Flat Sandals"
+          ]
+        },
+        {
+          "turn": 6,
+          "customer": "Still just sandals. Please show me that large set of woven string beach bracelets instead.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B089Y37G5Y",
+            "B0B18JB5MD",
+            "B09BPZCWDP",
+            "B01C6SL1D8",
+            "B081BBMV54",
+            "B07SYJ2KKG",
+            "B08Y8NJGW3",
+            "B09QY8RHVB",
+            "B099DMTCXV",
+            "B07Y33S95J"
+          ],
+          "shown_titles": [
+            "FUNKYMONKEY Women's Comfort Slides Double Buckle Adjustable EVA Flat Sandals",
+            "50 Pcs Summer Friendship Bracelets Beach String Bracelets Adjustable Waterproof Handmade Friendship Bracelet S",
+            "Hicarer 21 Pieces Surfer Wave Bracelet Ocean Wave Adjustable Waterproof Handmade Friendship Bracelet Summer Su",
+            "KAVU Original Rope Bag Sling Pack with Adjustable Rope Shoulder Strap",
+            "Wakami New World Handmade Boho Friendship Bracelets Set of 3 | Braided Indie Bracelets for Women and Men | Han",
+            "SUNSH 4PCS Handmade Wrap Braided Bracelets for Women Teen Girls kids Lover Friend Charm Hippie Boho Beach Surf",
+            "KOHOTA 18PCS Ankle Bracelets for Women Girls Gold Silver Chain Butterfly Heart Anklet Set Beaded Anklets Boho ",
+            "24 Pieces Colorful Friendship Beaded Bracelet Preppy Style Bracelets Handmade Braided Flower Bohemian Y2K Brac",
+            "Crocs Unisex-Adult Men's and Women's Classic Slide Sandals",
+            "Tarsus Best Friend BFF Bestfriend 3 Friendship Heart Charm Bracelet Set for Women Sibling Girls, Silver"
+          ],
+          "hit_rank": 3
+        }
+      ]
+    },
+    {
+      "sample_id": "public_0103",
+      "scenario": "indifferent",
+      "maps_to": "boundary",
+      "style": "esl",
+      "target": "B0BT8T2FQ3",
+      "hit": true,
+      "first_hit_turn": 3,
+      "best_rank": 6,
+      "reciprocal_rank": 0.16666666666666666,
+      "transcript": [
+        {
+          "turn": 1,
+          "customer": "Hello, I want to find some white t-shirts to wear under my work shirts. Can you help me?",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B0794VPVBH"
+          ],
+          "shown_titles": [
+            "NY Threads Luxurious Mens Shawl Collar Fleece Bathrobe Spa Robe"
+          ]
+        },
+        {
+          "turn": 2,
+          "customer": "This is robe, I need shirts for under my clothes.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B0794VPVBH"
+          ],
+          "shown_titles": [
+            "NY Threads Luxurious Mens Shawl Collar Fleece Bathrobe Spa Robe"
+          ]
+        },
+        {
+          "turn": 3,
+          "customer": "I not care much about the material, you can choose for me. I just need them to stay tucked in all day.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B08513YB2T",
+            "B0BH113WW9",
+            "B07PYB8F1G",
+            "B0794VPVBH",
+            "B0799Q7PVJ",
+            "B0BT8T2FQ3",
+            "B0825RFGR9",
+            "B09HMXWF7C",
+            "B00E1ITZIA",
+            "B094W6VZGC"
+          ],
+          "shown_titles": [
+            "Crocs Unisex-Adult Classic Clog",
+            "Hanes Boxer Briefs, Cool Dri Moisture-Wicking Underwear, Cotton No-Ride-up for Men, Multi-Packs Available",
+            "Hanes Women's Signature Breathe Cotton Brief Underwear 6-Pack",
+            "NY Threads Luxurious Mens Shawl Collar Fleece Bathrobe Spa Robe",
+            "90 Degree By Reflex Open Back Mesh Powerflex Tank",
+            "Fruit of the Loom Men's Eversoft Cotton Stay Tucked Crew T-Shirt",
+            "TRENDOUX Winter Gloves for Men Women - Upgraded Touch Screen Cold Weather Thermal Warm Knit Glove for Running ",
+            "aihihe Women's Rain Jackets Lightweight Jackets Raincoat Waterproof Lightweight Windproof Adjustable Windbreak",
+            "Crocs Men's Santa Cruz Loafer | Comfortable Men's Loafers | Slip On Shoes, Navy/Stucco, 10 US Men",
+            "YIANNA Waist Trainer for Women Latex Underbust Waist Corsets Cincher Hourglass Body Shaper 4 Hooks"
+          ],
+          "hit_rank": 6
+        }
+      ]
+    }
+  ]
+}

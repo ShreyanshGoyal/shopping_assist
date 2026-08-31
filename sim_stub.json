@@ -1,0 +1,597 @@
+{
+  "customer": "stub",
+  "overall": {
+    "sample_count": 6,
+    "hit_rate_at_10": 1.0,
+    "mrr": 0.393519,
+    "mttc": 2.833333,
+    "efficiency": 0.816667,
+    "technical_score": 0.781389
+  },
+  "by_scenario": {
+    "brand_led": {
+      "sample_count": 1,
+      "hit_rate_at_10": 1.0,
+      "mrr": 0.333333,
+      "mttc": 2.0,
+      "efficiency": 0.9,
+      "technical_score": 0.78
+    },
+    "decisive": {
+      "sample_count": 1,
+      "hit_rate_at_10": 1.0,
+      "mrr": 0.5,
+      "mttc": 3.0,
+      "efficiency": 0.8,
+      "technical_score": 0.81
+    },
+    "indifferent": {
+      "sample_count": 1,
+      "hit_rate_at_10": 1.0,
+      "mrr": 0.25,
+      "mttc": 1.0,
+      "efficiency": 1.0,
+      "technical_score": 0.775
+    },
+    "vague": {
+      "sample_count": 3,
+      "hit_rate_at_10": 1.0,
+      "mrr": 0.425926,
+      "mttc": 3.666667,
+      "efficiency": 0.733333,
+      "technical_score": 0.774444
+    }
+  },
+  "by_style": {
+    "esl": {
+      "sample_count": 4,
+      "hit_rate_at_10": 1.0,
+      "mrr": 0.479167,
+      "mttc": 2.75,
+      "efficiency": 0.825,
+      "technical_score": 0.80875
+    },
+    "plain": {
+      "sample_count": 1,
+      "hit_rate_at_10": 1.0,
+      "mrr": 0.333333,
+      "mttc": 2.0,
+      "efficiency": 0.9,
+      "technical_score": 0.78
+    },
+    "terse": {
+      "sample_count": 1,
+      "hit_rate_at_10": 1.0,
+      "mrr": 0.111111,
+      "mttc": 4.0,
+      "efficiency": 0.7,
+      "technical_score": 0.673333
+    }
+  },
+  "wall_clock_seconds": 0.4,
+  "token_usage": {},
+  "sessions": [
+    {
+      "sample_id": "public_0029",
+      "scenario": "decisive",
+      "maps_to": "buying",
+      "style": "esl",
+      "target": "B01IAKCZEK",
+      "hit": true,
+      "first_hit_turn": 3,
+      "best_rank": 2,
+      "reciprocal_rank": 0.5,
+      "transcript": [
+        {
+          "turn": 1,
+          "customer": "I need sandals flats. Something along the lines of back for a second time, it's the ever comfy, ever stylish yo.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B08513YB2T",
+            "B0BH113WW9",
+            "B07Z6J5N6Y",
+            "B0BT8T2FQ3",
+            "B0B9ZYDDZ1",
+            "B0BKL2R1WX",
+            "B07FDB7GMZ",
+            "B08134XNNB",
+            "B077276QGC",
+            "B016OT9D3K"
+          ],
+          "shown_titles": [
+            "Crocs Unisex-Adult Classic Clog",
+            "Hanes Boxer Briefs, Cool Dri Moisture-Wicking Underwear, Cotton No-Ride-up for Men, Multi-Packs Available",
+            "Amazon Essentials Women's Cotton Bikini Brief Underwear (Available in Plus Size), Multipacks",
+            "Fruit of the Loom Men's Eversoft Cotton Stay Tucked Crew T-Shirt",
+            "Buffway Slim Minimalist Front Pocket RFID Blocking Leather Wallets for Men Women",
+            "Crocs Unisex-Adult Classic Tie Dye Clogs",
+            "adidas Men's Adilette Shower Slide",
+            "Women's Walking Shoes Sock Sneakers - Mesh Slip On Air Cushion Lady Girls Modern Jazz Dance Easy Shoes Platfor",
+            "wirarpa Women's High Waisted Cotton Underwear Ladies Soft Full Briefs Panties Multipack",
+            "Hanes Men\u2019s Short Sleeve Graphic T-shirt Collection"
+          ]
+        },
+        {
+          "turn": 2,
+          "customer": "What matters to me is back for a second time, it's the ever comfy, ever stylish yoga sling 2.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B0BRS1DHVQ"
+          ],
+          "shown_titles": [
+            "PRETTYGARDEN Women's Loose Solid Off Shoulder Elastic Waist Stretchy Long Romper Jumpsuit"
+          ]
+        },
+        {
+          "turn": 3,
+          "customer": "What matters to me is new lightweight, two-way stretch knit upper with sling comfort constru.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B08513YB2T",
+            "B01IAKCZEK",
+            "B07VFPS68P",
+            "B07Q46M2J2",
+            "B00UHLFR32",
+            "B01MQUDPPO",
+            "B0BPCC1KBT",
+            "B099DMTCXV",
+            "B01C6SL1D8",
+            "B074KJ49F2"
+          ],
+          "shown_titles": [
+            "Crocs Unisex-Adult Classic Clog",
+            "Sanuk Yoga Sling 2 Light Natural 5 B (M)",
+            "Glamorise Women's Full Figure No Bounce Plus Size Camisole Wirefree Back Close Sports Bra #1066",
+            "IUGA High Waisted Yoga Pants for Women with Pockets Capri Leggings for Women Workout Leggings for Women Yoga C",
+            "Fruit of the Loom Men's Extended Sizes Jersey Knit Sleep Pant (1 & 2 Packs)",
+            "Iflex Scrubs for Women, Yoga-Inspired Knit Waistband Scrub Pants CK002",
+            "Hanes Womens Wireless Bra, Full-Coverage Pullover Stretch-Knit Bra, Smoothing T-Shirt Bra",
+            "Crocs Unisex-Adult Men's and Women's Classic Slide Sandals",
+            "KAVU Original Rope Bag Sling Pack with Adjustable Rope Shoulder Strap",
+            "Leggings Depot Premium Quality Women's Cotton Blend Stretch Pull-on Jeggings with Pockets"
+          ],
+          "hit_rank": 2
+        }
+      ]
+    },
+    {
+      "sample_id": "public_0005",
+      "scenario": "vague",
+      "maps_to": "browsing",
+      "style": "esl",
+      "target": "B074G1JP8Z",
+      "hit": true,
+      "first_hit_turn": 4,
+      "best_rank": 6,
+      "reciprocal_rank": 0.16666666666666666,
+      "transcript": [
+        {
+          "turn": 1,
+          "customer": "I'm after outdoor & work snow & cold weather, still deciding though.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B08513YB2T",
+            "B0BH113WW9",
+            "B07Z6J5N6Y",
+            "B0BT8T2FQ3",
+            "B0B9ZYDDZ1",
+            "B07FDB7GMZ",
+            "B0BKL2R1WX",
+            "B08134XNNB",
+            "B077276QGC",
+            "B016OT9D3K"
+          ],
+          "shown_titles": [
+            "Crocs Unisex-Adult Classic Clog",
+            "Hanes Boxer Briefs, Cool Dri Moisture-Wicking Underwear, Cotton No-Ride-up for Men, Multi-Packs Available",
+            "Amazon Essentials Women's Cotton Bikini Brief Underwear (Available in Plus Size), Multipacks",
+            "Fruit of the Loom Men's Eversoft Cotton Stay Tucked Crew T-Shirt",
+            "Buffway Slim Minimalist Front Pocket RFID Blocking Leather Wallets for Men Women",
+            "adidas Men's Adilette Shower Slide",
+            "Crocs Unisex-Adult Classic Tie Dye Clogs",
+            "Women's Walking Shoes Sock Sneakers - Mesh Slip On Air Cushion Lady Girls Modern Jazz Dance Easy Shoes Platfor",
+            "wirarpa Women's High Waisted Cotton Underwear Ladies Soft Full Briefs Panties Multipack",
+            "Hanes Men\u2019s Short Sleeve Graphic T-shirt Collection"
+          ]
+        },
+        {
+          "turn": 2,
+          "customer": "What matters to me is rubber sole.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B08513YB2T",
+            "B0BH113WW9",
+            "B0BKL2R1WX",
+            "B09QHC6T6N",
+            "B00E1ITZIA",
+            "B099DMTCXV",
+            "B010WE6VHO",
+            "B07VCQT55H",
+            "B010121UQ4",
+            "B003WSZXPO"
+          ],
+          "shown_titles": [
+            "Crocs Unisex-Adult Classic Clog",
+            "Hanes Boxer Briefs, Cool Dri Moisture-Wicking Underwear, Cotton No-Ride-up for Men, Multi-Packs Available",
+            "Crocs Unisex-Adult Classic Tie Dye Clogs",
+            "Crocs Women's Kadie II Flip Flops",
+            "Crocs Men's Santa Cruz Loafer | Comfortable Men's Loafers | Slip On Shoes, Navy/Stucco, 10 US Men",
+            "Crocs Unisex-Adult Men's and Women's Classic Slide Sandals",
+            "Crocs Unisex Offroad Sport Clogs",
+            "HISEA Women's Rubber Boots, Waterproof Insulated Neoprene Rain Boots, Durable Knee High Outdoor Work Boot for ",
+            "Crocs Women's Capri V Flip Flop | Casual Comfortable Sandals for Women",
+            "Crocs Men's and Women's Athens Flip Flop | Water Shoes | Beach Sandals"
+          ]
+        },
+        {
+          "turn": 3,
+          "customer": "What matters to me is shaft measures approximately 8.37\" from arch.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B08513YB2T",
+            "B07FDB7GMZ",
+            "B0BN6CCHB7",
+            "B093R14VP1",
+            "B096DWNW67",
+            "B0C6BL4RNN",
+            "B07VCQT55H",
+            "B08FLD24NK",
+            "B076VQQ962",
+            "B085RX192V"
+          ],
+          "shown_titles": [
+            "Crocs Unisex-Adult Classic Clog",
+            "adidas Men's Adilette Shower Slide",
+            "Skechers Men's Go Max-Athletic Air Mesh Slip on Walking Shoe Sneaker",
+            "ASICS Men's Gel-Venture 6 MX Running Shoes",
+            "Skechers Women's Squad Sr Food Service Shoe",
+            "Dearfoams Women's Rebecca Lightweight Cozy Memory Foam Closed Back Slipper with Wide Widths",
+            "HISEA Women's Rubber Boots, Waterproof Insulated Neoprene Rain Boots, Durable Knee High Outdoor Work Boot for ",
+            "DailyShoes Women's Confortable Casual Slip-On Flat Loafers Sneakers Shoes",
+            "Asgard Women's Ankle Rain Boots Waterproof Chelsea Boots",
+            "Crocs Women\u2019s Freesail Clog"
+          ]
+        },
+        {
+          "turn": 4,
+          "customer": "What matters to me is warm and comfortable women\u2019s winter boots: these women winter boots fe.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B08513YB2T",
+            "B08134XNNB",
+            "B07FDB7GMZ",
+            "B07VCQT55H",
+            "B0BN6CCHB7",
+            "B074G1JP8Z",
+            "B0C1582KYJ",
+            "B08FLD24NK",
+            "B0C6BL4RNN",
+            "B09P5B5PT8"
+          ],
+          "shown_titles": [
+            "Crocs Unisex-Adult Classic Clog",
+            "Women's Walking Shoes Sock Sneakers - Mesh Slip On Air Cushion Lady Girls Modern Jazz Dance Easy Shoes Platfor",
+            "adidas Men's Adilette Shower Slide",
+            "HISEA Women's Rubber Boots, Waterproof Insulated Neoprene Rain Boots, Durable Knee High Outdoor Work Boot for ",
+            "Skechers Men's Go Max-Athletic Air Mesh Slip on Walking Shoe Sneaker",
+            "GLOBALWIN Women's Waterproof Winter Boots Snow Boots For Women",
+            "Columbia womens Newton Ridge Plus hiking boots, Deep Wave/Dusty Green, 6.5 US",
+            "DailyShoes Women's Confortable Casual Slip-On Flat Loafers Sneakers Shoes",
+            "Dearfoams Women's Rebecca Lightweight Cozy Memory Foam Closed Back Slipper with Wide Widths",
+            "Holzkary Boots for Women Side Zipper Comfortable Chunky Low Heel Ankle Booties"
+          ],
+          "hit_rank": 6
+        }
+      ]
+    },
+    {
+      "sample_id": "public_0042",
+      "scenario": "vague",
+      "maps_to": "browsing",
+      "style": "esl",
+      "target": "B01LWOGORL",
+      "hit": true,
+      "first_hit_turn": 3,
+      "best_rank": 1,
+      "reciprocal_rank": 1.0,
+      "transcript": [
+        {
+          "turn": 1,
+          "customer": "I'm after watches wrist watches, still deciding though.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B08513YB2T",
+            "B0BH113WW9",
+            "B07Z6J5N6Y",
+            "B0B9ZYDDZ1",
+            "B0BT8T2FQ3",
+            "B07FDB7GMZ",
+            "B0BKL2R1WX",
+            "B08134XNNB",
+            "B077276QGC",
+            "B089RXP8K2"
+          ],
+          "shown_titles": [
+            "Crocs Unisex-Adult Classic Clog",
+            "Hanes Boxer Briefs, Cool Dri Moisture-Wicking Underwear, Cotton No-Ride-up for Men, Multi-Packs Available",
+            "Amazon Essentials Women's Cotton Bikini Brief Underwear (Available in Plus Size), Multipacks",
+            "Buffway Slim Minimalist Front Pocket RFID Blocking Leather Wallets for Men Women",
+            "Fruit of the Loom Men's Eversoft Cotton Stay Tucked Crew T-Shirt",
+            "adidas Men's Adilette Shower Slide",
+            "Crocs Unisex-Adult Classic Tie Dye Clogs",
+            "Women's Walking Shoes Sock Sneakers - Mesh Slip On Air Cushion Lady Girls Modern Jazz Dance Easy Shoes Platfor",
+            "wirarpa Women's High Waisted Cotton Underwear Ladies Soft Full Briefs Panties Multipack",
+            "Travelambo Womens Wallet RFID Blocking Bifold Multi Card Case Wallet with Zipper Pocket"
+          ]
+        },
+        {
+          "turn": 2,
+          "customer": "What matters to me is imported.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B08513YB2T",
+            "B0BH113WW9",
+            "B0BKL2R1WX",
+            "B09QHC6T6N",
+            "B00E1ITZIA",
+            "B07VFPS68P",
+            "B099DMTCXV",
+            "B081TWX2LR",
+            "B06Y45LQP3",
+            "B010WE6VHO"
+          ],
+          "shown_titles": [
+            "Crocs Unisex-Adult Classic Clog",
+            "Hanes Boxer Briefs, Cool Dri Moisture-Wicking Underwear, Cotton No-Ride-up for Men, Multi-Packs Available",
+            "Crocs Unisex-Adult Classic Tie Dye Clogs",
+            "Crocs Women's Kadie II Flip Flops",
+            "Crocs Men's Santa Cruz Loafer | Comfortable Men's Loafers | Slip On Shoes, Navy/Stucco, 10 US Men",
+            "Glamorise Women's Full Figure No Bounce Plus Size Camisole Wirefree Back Close Sports Bra #1066",
+            "Crocs Unisex-Adult Men's and Women's Classic Slide Sandals",
+            "Timberland Men's Leather RFID Blocking Passcase Security Wallet",
+            "Hanes Men\u2019s X-Temp Short Sleeve Polo Shirt, Midweight Men's Shirt",
+            "Crocs Unisex Offroad Sport Clogs"
+          ]
+        },
+        {
+          "turn": 3,
+          "customer": "What matters to me is gold-tone 18mm stainless steel expansion band fits up to 8-inch wrist .",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B01LWOGORL"
+          ],
+          "shown_titles": [
+            "Timex Men's Classic Digital Watch"
+          ],
+          "hit_rank": 1
+        }
+      ]
+    },
+    {
+      "sample_id": "public_0169",
+      "scenario": "vague",
+      "maps_to": "browsing",
+      "style": "terse",
+      "target": "B0829R9M5G",
+      "hit": true,
+      "first_hit_turn": 4,
+      "best_rank": 9,
+      "reciprocal_rank": 0.1111111111111111,
+      "transcript": [
+        {
+          "turn": 1,
+          "customer": "I'm after clothing jeans, still deciding though.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B08513YB2T",
+            "B0BH113WW9",
+            "B07Z6J5N6Y",
+            "B0BT8T2FQ3",
+            "B07FDB7GMZ",
+            "B0B9ZYDDZ1",
+            "B0BKL2R1WX",
+            "B08134XNNB",
+            "B077276QGC",
+            "B016OT9D3K"
+          ],
+          "shown_titles": [
+            "Crocs Unisex-Adult Classic Clog",
+            "Hanes Boxer Briefs, Cool Dri Moisture-Wicking Underwear, Cotton No-Ride-up for Men, Multi-Packs Available",
+            "Amazon Essentials Women's Cotton Bikini Brief Underwear (Available in Plus Size), Multipacks",
+            "Fruit of the Loom Men's Eversoft Cotton Stay Tucked Crew T-Shirt",
+            "adidas Men's Adilette Shower Slide",
+            "Buffway Slim Minimalist Front Pocket RFID Blocking Leather Wallets for Men Women",
+            "Crocs Unisex-Adult Classic Tie Dye Clogs",
+            "Women's Walking Shoes Sock Sneakers - Mesh Slip On Air Cushion Lady Girls Modern Jazz Dance Easy Shoes Platfor",
+            "wirarpa Women's High Waisted Cotton Underwear Ladies Soft Full Briefs Panties Multipack",
+            "Hanes Men\u2019s Short Sleeve Graphic T-shirt Collection"
+          ]
+        },
+        {
+          "turn": 2,
+          "customer": "What matters to me is 57% cotton, 26% polyester, 10% other fibers, 7% elastane.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B016OT9D3K"
+          ],
+          "shown_titles": [
+            "Hanes Men\u2019s Short Sleeve Graphic T-shirt Collection"
+          ]
+        },
+        {
+          "turn": 3,
+          "customer": "What matters to me is imported.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B016OT9D3K"
+          ],
+          "shown_titles": [
+            "Hanes Men\u2019s Short Sleeve Graphic T-shirt Collection"
+          ]
+        },
+        {
+          "turn": 4,
+          "customer": "What matters to me is pull on closure.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B0BH113WW9",
+            "B07VFPS68P",
+            "B081TWX2LR",
+            "B07QRW6JL1",
+            "B0C5RLJDSF",
+            "B07Q2MLX5N",
+            "B01C6SL1D8",
+            "B016OT9D3K",
+            "B0829R9M5G",
+            "B0BT8PMKPV"
+          ],
+          "shown_titles": [
+            "Hanes Boxer Briefs, Cool Dri Moisture-Wicking Underwear, Cotton No-Ride-up for Men, Multi-Packs Available",
+            "Glamorise Women's Full Figure No Bounce Plus Size Camisole Wirefree Back Close Sports Bra #1066",
+            "Timberland Men's Leather RFID Blocking Passcase Security Wallet",
+            "Disney Boys 3-Pack T-Shirts: Wide Variety Includes Lion King, Cars, Mickey Mouse",
+            "Hanes Women's Value, Crew Soft Moisture-Wicking Socks, Available in 10 and 14-Packs",
+            "Bali womens Comfort Revolution Wireless T-shirt Bra, Full-coverage Pullover Bra, Df3491",
+            "KAVU Original Rope Bag Sling Pack with Adjustable Rope Shoulder Strap",
+            "Hanes Men\u2019s Short Sleeve Graphic T-shirt Collection",
+            "Amazon Essentials Women's Pull-On Knit Jegging (Available in Plus Size)",
+            "Lee Women's Sculpting Slim Fit Skinny Leg Jean"
+          ],
+          "hit_rank": 9
+        }
+      ]
+    },
+    {
+      "sample_id": "public_0082",
+      "scenario": "brand_led",
+      "maps_to": "buying",
+      "style": "plain",
+      "target": "B09BPZCWDP",
+      "hit": true,
+      "first_hit_turn": 2,
+      "best_rank": 3,
+      "reciprocal_rank": 0.3333333333333333,
+      "transcript": [
+        {
+          "turn": 1,
+          "customer": "I need bracelets strand. Something along the lines of 21 styles: the package contains 21 pieces beach bracelet ank.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B08513YB2T",
+            "B0BH113WW9",
+            "B07Z6J5N6Y",
+            "B0BT8T2FQ3",
+            "B07FDB7GMZ",
+            "B0B9ZYDDZ1",
+            "B0BKL2R1WX",
+            "B08134XNNB",
+            "B077276QGC",
+            "B016OT9D3K"
+          ],
+          "shown_titles": [
+            "Crocs Unisex-Adult Classic Clog",
+            "Hanes Boxer Briefs, Cool Dri Moisture-Wicking Underwear, Cotton No-Ride-up for Men, Multi-Packs Available",
+            "Amazon Essentials Women's Cotton Bikini Brief Underwear (Available in Plus Size), Multipacks",
+            "Fruit of the Loom Men's Eversoft Cotton Stay Tucked Crew T-Shirt",
+            "adidas Men's Adilette Shower Slide",
+            "Buffway Slim Minimalist Front Pocket RFID Blocking Leather Wallets for Men Women",
+            "Crocs Unisex-Adult Classic Tie Dye Clogs",
+            "Women's Walking Shoes Sock Sneakers - Mesh Slip On Air Cushion Lady Girls Modern Jazz Dance Easy Shoes Platfor",
+            "wirarpa Women's High Waisted Cotton Underwear Ladies Soft Full Briefs Panties Multipack",
+            "Hanes Men\u2019s Short Sleeve Graphic T-shirt Collection"
+          ]
+        },
+        {
+          "turn": 2,
+          "customer": "What matters to me is 21 styles: the package contains 21 pieces beach bracelet anklets in di.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B0BH113WW9",
+            "B0C5RLJDSF",
+            "B09BPZCWDP",
+            "B08B62ZW7H",
+            "B01C6SL1D8",
+            "B07PQQQ8ZL",
+            "B0949GR8H9",
+            "B089M57PSQ",
+            "B09GC1ZHD2",
+            "B07QN2D6BY"
+          ],
+          "shown_titles": [
+            "Hanes Boxer Briefs, Cool Dri Moisture-Wicking Underwear, Cotton No-Ride-up for Men, Multi-Packs Available",
+            "Hanes Women's Value, Crew Soft Moisture-Wicking Socks, Available in 10 and 14-Packs",
+            "Hicarer 21 Pieces Surfer Wave Bracelet Ocean Wave Adjustable Waterproof Handmade Friendship Bracelet Summer Su",
+            "Btysun Bracelets for Women Mothers Day Bracelet Gifts from Daughter Inspirational Gifts for Women Girls Gradua",
+            "KAVU Original Rope Bag Sling Pack with Adjustable Rope Shoulder Strap",
+            "Women Thigh High Socks Extra Long Cotton Knit Warm Thick Tall Long Boot Stockings Leg Warmers",
+            "LETURE PU Leather Small Jewelry Box, Travel Portable Jewelry Case for Ring, Pendant, Earring, Necklace, Bracel",
+            "Boboking 100% Cotton Little Boys Briefs Soft Dinosaur Truck Toddler Underwear",
+            "Kanu Surf Girls' Alania Flounce Bikini Beach Sport 2 Piece Swimsuit",
+            "WAFUNNE 20 Pairs Baby Socks Wholesale for Infant Toddler Kids Children (Pattern at Random)"
+          ],
+          "hit_rank": 3
+        }
+      ]
+    },
+    {
+      "sample_id": "public_0103",
+      "scenario": "indifferent",
+      "maps_to": "boundary",
+      "style": "esl",
+      "target": "B0BT8T2FQ3",
+      "hit": true,
+      "first_hit_turn": 1,
+      "best_rank": 4,
+      "reciprocal_rank": 0.25,
+      "transcript": [
+        {
+          "turn": 1,
+          "customer": "I'm after underwear undershirts, still deciding though.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B08513YB2T",
+            "B0BH113WW9",
+            "B07Z6J5N6Y",
+            "B0BT8T2FQ3",
+            "B0B9ZYDDZ1",
+            "B0BKL2R1WX",
+            "B07FDB7GMZ",
+            "B08134XNNB",
+            "B077276QGC",
+            "B016OT9D3K"
+          ],
+          "shown_titles": [
+            "Crocs Unisex-Adult Classic Clog",
+            "Hanes Boxer Briefs, Cool Dri Moisture-Wicking Underwear, Cotton No-Ride-up for Men, Multi-Packs Available",
+            "Amazon Essentials Women's Cotton Bikini Brief Underwear (Available in Plus Size), Multipacks",
+            "Fruit of the Loom Men's Eversoft Cotton Stay Tucked Crew T-Shirt",
+            "Buffway Slim Minimalist Front Pocket RFID Blocking Leather Wallets for Men Women",
+            "Crocs Unisex-Adult Classic Tie Dye Clogs",
+            "adidas Men's Adilette Shower Slide",
+            "Women's Walking Shoes Sock Sneakers - Mesh Slip On Air Cushion Lady Girls Modern Jazz Dance Easy Shoes Platfor",
+            "wirarpa Women's High Waisted Cotton Underwear Ladies Soft Full Briefs Panties Multipack",
+            "Hanes Men\u2019s Short Sleeve Graphic T-shirt Collection"
+          ],
+          "hit_rank": 4
+        }
+      ]
+    }
+  ]
+}

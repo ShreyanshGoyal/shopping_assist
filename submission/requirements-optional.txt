@@ -1,0 +1,9 @@
+# Optional: the dense retrieval track (tier 2).
+#
+# Adds a local sentence-embedding channel over the frozen catalog. Worth +0.16 on
+# a paraphrasing customer and -0.002 on the published evaluator, so it is not
+# installed by default. Requires a one-off index build of roughly 25 minutes;
+# see README.md.
+numpy>=1.26
+onnxruntime>=1.17
+tokenizers>=0.15

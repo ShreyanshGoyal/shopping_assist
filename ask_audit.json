@@ -1,0 +1,175 @@
+[
+  {
+    "sample_id": "public_0002",
+    "scenario": "intent_override",
+    "turn": 3,
+    "rank": 2,
+    "transcript": [
+      {
+        "turn": 1,
+        "customer": "I'm looking for Accessories Belts. Buckle closure",
+        "ask": "other",
+        "shown": 1,
+        "kind": "productive"
+      },
+      {
+        "turn": 2,
+        "customer": "For that, what matters is: leather; 100% Leather.",
+        "ask": "other",
+        "shown": 10,
+        "kind": "interrupted"
+      },
+      {
+        "turn": 3,
+        "customer": "Actually, ignore my earlier preference. What I need is: leather.",
+        "ask": "other",
+        "shown": 10,
+        "kind": "hit"
+      }
+    ]
+  },
+  {
+    "sample_id": "public_0052",
+    "scenario": "intent_override",
+    "turn": 3,
+    "rank": 2,
+    "transcript": [
+      {
+        "turn": 1,
+        "customer": "I'm looking for Tees & Blouses Tunics. Hand Wash Only",
+        "ask": "other",
+        "shown": 1,
+        "kind": "productive"
+      },
+      {
+        "turn": 2,
+        "customer": "For that, what matters is: polyester; 60% polyester.",
+        "ask": "other",
+        "shown": 1,
+        "kind": "interrupted"
+      },
+      {
+        "turn": 3,
+        "customer": "Actually, ignore my earlier preference. What I need is: polyester.",
+        "ask": "other",
+        "shown": 10,
+        "kind": "hit"
+      }
+    ]
+  },
+  {
+    "sample_id": "public_0083",
+    "scenario": "buying",
+    "turn": 6,
+    "rank": 4,
+    "transcript": [
+      {
+        "turn": 1,
+        "customer": "I'm looking for Tees & Blouses Blouses & Button-Down Shirts. A key requirement is: polyester.",
+        "ask": "other",
+        "shown": 1,
+        "kind": "productive"
+      },
+      {
+        "turn": 2,
+        "customer": "For that, what matters is: 100% Polyester; Imported.",
+        "ask": "other",
+        "shown": 1,
+        "kind": "productive"
+      },
+      {
+        "turn": 3,
+        "customer": "For that, what matters is: Button closure.",
+        "ask": "other",
+        "shown": 1,
+        "kind": "wasted"
+      },
+      {
+        "turn": 4,
+        "customer": "I don't have an additional preference for other.",
+        "ask": "feature",
+        "shown": 1,
+        "kind": "wasted"
+      },
+      {
+        "turn": 5,
+        "customer": "I don't have an additional preference for feature.",
+        "ask": "material",
+        "shown": 1,
+        "kind": "wasted"
+      },
+      {
+        "turn": 6,
+        "customer": "I don't have an additional preference for material.",
+        "ask": "color",
+        "shown": 10,
+        "kind": "hit"
+      }
+    ]
+  },
+  {
+    "sample_id": "public_0096",
+    "scenario": "intent_override",
+    "turn": 3,
+    "rank": 2,
+    "transcript": [
+      {
+        "turn": 1,
+        "customer": "I'm looking for Tees & Blouses T-Shirts. Pull On closure",
+        "ask": "other",
+        "shown": 1,
+        "kind": "productive"
+      },
+      {
+        "turn": 2,
+        "customer": "For that, what matters is: polyester; 95% Polyester, 5% Spandex.",
+        "ask": "other",
+        "shown": 1,
+        "kind": "interrupted"
+      },
+      {
+        "turn": 3,
+        "customer": "Actually, ignore my earlier preference. What I need is: polyester.",
+        "ask": "other",
+        "shown": 10,
+        "kind": "hit"
+      }
+    ]
+  },
+  {
+    "sample_id": "public_0144",
+    "scenario": "intent_override",
+    "turn": 4,
+    "rank": 10,
+    "transcript": [
+      {
+        "turn": 1,
+        "customer": "I'm looking for Jackets & Vests Down Jackets & Parkas. Zipper closure",
+        "ask": "other",
+        "shown": 1,
+        "kind": "productive"
+      },
+      {
+        "turn": 2,
+        "customer": "For that, what matters is: polyester; 100% Polyester.",
+        "ask": "other",
+        "shown": 1,
+        "kind": "productive"
+      },
+      {
+        "turn": 3,
+        "customer": "For that, what matters is: Imported; Zipper closure.",
+        "ask": "other",
+        "shown": 1,
+        "kind": "interrupted"
+      },
+      {
+        "turn": 4,
+        "customer": "Actually, ignore my earlier preference. What I need is: polyester.",
+        "ask": "other",
+        "shown": 10,
+        "kind": "hit"
+      }
+    ]
+  }
+]

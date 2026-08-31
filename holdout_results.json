@@ -1,0 +1,19 @@
+{
+  "A": {
+    "sample_count": 100,
+    "hit_rate_at_10": 1.0,
+    "mrr": 0.9825,
+    "mttc": 2.18,
+    "efficiency": 0.882,
+    "recommended_technical_score": 0.97115
+  },
+  "B": {
+    "sample_count": 100,
+    "hit_rate_at_10": 1.0,
+    "mrr": 0.986,
+    "mttc": 2.06,
+    "efficiency": 0.894,
+    "recommended_technical_score": 0.9746
+  },
+  "gap": 0.00345
+}

@@ -1,0 +1,985 @@
+{
+  "customer": "vertex:gemini-3.5-flash-lite",
+  "overall": {
+    "sample_count": 6,
+    "hit_rate_at_10": 0.833333,
+    "mrr": 0.250463,
+    "mttc": 5.833333,
+    "efficiency": 0.516667,
+    "technical_score": 0.595139
+  },
+  "by_scenario": {
+    "brand_led": {
+      "sample_count": 1,
+      "hit_rate_at_10": 1.0,
+      "mrr": 0.1,
+      "mttc": 4.0,
+      "efficiency": 0.7,
+      "technical_score": 0.67
+    },
+    "decisive": {
+      "sample_count": 1,
+      "hit_rate_at_10": 0.0,
+      "mrr": 0.0,
+      "mttc": 11.0,
+      "efficiency": 0.0,
+      "technical_score": 0.0
+    },
+    "indifferent": {
+      "sample_count": 1,
+      "hit_rate_at_10": 1.0,
+      "mrr": 1.0,
+      "mttc": 4.0,
+      "efficiency": 0.7,
+      "technical_score": 0.94
+    },
+    "vague": {
+      "sample_count": 3,
+      "hit_rate_at_10": 1.0,
+      "mrr": 0.134259,
+      "mttc": 5.333333,
+      "efficiency": 0.566667,
+      "technical_score": 0.653611
+    }
+  },
+  "by_style": {
+    "esl": {
+      "sample_count": 4,
+      "hit_rate_at_10": 0.75,
+      "mrr": 0.319444,
+      "mttc": 6.0,
+      "efficiency": 0.5,
+      "technical_score": 0.570833
+    },
+    "plain": {
+      "sample_count": 1,
+      "hit_rate_at_10": 1.0,
+      "mrr": 0.1,
+      "mttc": 4.0,
+      "efficiency": 0.7,
+      "technical_score": 0.67
+    },
+    "terse": {
+      "sample_count": 1,
+      "hit_rate_at_10": 1.0,
+      "mrr": 0.125,
+      "mttc": 7.0,
+      "efficiency": 0.4,
+      "technical_score": 0.6175
+    }
+  },
+  "wall_clock_seconds": 35.7,
+  "token_usage": {
+    "prompt_tokens": 35057,
+    "completion_tokens": 705,
+    "calls": 34,
+    "served_from_cache": 6
+  },
+  "sessions": [
+    {
+      "sample_id": "public_0029",
+      "scenario": "decisive",
+      "maps_to": "buying",
+      "style": "esl",
+      "target": "B01IAKCZEK",
+      "hit": false,
+      "first_hit_turn": null,
+      "best_rank": null,
+      "reciprocal_rank": 0.0,
+      "transcript": [
+        {
+          "turn": 1,
+          "customer": "I looking for flat sandal, but it must have really soft bottom like yoga mat. Can you help me find?",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B09QHC6T6N"
+          ],
+          "shown_titles": [
+            "Crocs Women's Kadie II Flip Flops"
+          ]
+        },
+        {
+          "turn": 2,
+          "customer": "No, those are plastic and look hard. I want the stretchy fabric strap kind with the yoga mat cushion.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B09QHC6T6N",
+            "B010121UQ4",
+            "B07T82BGNN",
+            "B07PYNL2ST",
+            "B01EN562G8",
+            "B083GFX4T5",
+            "B08RWFJMKS",
+            "B00KNZ1376",
+            "B016OT9D3K",
+            "B00KYCF4PU"
+          ],
+          "shown_titles": [
+            "Crocs Women's Kadie II Flip Flops",
+            "Crocs Women's Capri V Flip Flop | Casual Comfortable Sandals for Women",
+            "MAIITRIP Womens Flip Flops Casual Brown Ladies Thong Sandals Comfort Fashion Yoga Mat Footbed flipflops With S",
+            "jiajiale Women's Flip Flops Flat Cushion Foam Beach Thong Sandals Non Slip",
+            "Santiro Flat Women Sandals Shoes Yoga Mat Sole Sling Thong Sandals",
+            "GPOS Womens Yoga\u00a0Mat\u00a0Flip\u00a0Flops\u00a0Comfortable Beach\u00a0Leather\u00a0Strap Thongs\u00a0Sandals\u00a0With Lightweight\u00a0EVA\u00a0Sole,Blue ",
+            "DOGDAN Women's Flip Flops Thong Cushion Sandals Toepost Slippers",
+            "Gurus Natural Rubber Sandals for Women with Adjustable Ankle Strap Twist for Comfortable and Secure Fit, India",
+            "Hanes Men\u2019s Short Sleeve Graphic T-shirt Collection",
+            "Sanuk Yoga Slinged Up Prints"
+          ]
+        },
+        {
+          "turn": 3,
+          "customer": "Those are between the toe like flip flops, but I want the cross strap fabric kind.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B07T82BGNN"
+          ],
+          "shown_titles": [
+            "MAIITRIP Womens Flip Flops Casual Brown Ladies Thong Sandals Comfort Fashion Yoga Mat Footbed flipflops With S"
+          ]
+        },
+        {
+          "turn": 4,
+          "customer": "Still not right, those are still flip flops with the toe post. I need the ones with the fabric straps that go over the top in a sling style.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B07T82BGNN",
+            "B016OT9D3K",
+            "B09QHC6T6N",
+            "B00KNZ1376",
+            "B00KYCF4PU",
+            "B00M95N6U0",
+            "B01EN562G8",
+            "B07PYNL2ST",
+            "B010121UQ4",
+            "B083GFX4T5"
+          ],
+          "shown_titles": [
+            "MAIITRIP Womens Flip Flops Casual Brown Ladies Thong Sandals Comfort Fashion Yoga Mat Footbed flipflops With S",
+            "Hanes Men\u2019s Short Sleeve Graphic T-shirt Collection",
+            "Crocs Women's Kadie II Flip Flops",
+            "Gurus Natural Rubber Sandals for Women with Adjustable Ankle Strap Twist for Comfortable and Secure Fit, India",
+            "Sanuk Yoga Slinged Up Prints",
+            "FitFlop Women's The Skinny Fabric Flip-Flop",
+            "Santiro Flat Women Sandals Shoes Yoga Mat Sole Sling Thong Sandals",
+            "jiajiale Women's Flip Flops Flat Cushion Foam Beach Thong Sandals Non Slip",
+            "Crocs Women's Capri V Flip Flop | Casual Comfortable Sandals for Women",
+            "GPOS Womens Yoga\u00a0Mat\u00a0Flip\u00a0Flops\u00a0Comfortable Beach\u00a0Leather\u00a0Strap Thongs\u00a0Sandals\u00a0With Lightweight\u00a0EVA\u00a0Sole,Blue "
+          ]
+        },
+        {
+          "turn": 5,
+          "customer": "Almost, but those have prints on them. I want the plain light natural colored ones.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B016OT9D3K"
+          ],
+          "shown_titles": [
+            "Hanes Men\u2019s Short Sleeve Graphic T-shirt Collection"
+          ]
+        },
+        {
+          "turn": 6,
+          "customer": "Why you showing me a t-shirt? I want the plain light color fabric sling sandals with yoga mat bottom.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B016OT9D3K",
+            "B09YKFSDWX",
+            "B07FR49R3H",
+            "B082YN2GYP",
+            "B00KNZ1376",
+            "B07T82BGNN",
+            "B09MVF4SDH",
+            "B07NBB2W3Q",
+            "B09QHC6T6N",
+            "B0872J8KB1"
+          ],
+          "shown_titles": [
+            "Hanes Men\u2019s Short Sleeve Graphic T-shirt Collection",
+            "Johari West Men's Big and Tall Short Sleeve Tropical Hawaiian Cotton Shirt",
+            "Native American Warrior Eternal Spirit Men's T-Shirt",
+            "BTFBM Women Summer Short Sleeve Shirts Crew Neck Color Block Irregular Striped Print Loose Soft Casual Tee Top",
+            "Gurus Natural Rubber Sandals for Women with Adjustable Ankle Strap Twist for Comfortable and Secure Fit, India",
+            "MAIITRIP Womens Flip Flops Casual Brown Ladies Thong Sandals Comfort Fashion Yoga Mat Footbed flipflops With S",
+            "INTO THE AM Mens T Shirt - Short Sleeve Crew Neck Soft Fitted Tees S - 4XL Fresh Classic Tshirts",
+            "Goodthreads Men's Slim-Fit Short-Sleeve Cotton V-Neck T-Shirt (Available in Tall)",
+            "Crocs Women's Kadie II Flip Flops",
+            "Straight Outta Quarantine Class of 2020 Funny T-Shirt"
+          ]
+        },
+        {
+          "turn": 7,
+          "customer": "Stop showing me shirts, I only want shoes. I am looking for the plain light natural colored stretchy fabric sling sandals.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B016OT9D3K",
+            "B00KNZ1376",
+            "B07T82BGNN",
+            "B09QHC6T6N",
+            "B00KYCF4PU",
+            "B01EN562G8",
+            "B07JX7RGNZ",
+            "B07KCFS4VC",
+            "B09825GQC3",
+            "B00I20S5BQ"
+          ],
+          "shown_titles": [
+            "Hanes Men\u2019s Short Sleeve Graphic T-shirt Collection",
+            "Gurus Natural Rubber Sandals for Women with Adjustable Ankle Strap Twist for Comfortable and Secure Fit, India",
+            "MAIITRIP Womens Flip Flops Casual Brown Ladies Thong Sandals Comfort Fashion Yoga Mat Footbed flipflops With S",
+            "Crocs Women's Kadie II Flip Flops",
+            "Sanuk Yoga Slinged Up Prints",
+            "Santiro Flat Women Sandals Shoes Yoga Mat Sole Sling Thong Sandals",
+            "HEMOON Men's Casual Slim Fit Contrast Color Long Sleeve T-Shirt Tee",
+            "Columbia Men's Thistletown Park Crew",
+            "All Work and No Play Makes Jack A Dull Boy Tshirt Horror Long Sleeve T Shirt",
+            "Epic MMA Gear WOD Triblend T-Shirt, WOD Warrior, WOD The F#%k!"
+          ]
+        },
+        {
+          "turn": 8,
+          "customer": "Still all wrong, you keep showing men's shirts and wrong shoes. I just need the plain light natural stretchy sling sandal with the yoga mat sole.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B016OT9D3K",
+            "B00KNZ1376",
+            "B0765GJM8C",
+            "B07T82BGNN",
+            "B086BPBMZQ",
+            "B084BYZSG2",
+            "B01E0LDY4I",
+            "B07RGXB3XB",
+            "B0BMGZWD7Q",
+            "B09PF5PJ7W"
+          ],
+          "shown_titles": [
+            "Hanes Men\u2019s Short Sleeve Graphic T-shirt Collection",
+            "Gurus Natural Rubber Sandals for Women with Adjustable Ankle Strap Twist for Comfortable and Secure Fit, India",
+            "RADIO Is My Life Passionate DJ Music Talk Hobby Lovers Tee",
+            "MAIITRIP Womens Flip Flops Casual Brown Ladies Thong Sandals Comfort Fashion Yoga Mat Footbed flipflops With S",
+            "U2SKIIN 2 Pack Mens Plain t Shirts, Crew-Neck Short Sleeve T-Shirt for Men",
+            "Men's Tool T Shirts | This is Not a Drill | Sawdust is Man Glitter | Funny Novelty Tshirts Christmas",
+            "Marilyn Monroe and Audrey Hepburn Tattooed Twins Men's Funny T-Shirt",
+            "Teelocity Bob Ross Paint Drip Graphic T-Shirt",
+            "The Mountain Kraken",
+            "I Survived My Trip to NYC Unisex Shirt Round Neck top T-Shirt Fashion Short-Sleeved Pure Cotton Loose Shirt"
+          ]
+        },
+        {
+          "turn": 9,
+          "customer": "Why you only show men t-shirts now? I just want the light natural colored stretchy sling sandals with yoga mat.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B016OT9D3K",
+            "B00KNZ1376",
+            "B07T82BGNN",
+            "B01EN562G8",
+            "B00KYCF4PU",
+            "B00ZUYHVJE",
+            "B09BPSC7MV",
+            "B0921CQN89",
+            "B09QHC6T6N",
+            "B0009GI3CM"
+          ],
+          "shown_titles": [
+            "Hanes Men\u2019s Short Sleeve Graphic T-shirt Collection",
+            "Gurus Natural Rubber Sandals for Women with Adjustable Ankle Strap Twist for Comfortable and Secure Fit, India",
+            "MAIITRIP Womens Flip Flops Casual Brown Ladies Thong Sandals Comfort Fashion Yoga Mat Footbed flipflops With S",
+            "Santiro Flat Women Sandals Shoes Yoga Mat Sole Sling Thong Sandals",
+            "Sanuk Yoga Slinged Up Prints",
+            "Ahnu Women's Salena-W",
+            "BINWEN15 COLLECTION Women's Short Sleeve Crew-Neck Shirts Loose Casual Tee T-Shirt",
+            "Country Music Blame It All On My Roots Funny Western Graphic Tees Mens Shirts",
+            "Crocs Women's Kadie II Flip Flops",
+            "Hanes Men's ComfortSoft T-Shirt, Deep Forest, Medium"
+          ]
+        },
+        {
+          "turn": 10,
+          "customer": "This is so frustrating, you still did not show me the plain light natural color yoga mat sling sandals. I give up.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B00KNZ1376",
+            "B016OT9D3K",
+            "B07T82BGNN",
+            "B01EN562G8",
+            "B00KYCF4PU",
+            "B07F1KML1K",
+            "B07QPM54V7",
+            "B08B8BKPQS",
+            "B01BN5J9IY",
+            "B07PYNL2ST"
+          ],
+          "shown_titles": [
+            "Gurus Natural Rubber Sandals for Women with Adjustable Ankle Strap Twist for Comfortable and Secure Fit, India",
+            "Hanes Men\u2019s Short Sleeve Graphic T-shirt Collection",
+            "MAIITRIP Womens Flip Flops Casual Brown Ladies Thong Sandals Comfort Fashion Yoga Mat Footbed flipflops With S",
+            "Santiro Flat Women Sandals Shoes Yoga Mat Sole Sling Thong Sandals",
+            "Sanuk Yoga Slinged Up Prints",
+            "Milan Style Women\u2019s Summer Short Sleeve Casual Swing Loose T-Shirt Tunic Dresses",
+            "WNEEDU Women's Summer Casual T Shirt Dresses Short Sleeve Swing Dress with Pockets",
+            "BTFBM Women's 2023 Summer Casual Beach Dresses Crew Neck Short Sleeve Wrap Party Club Mini Ruched Bodycon T Sh",
+            "Scott's Tots from The Office - Funny T-Shirt Light Blue",
+            "jiajiale Women's Flip Flops Flat Cushion Foam Beach Thong Sandals Non Slip"
+          ]
+        }
+      ]
+    },
+    {
+      "sample_id": "public_0005",
+      "scenario": "vague",
+      "maps_to": "browsing",
+      "style": "esl",
+      "target": "B074G1JP8Z",
+      "hit": true,
+      "first_hit_turn": 3,
+      "best_rank": 6,
+      "reciprocal_rank": 0.16666666666666666,
+      "transcript": [
+        {
+          "turn": 1,
+          "customer": "Hello! I just look around for some shoes for winter, not sure yet what I want.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B0B9ZYDDZ1"
+          ],
+          "shown_titles": [
+            "Buffway Slim Minimalist Front Pocket RFID Blocking Leather Wallets for Men Women"
+          ]
+        },
+        {
+          "turn": 2,
+          "customer": "Wait, those are small wallets, not shoes. I need something for cold weather and snow.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B0B9ZYDDZ1",
+            "B089RXP8K2",
+            "B0C31KQH8P",
+            "B08GPGX2QG",
+            "B081TWX2LR",
+            "B0BNYK4FJX",
+            "B0BZH88YGD",
+            "B0873CNY44",
+            "B07HFVBK9Z",
+            "B01N9F4CUU"
+          ],
+          "shown_titles": [
+            "Buffway Slim Minimalist Front Pocket RFID Blocking Leather Wallets for Men Women",
+            "Travelambo Womens Wallet RFID Blocking Bifold Multi Card Case Wallet with Zipper Pocket",
+            "SERMAN BRANDS RFID Blocking Slim Bifold Genuine Leather Minimalist Front Pocket Wallets for Men with Money Cli",
+            "SENDEFN Wallets for Women Genuine Leather Credit Card Holder with RFID Blocking Large Capacity Wristlet",
+            "Timberland Men's Leather RFID Blocking Passcase Security Wallet",
+            "Zitahli Wallet Men-Magnetic Money Clip-Slim and Minimalist Card Case-ID Window Front Pocket Wallet Gift Boxing",
+            "FDKOBE Wallet for Men with Smart Pop Up Mechanism, Men's Minimalist Wallet with Expandable Backplate& Strap Me",
+            "STAY FINE Top Grain Leather Trifold Wallet for Men | Ultra Strong Stitching | Handcrafted Argentinian Leather ",
+            "APHISON Womens Wallets RFID Blocking Leather Clutch Long Wallet for Women Card Holder Phone Organizer Ladies T",
+            "RIK COLLECTION Wallets for Men Bifold Leather Slim RFID Blocking Italian Genuine Leather"
+          ]
+        },
+        {
+          "turn": 3,
+          "customer": "Why you show me all these wallets? I want winter boots for snow, please.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B0B9ZYDDZ1",
+            "B089RXP8K2",
+            "B016OT9D3K",
+            "B0C31KQH8P",
+            "B08GPGX2QG",
+            "B074G1JP8Z",
+            "B07JVKFDYW",
+            "B07H253XTD",
+            "B08XJG3KDX",
+            "B081TWX2LR"
+          ],
+          "shown_titles": [
+            "Buffway Slim Minimalist Front Pocket RFID Blocking Leather Wallets for Men Women",
+            "Travelambo Womens Wallet RFID Blocking Bifold Multi Card Case Wallet with Zipper Pocket",
+            "Hanes Men\u2019s Short Sleeve Graphic T-shirt Collection",
+            "SERMAN BRANDS RFID Blocking Slim Bifold Genuine Leather Minimalist Front Pocket Wallets for Men with Money Cli",
+            "SENDEFN Wallets for Women Genuine Leather Credit Card Holder with RFID Blocking Large Capacity Wristlet",
+            "GLOBALWIN Women's Waterproof Winter Boots Snow Boots For Women",
+            "SILENTCARE Mens Winter Mid-Calf Snow Boot Fur Warm Waterproof Slip On Outdoor Athletic",
+            "Ginjang Women Winter Snow Boots Warm Ankle Boots Anti-Slip Waterproof Winter Shoes Slip On Booties Sneakers",
+            "Men's Insulated Snow Bibs Overalls, Winter Ski Bib for Men Black",
+            "Timberland Men's Leather RFID Blocking Passcase Security Wallet"
+          ],
+          "hit_rank": 6
+        }
+      ]
+    },
+    {
+      "sample_id": "public_0042",
+      "scenario": "vague",
+      "maps_to": "browsing",
+      "style": "esl",
+      "target": "B01LWOGORL",
+      "hit": true,
+      "first_hit_turn": 6,
+      "best_rank": 9,
+      "reciprocal_rank": 0.1111111111111111,
+      "transcript": [
+        {
+          "turn": 1,
+          "customer": "Hello! I am just looking around today, not really sure what I want yet. Can you help me see some watches?",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B016OT9D3K"
+          ],
+          "shown_titles": [
+            "Hanes Men\u2019s Short Sleeve Graphic T-shirt Collection"
+          ]
+        },
+        {
+          "turn": 2,
+          "customer": "Those are shirts, not watches. Can you show me some wrist watches instead?",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B007R9WURS"
+          ],
+          "shown_titles": [
+            "Fossil Women's Riley Quartz Stainless Steel Multifunction Watch, Color: Rose Gold Glitz (Model: ES2811)"
+          ]
+        },
+        {
+          "turn": 3,
+          "customer": "That one is for women and has too many shiny stones. I am looking for a men's digital watch, maybe in gold color with a metal stretch band.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B007R9WURS",
+            "B000EQU0NW",
+            "B005FN0DSQ",
+            "B0068C8SUI",
+            "B00EUY671S",
+            "B0007X9F7O",
+            "B00IB2ZID8",
+            "B06XZ2JG95",
+            "B0B19838BK",
+            "B000GX3IIM"
+          ],
+          "shown_titles": [
+            "Fossil Women's Riley Quartz Stainless Steel Multifunction Watch, Color: Rose Gold Glitz (Model: ES2811)",
+            "Citizen Eco-Drive Corso Quartz Mens Watch, Stainless Steel with Leather strap, Classic, Brown (Model: BM8242-0",
+            "Invicta Men's 1561 II Collection Swiss Chronograph Watch",
+            "Kenneth Cole REACTION Men's RK5108 Box Set East to West Interchange Watch",
+            "Kenneth Cole New York Men's Quartz Stainless Steel Case Stainless Steel Bracelet Gray,(Model:KC15114001)",
+            "Skagen Men's 233XLTMB Grenen Black Titanium Mesh Watch",
+            "Invicta Men's S1 Rally Quartz Watch with Chronograph Display and Stainless Steel Bracelet",
+            "cofuo Men Women Unisex Sport Digital Running Watch Electronic Waterproof Outdoor Casual Military Watches with ",
+            "Accutime Kids Marvel Spider-Man Digital Quartz Plastic Watch for Boys & Girls with LCD Display",
+            "Invicta Men's 8929 Pro Diver Collection Automatic Gold-Tone Watch"
+          ]
+        },
+        {
+          "turn": 4,
+          "customer": "None of those are right. I want a cheap digital one with a square face and a gold metal band that stretches.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B007R9WURS",
+            "B000EQU0NW",
+            "B0068C8SUI",
+            "B0007X9F7O",
+            "B005FN0DSQ",
+            "B00EUY671S",
+            "B00GN55U8S",
+            "B0B19838BK",
+            "B000GX3IIM",
+            "B00IB2ZID8"
+          ],
+          "shown_titles": [
+            "Fossil Women's Riley Quartz Stainless Steel Multifunction Watch, Color: Rose Gold Glitz (Model: ES2811)",
+            "Citizen Eco-Drive Corso Quartz Mens Watch, Stainless Steel with Leather strap, Classic, Brown (Model: BM8242-0",
+            "Kenneth Cole REACTION Men's RK5108 Box Set East to West Interchange Watch",
+            "Skagen Men's 233XLTMB Grenen Black Titanium Mesh Watch",
+            "Invicta Men's 1561 II Collection Swiss Chronograph Watch",
+            "Kenneth Cole New York Men's Quartz Stainless Steel Case Stainless Steel Bracelet Gray,(Model:KC15114001)",
+            "Skagen Women's SKW2187 Leonora Stainless Steel Rose Gold-Tone Watch",
+            "Accutime Kids Marvel Spider-Man Digital Quartz Plastic Watch for Boys & Girls with LCD Display",
+            "Invicta Men's 8929 Pro Diver Collection Automatic Gold-Tone Watch",
+            "Invicta Men's S1 Rally Quartz Watch with Chronograph Display and Stainless Steel Bracelet"
+          ]
+        },
+        {
+          "turn": 5,
+          "customer": "Still no good, these are mostly fancy or leather. Do you have any digital ones from that old popular brand that light up bright green in the dark?",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B007R9WURS",
+            "B000EQU0NW",
+            "B0068C8SUI",
+            "B005FN0DSQ",
+            "B0007X9F7O",
+            "B00EUY671S",
+            "B00BLZWMG8",
+            "B003KQJ9RG",
+            "B00BLZWK7O",
+            "B000GX3IIM"
+          ],
+          "shown_titles": [
+            "Fossil Women's Riley Quartz Stainless Steel Multifunction Watch, Color: Rose Gold Glitz (Model: ES2811)",
+            "Citizen Eco-Drive Corso Quartz Mens Watch, Stainless Steel with Leather strap, Classic, Brown (Model: BM8242-0",
+            "Kenneth Cole REACTION Men's RK5108 Box Set East to West Interchange Watch",
+            "Invicta Men's 1561 II Collection Swiss Chronograph Watch",
+            "Skagen Men's 233XLTMB Grenen Black Titanium Mesh Watch",
+            "Kenneth Cole New York Men's Quartz Stainless Steel Case Stainless Steel Bracelet Gray,(Model:KC15114001)",
+            "Skagen Women's SKW2051 Asta Stainless Steel Mesh Watch",
+            "Invicta Women's 6912 II Collection Two-Tone Stainless Steel Watch",
+            "Skagen Men's SKW6052 Ancher Stainless Steel Watch with Mesh Band",
+            "Invicta Men's 8929 Pro Diver Collection Automatic Gold-Tone Watch"
+          ]
+        },
+        {
+          "turn": 6,
+          "customer": "Those are still not right. I need the classic gold digital one with the stretchy metal band and the light-up screen.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B0007X9F7O",
+            "B000EQU0NW",
+            "B005FN0DSQ",
+            "B007R9WURS",
+            "B0068C8SUI",
+            "B00EUY671S",
+            "B000GX3IIM",
+            "B00IB2ZID8",
+            "B01LWOGORL",
+            "B0050SB6TQ"
+          ],
+          "shown_titles": [
+            "Skagen Men's 233XLTMB Grenen Black Titanium Mesh Watch",
+            "Citizen Eco-Drive Corso Quartz Mens Watch, Stainless Steel with Leather strap, Classic, Brown (Model: BM8242-0",
+            "Invicta Men's 1561 II Collection Swiss Chronograph Watch",
+            "Fossil Women's Riley Quartz Stainless Steel Multifunction Watch, Color: Rose Gold Glitz (Model: ES2811)",
+            "Kenneth Cole REACTION Men's RK5108 Box Set East to West Interchange Watch",
+            "Kenneth Cole New York Men's Quartz Stainless Steel Case Stainless Steel Bracelet Gray,(Model:KC15114001)",
+            "Invicta Men's 8929 Pro Diver Collection Automatic Gold-Tone Watch",
+            "Invicta Men's S1 Rally Quartz Watch with Chronograph Display and Stainless Steel Bracelet",
+            "Timex Men's Classic Digital Watch",
+            "Citizen Men's AR1124-59E Stiletto Eco Drive Watch"
+          ],
+          "hit_rank": 9
+        }
+      ]
+    },
+    {
+      "sample_id": "public_0169",
+      "scenario": "vague",
+      "maps_to": "browsing",
+      "style": "terse",
+      "target": "B0829R9M5G",
+      "hit": true,
+      "first_hit_turn": 7,
+      "best_rank": 8,
+      "reciprocal_rank": 0.125,
+      "transcript": [
+        {
+          "turn": 1,
+          "customer": "Just looking around. Need some new pants.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B0B9ZYDDZ1"
+          ],
+          "shown_titles": [
+            "Buffway Slim Minimalist Front Pocket RFID Blocking Leather Wallets for Men Women"
+          ]
+        },
+        {
+          "turn": 2,
+          "customer": "Those are wallets. Need stretchy pull-on pants, not wallets.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B0B9ZYDDZ1",
+            "B089RXP8K2",
+            "B0C31KQH8P",
+            "B08GPGX2QG",
+            "B081TWX2LR",
+            "B01N9F4CUU",
+            "B0873CNY44",
+            "B0954QMP4D",
+            "B0BZH88YGD",
+            "B07HFVBK9Z"
+          ],
+          "shown_titles": [
+            "Buffway Slim Minimalist Front Pocket RFID Blocking Leather Wallets for Men Women",
+            "Travelambo Womens Wallet RFID Blocking Bifold Multi Card Case Wallet with Zipper Pocket",
+            "SERMAN BRANDS RFID Blocking Slim Bifold Genuine Leather Minimalist Front Pocket Wallets for Men with Money Cli",
+            "SENDEFN Wallets for Women Genuine Leather Credit Card Holder with RFID Blocking Large Capacity Wristlet",
+            "Timberland Men's Leather RFID Blocking Passcase Security Wallet",
+            "RIK COLLECTION Wallets for Men Bifold Leather Slim RFID Blocking Italian Genuine Leather",
+            "STAY FINE Top Grain Leather Trifold Wallet for Men | Ultra Strong Stitching | Handcrafted Argentinian Leather ",
+            "Suavell Slim Wallets for Men. RFID Money Clip Wallet, Slim Wallet, Thin Front Pocket Credit Card Wallet, Minim",
+            "FDKOBE Wallet for Men with Smart Pop Up Mechanism, Men's Minimalist Wallet with Expandable Backplate& Strap Me",
+            "APHISON Womens Wallets RFID Blocking Leather Clutch Long Wallet for Women Card Holder Phone Organizer Ladies T"
+          ]
+        },
+        {
+          "turn": 3,
+          "customer": "Still just wallets. Want soft stretchy denim pants without any stiff buttons or zippers.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B0B9ZYDDZ1",
+            "B0C31KQH8P",
+            "B089RXP8K2",
+            "B08GPGX2QG",
+            "B081TWX2LR",
+            "B01N9F4CUU",
+            "B0BZH88YGD",
+            "B0873CNY44",
+            "B07QGCT8V4",
+            "B07HFVBK9Z"
+          ],
+          "shown_titles": [
+            "Buffway Slim Minimalist Front Pocket RFID Blocking Leather Wallets for Men Women",
+            "SERMAN BRANDS RFID Blocking Slim Bifold Genuine Leather Minimalist Front Pocket Wallets for Men with Money Cli",
+            "Travelambo Womens Wallet RFID Blocking Bifold Multi Card Case Wallet with Zipper Pocket",
+            "SENDEFN Wallets for Women Genuine Leather Credit Card Holder with RFID Blocking Large Capacity Wristlet",
+            "Timberland Men's Leather RFID Blocking Passcase Security Wallet",
+            "RIK COLLECTION Wallets for Men Bifold Leather Slim RFID Blocking Italian Genuine Leather",
+            "FDKOBE Wallet for Men with Smart Pop Up Mechanism, Men's Minimalist Wallet with Expandable Backplate& Strap Me",
+            "STAY FINE Top Grain Leather Trifold Wallet for Men | Ultra Strong Stitching | Handcrafted Argentinian Leather ",
+            "Personalized Engraved Wallet, Custom Photo Leather Wallet for Men, Perfect Gifts for Husband,Dad,Son,BF,Grooms",
+            "APHISON Womens Wallets RFID Blocking Leather Clutch Long Wallet for Women Card Holder Phone Organizer Ladies T"
+          ]
+        },
+        {
+          "turn": 4,
+          "customer": "Still all wallets. Needs to be cotton blend, super comfy.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B0B9ZYDDZ1",
+            "B0C31KQH8P",
+            "B089RXP8K2",
+            "B08GPGX2QG",
+            "B081TWX2LR",
+            "B01N9F4CUU",
+            "B0954QMP4D",
+            "B0873CNY44",
+            "B07QGCT8V4",
+            "B07DQJ5T3K"
+          ],
+          "shown_titles": [
+            "Buffway Slim Minimalist Front Pocket RFID Blocking Leather Wallets for Men Women",
+            "SERMAN BRANDS RFID Blocking Slim Bifold Genuine Leather Minimalist Front Pocket Wallets for Men with Money Cli",
+            "Travelambo Womens Wallet RFID Blocking Bifold Multi Card Case Wallet with Zipper Pocket",
+            "SENDEFN Wallets for Women Genuine Leather Credit Card Holder with RFID Blocking Large Capacity Wristlet",
+            "Timberland Men's Leather RFID Blocking Passcase Security Wallet",
+            "RIK COLLECTION Wallets for Men Bifold Leather Slim RFID Blocking Italian Genuine Leather",
+            "Suavell Slim Wallets for Men. RFID Money Clip Wallet, Slim Wallet, Thin Front Pocket Credit Card Wallet, Minim",
+            "STAY FINE Top Grain Leather Trifold Wallet for Men | Ultra Strong Stitching | Handcrafted Argentinian Leather ",
+            "Personalized Engraved Wallet, Custom Photo Leather Wallet for Men, Perfect Gifts for Husband,Dad,Son,BF,Grooms",
+            "Slim Wallet 5.0 By DASH Co. - Minimal Wallet For Men & Women - RFID Blocking, Quickdraw & Pull Tab"
+          ]
+        },
+        {
+          "turn": 5,
+          "customer": "Still showing wallets. Show me the cotton knit stretch jeggings instead.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B0B9ZYDDZ1",
+            "B0C31KQH8P",
+            "B01MUBHNOR",
+            "B09YSQQWKM",
+            "B074KJ49F2",
+            "B089RXP8K2",
+            "B07B5N27VT",
+            "B0BQDTGHMZ",
+            "B08GPGX2QG",
+            "B07HHDW5TD"
+          ],
+          "shown_titles": [
+            "Buffway Slim Minimalist Front Pocket RFID Blocking Leather Wallets for Men Women",
+            "SERMAN BRANDS RFID Blocking Slim Bifold Genuine Leather Minimalist Front Pocket Wallets for Men with Money Cli",
+            "Curvify 764 Women's Butt-Lifting Skinny Jeans | High-Rise Waist, Brazilian Style",
+            "Plus/Junior Size Colombian Design Butt Lift Levanta Cola Stretch Skinny Jeans",
+            "Leggings Depot Premium Quality Women's Cotton Blend Stretch Pull-on Jeggings with Pockets",
+            "Travelambo Womens Wallet RFID Blocking Bifold Multi Card Case Wallet with Zipper Pocket",
+            "Curvify Pull on Skinny Jeans | High Waist Jeggings | Butt Lift Denim Leggings",
+            "Signature by Levi Strauss & Co. Gold Label Women's Modern Skinny Jeans (Standard and Plus)",
+            "SENDEFN Wallets for Women Genuine Leather Credit Card Holder with RFID Blocking Large Capacity Wristlet",
+            "Ulanda Women's Loose Casual Denim Pull-On Pants with Drawstring Waist Cropped Jeans Plus Size"
+          ]
+        },
+        {
+          "turn": 6,
+          "customer": "Getting closer, but those aren't the exact ones. Looking for the knit ones from Amazon Essentials.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B0B9ZYDDZ1",
+            "B0C31KQH8P",
+            "B089RXP8K2",
+            "B0794VPVBH",
+            "B08GPGX2QG",
+            "B0B7WY3DYM",
+            "B0C3B3B2VM",
+            "B00I5M8Y76",
+            "B01N9F4CUU",
+            "B09QT4M6NS"
+          ],
+          "shown_titles": [
+            "Buffway Slim Minimalist Front Pocket RFID Blocking Leather Wallets for Men Women",
+            "SERMAN BRANDS RFID Blocking Slim Bifold Genuine Leather Minimalist Front Pocket Wallets for Men with Money Cli",
+            "Travelambo Womens Wallet RFID Blocking Bifold Multi Card Case Wallet with Zipper Pocket",
+            "NY Threads Luxurious Mens Shawl Collar Fleece Bathrobe Spa Robe",
+            "SENDEFN Wallets for Women Genuine Leather Credit Card Holder with RFID Blocking Large Capacity Wristlet",
+            "Wide Leg Jeans for Women Mid Rise Stretchy Distressed Washed Denim Jeans Bootcut 70s Hippie Cowboy Jeans",
+            "U2SKIIN Mens Cotton Blend Robe Lightweight Knit Bathrobe",
+            "Hey Collection Juniors Brushed Stretch Twill Low Rise Pants Skinny Jeans for Women",
+            "RIK COLLECTION Wallets for Men Bifold Leather Slim RFID Blocking Italian Genuine Leather",
+            "CG JEANS Women's Soft and Fit Skinny Jeans Stretch Comfort Mid Rise in Juniors and Plus Size"
+          ]
+        },
+        {
+          "turn": 7,
+          "customer": "Went back to random stuff again. Need the pull-on knit jeggings from the Amazon brand.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B0B9ZYDDZ1",
+            "B0C31KQH8P",
+            "B089RXP8K2",
+            "B08GPGX2QG",
+            "B01N9F4CUU",
+            "B016OT9D3K",
+            "B07YJBHRHP",
+            "B0829R9M5G",
+            "B08665RRRX",
+            "B07P5JHV8L"
+          ],
+          "shown_titles": [
+            "Buffway Slim Minimalist Front Pocket RFID Blocking Leather Wallets for Men Women",
+            "SERMAN BRANDS RFID Blocking Slim Bifold Genuine Leather Minimalist Front Pocket Wallets for Men with Money Cli",
+            "Travelambo Womens Wallet RFID Blocking Bifold Multi Card Case Wallet with Zipper Pocket",
+            "SENDEFN Wallets for Women Genuine Leather Credit Card Holder with RFID Blocking Large Capacity Wristlet",
+            "RIK COLLECTION Wallets for Men Bifold Leather Slim RFID Blocking Italian Genuine Leather",
+            "Hanes Men\u2019s Short Sleeve Graphic T-shirt Collection",
+            "IWEAGER Women Ripped Skinny Jeans Stretchy High Waist Pull-on Ankled Destroyed Distressed Denim Pants",
+            "Amazon Essentials Women's Pull-On Knit Jegging (Available in Plus Size)",
+            "Amazon Essentials Unisex Kids' Snug-Fit Cotton Pajama Sleepwear Sets, Cat Print, 10 Years",
+            "kathy ireland Womens Chemise Nightgown and Robe Two-Piece Sleepwear and Loungewear Set - Pajama Set for Women"
+          ],
+          "hit_rank": 8
+        }
+      ]
+    },
+    {
+      "sample_id": "public_0082",
+      "scenario": "brand_led",
+      "maps_to": "buying",
+      "style": "plain",
+      "target": "B09BPZCWDP",
+      "hit": true,
+      "first_hit_turn": 4,
+      "best_rank": 10,
+      "reciprocal_rank": 0.1,
+      "transcript": [
+        {
+          "turn": 1,
+          "customer": "Hi there! I'm looking to buy some new jewelry from Hicarer.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B073DYJ2V1"
+          ],
+          "shown_titles": [
+            "Flexfit Men's Athletic Baseball Fitted Cap"
+          ]
+        },
+        {
+          "turn": 2,
+          "customer": "That's a hat, but I'm looking for some kind of bracelet set from them.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B073DYJ2V1",
+            "B07DY6V1YV",
+            "B0BQW5V4JB",
+            "B075LPX32H",
+            "B0BJP97TX7",
+            "B0B9W8LGST",
+            "B09431HGF7",
+            "B07VCYFB5D",
+            "B0B92C8FFY",
+            "B09PCY35N7"
+          ],
+          "shown_titles": [
+            "Flexfit Men's Athletic Baseball Fitted Cap",
+            "BEEN THERE BRAND Sunset Foldable Hat & Carry Pouch| Travel, Beach, Event & Parade Hat",
+            "OASCUVER Retired Since 2023 Hat, Adjustable Cotton Baseball Cap Distressed Washed for Retirees Men Women",
+            "Carhartt Men's Rugged Professional\u2122 Series Canvas Mesh-Back Cap",
+            "Python Utility Golf Hat - Adjustable Egyptian Cotton Baseball Cap for Men & Women, Black Camo Design Hats, Sty",
+            "2PCS Mr Mrs Baseball Hats for Men Women, Newlywed Honeymoon Wedding Gifts, Funny Adjustable 3D Embroidered Hat",
+            "American Flag Hats, Hats for Women and Men Tie-Dye Adjustable Baseball Caps Outdoor Sun Protection Street Hip ",
+            "Baseball Cap Custom Personalized Text Dad Hats for Men & Women Strap Closure",
+            "Eurzom 2 Pieces Girls Baseball Cap Summer Ponytail Hats Adjustable Baseball Cap High Messy Bun Baseball Hat fo",
+            "Popfizzy Womens Skull Hat, Trucker Hat, Girls Trendy Skull Baseball Cap, Adjustable Snapback Low Profile Hats "
+          ]
+        },
+        {
+          "turn": 3,
+          "customer": "Those are all hats again, but I really want a nice set of braided beach bracelets.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B07DY6V1YV"
+          ],
+          "shown_titles": [
+            "BEEN THERE BRAND Sunset Foldable Hat & Carry Pouch| Travel, Beach, Event & Parade Hat"
+          ]
+        },
+        {
+          "turn": 4,
+          "customer": "Still just a hat, not a bracelet. I'm looking for a big pack of those colorful woven surfer bracelets.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B07DY6V1YV",
+            "B0B9W8LGST",
+            "B073DYJ2V1",
+            "B07Q1GMV76",
+            "B09QHM9C1D",
+            "B073RVRVRY",
+            "B08VN9VT8N",
+            "B07HSZLXCY",
+            "B09431HGF7",
+            "B09BPZCWDP"
+          ],
+          "shown_titles": [
+            "BEEN THERE BRAND Sunset Foldable Hat & Carry Pouch| Travel, Beach, Event & Parade Hat",
+            "2PCS Mr Mrs Baseball Hats for Men Women, Newlywed Honeymoon Wedding Gifts, Funny Adjustable 3D Embroidered Hat",
+            "Flexfit Men's Athletic Baseball Fitted Cap",
+            "Swyss Unisex Camouflage Casual Hat Trucker Special Tactical Operator Forces USA Flag Patch Baseball Cap,Black",
+            "Jomiwink Ukrainian Coat Arms Dad Hat Soft Low Profile Cotton Cap Casual Baseball Hat",
+            "Cristian Chaplain Cross Flexfit\u00ae Adult Pro-Formance\u00ae Branded Hat Black Large/X-Large",
+            "KLZJR Women's Baseball Hat Washed Ball Hat Adjustable Baseball Cap",
+            "Custom Ponycap Messy High Bun Ponytail Baseball Cap Adjustable Mesh Trucker Baseball Cap Hat for Women",
+            "American Flag Hats, Hats for Women and Men Tie-Dye Adjustable Baseball Caps Outdoor Sun Protection Street Hip ",
+            "Hicarer 21 Pieces Surfer Wave Bracelet Ocean Wave Adjustable Waterproof Handmade Friendship Bracelet Summer Su"
+          ],
+          "hit_rank": 10
+        }
+      ]
+    },
+    {
+      "sample_id": "public_0103",
+      "scenario": "indifferent",
+      "maps_to": "boundary",
+      "style": "esl",
+      "target": "B0BT8T2FQ3",
+      "hit": true,
+      "first_hit_turn": 4,
+      "best_rank": 1,
+      "reciprocal_rank": 1.0,
+      "transcript": [
+        {
+          "turn": 1,
+          "customer": "Hello, I want to find some white t-shirts to wear under my work shirts. Can you help me?",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B016OT9D3K"
+          ],
+          "shown_titles": [
+            "Hanes Men\u2019s Short Sleeve Graphic T-shirt Collection"
+          ]
+        },
+        {
+          "turn": 2,
+          "customer": "No, these are graphic shirts with pictures, I just want plain white ones.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B016OT9D3K",
+            "B08YQN9442",
+            "B09MVF4SDH",
+            "B09SM1ZLRN",
+            "B09B2R6JR9",
+            "B08437CMQS",
+            "B07Z3JPPV1",
+            "B09B12C1Q6",
+            "B07Y4TRFZ8",
+            "B076HSSLLB"
+          ],
+          "shown_titles": [
+            "Hanes Men\u2019s Short Sleeve Graphic T-shirt Collection",
+            "SIRIL Women's Printed Chiffon Saree With Blouse",
+            "INTO THE AM Mens T Shirt - Short Sleeve Crew Neck Soft Fitted Tees S - 4XL Fresh Classic Tshirts",
+            "Dinazah Women Single Breasted Flannel Shirt Long Sleeve Loose Plaid Woolen Coat",
+            "Tpingfe Womens Summer Dresses Flowy Floral Print Two-Piece Set Chiffon Dress Plus Size Crewneck Sleeveles Dres",
+            "iooiooi Women's Fashion Casual Plus Size African Print Cotton Wide Leg Pants with Pockets",
+            "SOURBH Women's New Fancy All Over Flower Prints Saree With & Mirror Lace Border & Blouse Piece",
+            "Graphic Tees Women Summer Tops Long Sleeve Cute Shirts Blouses for Women Fashion Colorful Plus Size Loose T Ts",
+            "HEARTNICE Plain T-Shirt for Women, 2-Pack Long Sleeve Casual Underwear Soft Top with Round Neck",
+            "Sourbh Women's Bollywood Style Shibori Printed Sari with Blouse Piece"
+          ]
+        },
+        {
+          "turn": 3,
+          "customer": "Those are mostly women clothes, I need men shirts for under my clothes.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B016OT9D3K",
+            "B09B2R6JR9",
+            "B08YQN9442",
+            "B09SM1ZLRN",
+            "B09B12C1Q6",
+            "B07Z3JPPV1",
+            "B08437CMQS",
+            "B076HSSLLB",
+            "B01CKOBCVY",
+            "B09MVF4SDH"
+          ],
+          "shown_titles": [
+            "Hanes Men\u2019s Short Sleeve Graphic T-shirt Collection",
+            "Tpingfe Womens Summer Dresses Flowy Floral Print Two-Piece Set Chiffon Dress Plus Size Crewneck Sleeveles Dres",
+            "SIRIL Women's Printed Chiffon Saree With Blouse",
+            "Dinazah Women Single Breasted Flannel Shirt Long Sleeve Loose Plaid Woolen Coat",
+            "Graphic Tees Women Summer Tops Long Sleeve Cute Shirts Blouses for Women Fashion Colorful Plus Size Loose T Ts",
+            "SOURBH Women's New Fancy All Over Flower Prints Saree With & Mirror Lace Border & Blouse Piece",
+            "iooiooi Women's Fashion Casual Plus Size African Print Cotton Wide Leg Pants with Pockets",
+            "Sourbh Women's Bollywood Style Shibori Printed Sari with Blouse Piece",
+            "ToBeInStyle Women\u2019s Fun Jester Pattern Polka Dot & Striped Thigh High Stockings",
+            "INTO THE AM Mens T Shirt - Short Sleeve Crew Neck Soft Fitted Tees S - 4XL Fresh Classic Tshirts"
+          ]
+        },
+        {
+          "turn": 4,
+          "customer": "Still showing women dresses and sarees, I am looking for men undershirts.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B0BT8T2FQ3"
+          ],
+          "shown_titles": [
+            "Fruit of the Loom Men's Eversoft Cotton Stay Tucked Crew T-Shirt"
+          ],
+          "hit_rank": 1
+        }
+      ]
+    }
+  ]
+}

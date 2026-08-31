@@ -1,0 +1,3277 @@
+{
+  "customer": "vertex:gemini-3.5-flash-lite",
+  "overall": {
+    "sample_count": 24,
+    "hit_rate_at_10": 0.666667,
+    "mrr": 0.446296,
+    "mttc": 6.666667,
+    "efficiency": 0.433333,
+    "technical_score": 0.553889
+  },
+  "by_scenario": {
+    "brand_led": {
+      "sample_count": 2,
+      "hit_rate_at_10": 0.5,
+      "mrr": 0.5,
+      "mttc": 9.5,
+      "efficiency": 0.15,
+      "technical_score": 0.43
+    },
+    "decisive": {
+      "sample_count": 6,
+      "hit_rate_at_10": 0.666667,
+      "mrr": 0.301852,
+      "mttc": 5.666667,
+      "efficiency": 0.533333,
+      "technical_score": 0.530556
+    },
+    "indifferent": {
+      "sample_count": 4,
+      "hit_rate_at_10": 0.75,
+      "mrr": 0.425,
+      "mttc": 7.0,
+      "efficiency": 0.4,
+      "technical_score": 0.5825
+    },
+    "mind_changer": {
+      "sample_count": 1,
+      "hit_rate_at_10": 0.0,
+      "mrr": 0.0,
+      "mttc": 11.0,
+      "efficiency": 0.0,
+      "technical_score": 0.0
+    },
+    "use_case_led": {
+      "sample_count": 3,
+      "hit_rate_at_10": 0.666667,
+      "mrr": 0.666667,
+      "mttc": 5.666667,
+      "efficiency": 0.533333,
+      "technical_score": 0.64
+    },
+    "vague": {
+      "sample_count": 8,
+      "hit_rate_at_10": 0.75,
+      "mrr": 0.525,
+      "mttc": 6.375,
+      "efficiency": 0.4625,
+      "technical_score": 0.625
+    }
+  },
+  "by_style": {
+    "chatty": {
+      "sample_count": 1,
+      "hit_rate_at_10": 1.0,
+      "mrr": 0.2,
+      "mttc": 8.0,
+      "efficiency": 0.3,
+      "technical_score": 0.62
+    },
+    "esl": {
+      "sample_count": 6,
+      "hit_rate_at_10": 0.666667,
+      "mrr": 0.45,
+      "mttc": 6.833333,
+      "efficiency": 0.416667,
+      "technical_score": 0.551667
+    },
+    "informal": {
+      "sample_count": 4,
+      "hit_rate_at_10": 0.5,
+      "mrr": 0.5,
+      "mttc": 7.5,
+      "efficiency": 0.35,
+      "technical_score": 0.47
+    },
+    "plain": {
+      "sample_count": 8,
+      "hit_rate_at_10": 0.875,
+      "mrr": 0.638889,
+      "mttc": 5.375,
+      "efficiency": 0.5625,
+      "technical_score": 0.741667
+    },
+    "terse": {
+      "sample_count": 5,
+      "hit_rate_at_10": 0.4,
+      "mrr": 0.14,
+      "mttc": 7.6,
+      "efficiency": 0.34,
+      "technical_score": 0.31
+    }
+  },
+  "wall_clock_seconds": 147.6,
+  "aborted_sessions": 1,
+  "token_usage": {
+    "prompt_tokens": 137776,
+    "completion_tokens": 3317,
+    "calls": 144,
+    "served_from_cache": 133
+  },
+  "sessions": [
+    {
+      "sample_id": "public_0029",
+      "scenario": "decisive",
+      "maps_to": "buying",
+      "style": "esl",
+      "target": "B01IAKCZEK",
+      "hit": true,
+      "first_hit_turn": 2,
+      "best_rank": 1,
+      "reciprocal_rank": 1.0,
+      "aborted": null,
+      "transcript": [
+        {
+          "turn": 1,
+          "customer": "I looking for flat sandal, but it must have really soft bottom like yoga mat. Can you help me find?",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B07FXWWPN6"
+          ],
+          "shown_titles": [
+            "Plaka Flat Sandals for Women Palm Leaf"
+          ]
+        },
+        {
+          "turn": 2,
+          "customer": "No, yoga mat bottom is most important. These rope ones you show look too hard on the feet.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B01IAKCZEK"
+          ],
+          "shown_titles": [
+            "Sanuk Yoga Sling 2 Light Natural 5 B (M)"
+          ],
+          "hit_rank": 1
+        }
+      ]
+    },
+    {
+      "sample_id": "public_0005",
+      "scenario": "vague",
+      "maps_to": "browsing",
+      "style": "esl",
+      "target": "B074G1JP8Z",
+      "hit": true,
+      "first_hit_turn": 6,
+      "best_rank": 2,
+      "reciprocal_rank": 0.5,
+      "aborted": null,
+      "transcript": [
+        {
+          "turn": 1,
+          "customer": "Hello! I just look around for some shoes for winter, not sure yet what I want.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B08MV1VVKR"
+          ],
+          "shown_titles": [
+            "NineCiFun Women's Slip on Fuzzy House Slippers Memory Foam Slippers Scuff Outdoor Indoor Warm Plush Bedroom Sh"
+          ]
+        },
+        {
+          "turn": 2,
+          "customer": "No, those are just house slippers, I need something for outside in the cold snow.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B07WTQDHKN"
+          ],
+          "shown_titles": [
+            "IceUnicorn Boys Girls Snow Boots Waterproof Winter Boots Outdoor Warm Shoes with Faux Fur Lined for Cold Weath"
+          ]
+        },
+        {
+          "turn": 3,
+          "customer": "Those are for kids, I need them for women. And they must keep my feet warm in freezing weather.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B07WT9HFMT"
+          ],
+          "shown_titles": [
+            "Chenghe Women's Wedge Sneakers High Top Side Zipper Fashion Wedge Booties Shoes"
+          ]
+        },
+        {
+          "turn": 4,
+          "customer": "No, those are just fashion sneakers with wedges, not snow boots. I want something that goes up to my mid-calf and has good rubber grip for ice.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B008JF30VO"
+          ],
+          "shown_titles": [
+            "Women's Bearpaw Boots Meadow Short - 604W/Navy"
+          ]
+        },
+        {
+          "turn": 5,
+          "customer": "Those look too short and I need them to be waterproof for the wet snow.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B07MBHY9NJ"
+          ],
+          "shown_titles": [
+            "Muck Women's Liberty Alpine, Brown"
+          ]
+        },
+        {
+          "turn": 6,
+          "customer": "Those are not right, I want something with soft fur inside and faux leather outside.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B07WTQDHKN",
+            "B074G1JP8Z",
+            "B0049IASSS",
+            "B096W8RZQ1",
+            "B005O6PMO4",
+            "B002GKAK0W",
+            "B07G7G7NBM",
+            "B00ALGNSRK",
+            "B00Q9CCR9K",
+            "B013EUXN0G"
+          ],
+          "shown_titles": [
+            "IceUnicorn Boys Girls Snow Boots Waterproof Winter Boots Outdoor Warm Shoes with Faux Fur Lined for Cold Weath",
+            "GLOBALWIN Women's Waterproof Winter Boots Snow Boots For Women",
+            "UGG Australia Stain & Water Repellent Shoe Care Kits",
+            "bebe girls Winter Boots",
+            "Merrell",
+            "Stride Rite Toddler SRT Wallaroo First Walker",
+            "bebe girls Girls' Distressed Metallic Bootie With Side Buckles and Bebe Hardware",
+            "Sorel Slimpack Riding",
+            "Madden Girl Women's Rustiee",
+            "Sesto Meucci Women's Albie"
+          ],
+          "hit_rank": 2
+        }
+      ]
+    },
+    {
+      "sample_id": "public_0042",
+      "scenario": "vague",
+      "maps_to": "browsing",
+      "style": "esl",
+      "target": "B01LWOGORL",
+      "hit": true,
+      "first_hit_turn": 5,
+      "best_rank": 1,
+      "reciprocal_rank": 1.0,
+      "aborted": null,
+      "transcript": [
+        {
+          "turn": 1,
+          "customer": "Hello! I am just looking around today, not really sure what I want yet. Can you help me see some watches?",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B00UL18FOG",
+            "B007R9WURS",
+            "B0068C8SUI",
+            "B000EQU0NW",
+            "B0B19838BK",
+            "B0007X9F7O",
+            "B00EUY671S",
+            "B08JTYNYW6",
+            "B00IB2ZID8",
+            "B005FN0DSQ"
+          ],
+          "shown_titles": [
+            "14k Gold-Filled Round \"You Are My Sunshine\" Heavy Charm Pendant Necklace, 18\"",
+            "Fossil Women's Riley Quartz Stainless Steel Multifunction Watch, Color: Rose Gold Glitz (Model: ES2811)",
+            "Kenneth Cole REACTION Men's RK5108 Box Set East to West Interchange Watch",
+            "Citizen Eco-Drive Corso Quartz Mens Watch, Stainless Steel with Leather strap, Classic, Brown (Model: BM8242-0",
+            "Accutime Kids Marvel Spider-Man Digital Quartz Plastic Watch for Boys & Girls with LCD Display",
+            "Skagen Men's 233XLTMB Grenen Black Titanium Mesh Watch",
+            "Kenneth Cole New York Men's Quartz Stainless Steel Case Stainless Steel Bracelet Gray,(Model:KC15114001)",
+            "yxiyxi Kids Watch 3D Cute Cartoon Analog Waterproof Color Lights Flashing Girls Boys Toddler Wrist Watch for L",
+            "Invicta Men's S1 Rally Quartz Watch with Chronograph Display and Stainless Steel Bracelet",
+            "Invicta Men's 1561 II Collection Swiss Chronograph Watch"
+          ]
+        },
+        {
+          "turn": 2,
+          "customer": "No, none of those are right. I want a digital one, with numbers on the screen.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B06XZ2JG95"
+          ],
+          "shown_titles": [
+            "cofuo Men Women Unisex Sport Digital Running Watch Electronic Waterproof Outdoor Casual Military Watches with "
+          ]
+        },
+        {
+          "turn": 3,
+          "customer": "That one looks too sporty, I want something in gold color. With a metal band that stretches.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B0009P834G"
+          ],
+          "shown_titles": [
+            "Casio Women's 'Classic' Quartz Resin Casual Watch, Color:Black (Model: LQ139A-1)"
+          ]
+        },
+        {
+          "turn": 4,
+          "customer": "That is for women and not gold. I need a men's digital watch in gold color with a stretch metal band.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B077TPVTMT"
+          ],
+          "shown_titles": [
+            "Casio DW9052GBX-1A9 G-Shock Chronograph Digital Men039;s Watch (Black/Gold)"
+          ]
+        },
+        {
+          "turn": 5,
+          "customer": "Still too bulky and black. I want a classic square-ish gold digital one with that stretchy metal strap.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B01LWOGORL"
+          ],
+          "shown_titles": [
+            "Timex Men's Classic Digital Watch"
+          ],
+          "hit_rank": 1
+        }
+      ]
+    },
+    {
+      "sample_id": "public_0169",
+      "scenario": "vague",
+      "maps_to": "browsing",
+      "style": "terse",
+      "target": "B0829R9M5G",
+      "hit": false,
+      "first_hit_turn": null,
+      "best_rank": null,
+      "reciprocal_rank": 0.0,
+      "aborted": null,
+      "transcript": [
+        {
+          "turn": 1,
+          "customer": "Just looking around. Need some new pants.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B07VGV2Q71"
+          ],
+          "shown_titles": [
+            "chimikeey Womens Leopard Print Wide Leg Pants High Waisted Belted Palazzo Trousers"
+          ]
+        },
+        {
+          "turn": 2,
+          "customer": "Wild animal prints. No way. \n\nNeeds to be super stretchy and soft.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B074CSP7LV"
+          ],
+          "shown_titles": [
+            "LKOUS Women's Stretchy High Waisted Wide Leg Button-Down Pants"
+          ]
+        },
+        {
+          "turn": 3,
+          "customer": "Way too baggy. \n\nWant something that hugs tight like leggings.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B08GNYS2KB"
+          ],
+          "shown_titles": [
+            "Leggings for Women - Premium Stretch Skinny Jeggings for Women - Women Jeggings"
+          ]
+        },
+        {
+          "turn": 4,
+          "customer": "Not quite right. \n\nNeeds actual pockets and a fake fly, like denim.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B016OT9D3K"
+          ],
+          "shown_titles": [
+            "Hanes Men\u2019s Short Sleeve Graphic T-shirt Collection"
+          ]
+        },
+        {
+          "turn": 5,
+          "customer": "Those are men's t-shirts. \n\nLooking for pull-on denim leggings.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B0B7WY3DYM"
+          ],
+          "shown_titles": [
+            "Wide Leg Jeans for Women Mid Rise Stretchy Distressed Washed Denim Jeans Bootcut 70s Hippie Cowboy Jeans"
+          ]
+        },
+        {
+          "turn": 6,
+          "customer": "Way too flared out. \n\nJust want a basic, fitted knit jean you pull right on.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B07HHDW5TD",
+            "B09QT4M6NS",
+            "B07B5N27VT",
+            "B01A8ZNKIU",
+            "B09V8B7DSB",
+            "B01MUBHNOR",
+            "B08T8YBQ88",
+            "B08T2VV3GN",
+            "B0999623FZ",
+            "B078JGDKHP"
+          ],
+          "shown_titles": [
+            "Ulanda Women's Loose Casual Denim Pull-On Pants with Drawstring Waist Cropped Jeans Plus Size",
+            "CG JEANS Women's Soft and Fit Skinny Jeans Stretch Comfort Mid Rise in Juniors and Plus Size",
+            "Curvify Pull on Skinny Jeans | High Waist Jeggings | Butt Lift Denim Leggings",
+            "Mens Worlds Okayest Nurse Tshirt Funny Sarcastic Doctor Tee for Guys",
+            "Womens Basic Fitted Crop Tops Short Sleeve Stretchy Cropped Tees",
+            "Curvify 764 Women's Butt-Lifting Skinny Jeans | High-Rise Waist, Brazilian Style",
+            "Jescakoo Womens V Neck Tshirts Short Sleeve Tops Casual Loose Fit",
+            "white mark Super Stretch Tie-Dye Denim Plus Size Skinny Jeans",
+            "Cupio Favorite Basic - Juliana Crepe Long Sleeve Knit Top, Shirttail Hem",
+            "Celebrity Pink Jeans Women Mid Rise Basic Crop Skinny Jeans with Roll Cuff CJ40324CH 7 Medium Denim"
+          ]
+        },
+        {
+          "turn": 7,
+          "customer": "Still not seeing it. \n\nJust a simple cotton-blend stretchy pull-on jean around twenty-five bucks.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B07SHDBZQC",
+            "B00I5M8Y76",
+            "B01CK7A1YA",
+            "B07HNXZG3M",
+            "B0BTLNVCLG",
+            "B014E96UA6",
+            "B09YSQQWKM",
+            "B09ZV4VYM3",
+            "B00NGJ0GEC",
+            "B08FC1WB1X"
+          ],
+          "shown_titles": [
+            "Aifer Women's Casual Crew Neck Sleeveless Tank Ruched Tulip Hem Ribbed Club Bodycon Short Mini Dress (Dark Gra",
+            "Hey Collection Juniors Brushed Stretch Twill Low Rise Pants Skinny Jeans for Women",
+            "Nygard Women's Regular Slims 3.5 Denim Capri",
+            "Speedy Cat Ribbed Tank Tops for Women Racerback Scoop Neck Tight Workout",
+            "LONGBIDA Ripped Jeans for Women High Waisted Skinny Stretch Distressed Jeans Slim Fit Denim Pants",
+            "Red Hanger Womens Bodycon Fitted Pull On Knee Length Midi Pencil Skirt, Teal-M",
+            "Plus/Junior Size Colombian Design Butt Lift Levanta Cola Stretch Skinny Jeans",
+            "HOXINE American Flag Tshirt Dress for Women Summer 4th of July V Neck Cold Shoulder Tunic Tops Dresses Trendy ",
+            "PAIGE Women's Verdugo Ankle Desert Sunset",
+            "ClothingAve. Women Ribbed Racerback Stretchy Cotton Blend Tank Top in Singles, Value Packs S-3X"
+          ]
+        },
+        {
+          "turn": 8,
+          "customer": "None of those either. \n\nMaybe search for an essential knit pull-on style with elastane.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B08HR8T7YN",
+            "B091NQBS12",
+            "B09TVP4TL9",
+            "B08RDF5RYN",
+            "B09D75F31V",
+            "B0C3S19FMB",
+            "B09HMQRZ69",
+            "B0BJ69275M",
+            "B0BB7F1PX3",
+            "B08P2FMYP5"
+          ],
+          "shown_titles": [
+            "CULTURE CODE Women's Casual Jumpsuit - Strapless Shirred Tube Top Long Pants Bodycon Summer Romper Playsuit On",
+            "Digood Women's Coat, Women Camouflage Jacket Coat Autumn Winter Street Jacket Women Casual Jackets",
+            "Womens Tank Tops Basic Sexy Sleeveless Racerback High Neck Crop Top for Women Teen Girls Cute Crew Neck Workou",
+            "Women's Sexy Bodycon Tanks Dresses Elegant Sleeveless Printed Basic Club Long Dress with Mask",
+            "Ysoea Women's Casual T-Shirt Dresses Long Sleeve Round Neck Pullover Blouse Loose Fit Mini Short Dress",
+            "MISSACTIVER Women Square Sweetheart Neck Asymmetrical Hem Knit Sweater Solid Long Sleeve Slim Fit Knit Pullove",
+            "Oversized Denim Jacket Distressed Boyfriend Jean Coat Plus Size Long Sleeve Jeans Trucker Jackets with Vest fo",
+            "MISSACTIVER Women Square Sweetheart Neck Asymmetrical Hem Knit Sweater Solid Long Sleeve Slim Fit Knit Pullove",
+            "Fall Jackets for Women Fashion Petite to Plus Size Full Zip Down Puffer Jacket Long Length Stand Collar Long P",
+            "Beyond Trim Women's Cardigan Sweater - Classic Long Sleeve Soft Knit Open Front Pockets Casual Basic Jacket Co"
+          ]
+        },
+        {
+          "turn": 9,
+          "customer": "Way off. \n\nJust want that basic cotton-poly knit jegging that pulls right on.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B098GXBCTG",
+            "B082YN2GYP",
+            "B0BZ3SGKRL",
+            "B00F1X4BZG",
+            "B07Y4WKK7Q",
+            "B09ZMJ5439",
+            "B07WK1DF9M",
+            "B07XZJPZS8",
+            "B0836M3Q64",
+            "B07VV1RV62"
+          ],
+          "shown_titles": [
+            "EDENNAOMI Women's Casual Crop Top - Short Sleeve French Terry Elastic Hem Loose Fit Cropped T Shirt Pullover",
+            "BTFBM Women Summer Short Sleeve Shirts Crew Neck Color Block Irregular Striped Print Loose Soft Casual Tee Top",
+            "GLIGLITTR Plus Size Women\u2019s Summer Sunflower T Shirt Flower Graphic Oversized Tee Crew Neck Short Sleeve Casua",
+            "Milk Nursingwear Women's Side Shirred Nursing Top",
+            "Long Sleeve Turtleneck Women Strech/Short Sleeve High Neck Tops Fitted Tee Shirt",
+            "Women's Turtleneck Crop Tops",
+            "Ripe Women's Long Sleeve Tee, Nursing",
+            "Women Solid Color Casual Loose Long Sleeve Sweatshirt T-Shirts Tops Blouse Black M",
+            "Fleur Wood Womens Summer Short Sleeve Lrregular Hem T-Shirts Casual Round Neck Solid Color Basic Tops Blouses",
+            "STYLEIE Women Tale As Old As Time Tee Tops Letter Print Graphic Tees Vintage Tanks Tops"
+          ]
+        },
+        {
+          "turn": 10,
+          "customer": "None of those. \n\nGuess you don't have it.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B07DPTRPZ4",
+            "B07Y42STCX",
+            "B08T8WGSZC",
+            "B08ZYL7N4G",
+            "B09TKSBP9Y",
+            "B08D3WK3Z8",
+            "B0CCV6544C",
+            "B07RGXB3XB",
+            "B07XWJ23XB",
+            "B0997SY8BP"
+          ],
+          "shown_titles": [
+            "Emmalise Women's Deep V Neck Tshirt Short Sleeves Tee",
+            "Womens There's A Little Witch in All of Us Tshirt Funny Halloween Tee",
+            "Jescakoo Womens V Neck Tshirts Short Sleeve Tops Casual Loose Fit",
+            "Womens Tops V Neck Tee Casual Summer Short Sleeve T Shirts",
+            "Women's Notched V-Neck Short Sleeve Summer Solid Color Casual Cap Sleeve Tunic Knit Top",
+            "Mens Don't Make Me Repeat Myself - History Tshirt Funny Quote Novelty Graphic Tee",
+            "Teacher Tee Shirts Alphabet Kindergarten Teacher Casual T-Shirt Graphic Funny Short Sleeve Tees Tops",
+            "Teelocity Bob Ross Paint Drip Graphic T-Shirt",
+            "Vintage 1969 Original Part Rock Legend T Shirt Women Funny Country Music Shirt Cute 50th Birthday Gift Tee Top",
+            "Mens 30% Stud 70% Muffin Tshirt Funny Dating Relationship Graphic Novelty Tee"
+          ]
+        }
+      ]
+    },
+    {
+      "sample_id": "public_0082",
+      "scenario": "brand_led",
+      "maps_to": "buying",
+      "style": "plain",
+      "target": "B09BPZCWDP",
+      "hit": true,
+      "first_hit_turn": 8,
+      "best_rank": 1,
+      "reciprocal_rank": 1.0,
+      "aborted": null,
+      "transcript": [
+        {
+          "turn": 1,
+          "customer": "Hi there! I'm looking to buy some new jewelry from Hicarer.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B09W9LD8MH"
+          ],
+          "shown_titles": [
+            "55Carat Brand Sterling Silver Natural Aqua Chalcedony Emerald Cut Simple Ring Size 4,5,6,7,8,9,10,11,12"
+          ]
+        },
+        {
+          "turn": 2,
+          "customer": "Oh, those aren't right at all, I'm looking for some waterproof wristbands or bracelets.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B0BNKF15N6"
+          ],
+          "shown_titles": [
+            "45 PCS Croc Charms PVC Shoe Decoration Charms for Kids Girls Croc Charms fit Clog Sandals Bracelet Wristband D"
+          ]
+        },
+        {
+          "turn": 3,
+          "customer": "No, those are shoe charms, not what I'm after. I want a big set of those woven beachy string ones that come with a bunch of different styles.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B078WJQNT9"
+          ],
+          "shown_titles": [
+            "Reminderband - Custom Dual Layer 100% Silicone Wristband - Personalized Silicone Rubber Bracelet - Customized "
+          ]
+        },
+        {
+          "turn": 4,
+          "customer": "No, those are just plain rubber bands. I'm looking for a big multi-pack of adjustable cord bracelets with a summer beach vibe.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B07FD9FW9M"
+          ],
+          "shown_titles": [
+            "Braided Rope Bracelet Set Handmade Waterproof Wrap Bracelet String Bracelet for Woman Kids"
+          ]
+        },
+        {
+          "turn": 5,
+          "customer": "Those are still not from the right brand. I want that big set of Hicarer beach string bracelets.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B09R3XBPL7"
+          ],
+          "shown_titles": [
+            "COLORFUL BLING Glitter Jelly Bangles Bracelets Set for Women Girls Glitter Filled Jelly Silicone Bracelets for"
+          ]
+        },
+        {
+          "turn": 6,
+          "customer": "No, those are just shiny plastic bangles. I'm specifically looking for that big set of Hicarer wave and cord bracelets.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B07KK3Q5YH",
+            "B07TWKDFL1",
+            "B01JU3JO4K",
+            "B0081GEMLI",
+            "B073R2RSV7",
+            "B073ZB53PK",
+            "B07M8FVQX1",
+            "B00SKVOSVS",
+            "B0051XQ09Q",
+            "B08B8HN96X"
+          ],
+          "shown_titles": [
+            "LOLIAS 12Pcs Leather Bead Tribal Bracelet for Men Women Charm Ethnic Wood Beaded Hemp Bracelets Boho Wristband",
+            "LOLIAS 21 Pcs Leather Chakra Bead Tribal Bracelet for Men Women Charm Ethnic Wood Beaded Hemp Friendship Brace",
+            "Mountaineer Mens Sport Watch Black Silicone Band Oversized Big Face Orange Numerals Reloj Hombre MN8041",
+            "MIZZE Made for Luck Men's Red String Bracelet with Sterling Silver Coin Protection Charm Adjustable - Waterpro",
+            "FLORIANA Womens Art Gold-Flecked Cuff Bracelet - Gustav Klimt/Vincent Van Gogh - The Kiss",
+            "neff Adult's Flava Digital Athletic Water Resistant Watch Unisex, Tennis/Speckle, One Size",
+            "QLEESI Braided Nautical Rope Bracelets for Men Women, Handmade Stylish Infinity Knotted Woven Nylon String War",
+            "Pink Pentagram Star Pentacle Wicca Wiccan Gothic Occult Faux Leather Wide Cuff Bracelet",
+            "Shashi Yellow Gold-Plated with Black Cord Military Bracelet",
+            "ZNTINA Bridesmaid Gift Thank You For Standing by My Side Bridesmaid Bracelet Matron of Honor Jewelry Wedding G"
+          ]
+        },
+        {
+          "turn": 7,
+          "customer": "Still not the right brand, I need the Hicarer set with all those different wave and summer styles.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B01JGRHHTY",
+            "B0068C8SUI",
+            "B09NHS8ZNJ",
+            "B004NSHIUU",
+            "B08P77BB31",
+            "B07XT3PRBL",
+            "B004TSBNN2",
+            "B07G6ZRHFT",
+            "B09S9XD1NR",
+            "B017SQL4GM"
+          ],
+          "shown_titles": [
+            "Bracelets Gold Plated Open Cuff Bangles Gift Choice for Women & Girls Fashion (Classic Bohemia)",
+            "Kenneth Cole REACTION Men's RK5108 Box Set East to West Interchange Watch",
+            "ORKINA Mens Luxury Mechanical Tourbillon Multifunctional Watches, Self-Wind Automatic Wrist Watch, Stainless S",
+            "Alchemy Gothic Dripping Passion of Red Beauty Bracelet",
+            "Pingyongchang 14K Gold Plated Upper Arm Band Cuff Bracelet for Women Simple Swirl Gypsy Leaf Arm Bracelet Open",
+            "CENWA Boxing Gift Boxing Gloves Keychain Sports Gift Thank You for Being in My Corner Gifts for Boxers Boxing ",
+            "Freestyle Men's FS84977 Shark Clip Classic Retro Television Screen Case Digital Watch",
+            "RUNXINTD Side By Side Or Miles Apart Best Friends Bracelet Long Distance Friendship Gift\u2026",
+            "10 Pieces Get Well Soon Gifts for Women Life Is Tough But So Are You Stress Relief Gifts Self Care Gifts with ",
+            "Joya Gift 8MM Natural Gemstone Chakra Buddha Head Stretch Bracelet for Women Men"
+          ]
+        },
+        {
+          "turn": 8,
+          "customer": "No, those aren't the ones. I'm looking for the Hicarer 21 pieces surfer wave bracelet set.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B09BPZCWDP",
+            "B0B18JB5MD",
+            "B081BBMV54",
+            "B097YLHX5Q",
+            "B09QY8RHVB",
+            "B08GHXMZJ5",
+            "B09D3RD12Y",
+            "B09251WRDY",
+            "B07RKJWQYC",
+            "B00E5Z0VA0"
+          ],
+          "shown_titles": [
+            "Hicarer 21 Pieces Surfer Wave Bracelet Ocean Wave Adjustable Waterproof Handmade Friendship Bracelet Summer Su",
+            "50 Pcs Summer Friendship Bracelets Beach String Bracelets Adjustable Waterproof Handmade Friendship Bracelet S",
+            "Wakami New World Handmade Boho Friendship Bracelets Set of 3 | Braided Indie Bracelets for Women and Men | Han",
+            "NC 5Pcs/Set Colorful Beaded Bracelet Multiple Beaded Love Strand Bracelet Handmade Pearls Beads Stretch Bracel",
+            "24 Pieces Colorful Friendship Beaded Bracelet Preppy Style Bracelets Handmade Braided Flower Bohemian Y2K Brac",
+            "Sunique Morse Code Bracelet Pinky Pomise Distance Matching Bracelets Handmade Bead Adjustable String Friendshi",
+            "Jstyle 8Pcs Bohemian Beaded String Bracelets Anklets for Women Colorful Seed Beaded Friendship Bracelets Handm",
+            "SunsetHalo Morse Code Bracelet Jewelry for Her Sterling Silver Beads on Silk Cord for Women",
+            "BOCHOI Knotted Rosary Bracelet \"Decenario\" Red Knot String Bracelet Baptism First Communion Confirmation Relig",
+            "Signature 1928 \"Signature Crystal Jeweltones\" Gold Topaz Swarovski Bracelet, 2.5\""
+          ],
+          "hit_rank": 1
+        }
+      ]
+    },
+    {
+      "sample_id": "public_0103",
+      "scenario": "indifferent",
+      "maps_to": "boundary",
+      "style": "esl",
+      "target": "B0BT8T2FQ3",
+      "hit": false,
+      "first_hit_turn": null,
+      "best_rank": null,
+      "reciprocal_rank": 0.0,
+      "aborted": null,
+      "transcript": [
+        {
+          "turn": 1,
+          "customer": "Hello, I want to find some white t-shirts to wear under my work shirts. Can you help me?",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B07BYLJ2T7"
+          ],
+          "shown_titles": [
+            "DIRTYRAGZ Merica Tuxedo T Shirts for Men - Funny Birthday Gifts for Men, USA 4th of July White Trash Party Att"
+          ]
+        },
+        {
+          "turn": 2,
+          "customer": "No, this is wrong, I want simple white shirts, not funny picture. For the material, I don't really mind, you can choose.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B09M9L25SH"
+          ],
+          "shown_titles": [
+            "Vlone European and American Fashion Brand Printed Men's and Women's Casual Short-Sleeved T-Shirt"
+          ]
+        },
+        {
+          "turn": 3,
+          "customer": "No, still not right, these have big prints on them. I just need normal white ones for under clothes.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B09M9L25SH",
+            "B09MVF4SDH",
+            "B0BQG39Y3L",
+            "B0C5F6SY1V",
+            "B07RGXB3XB",
+            "B07CB4N9B4",
+            "B01LYVWC3D",
+            "B07PZ8JR4C",
+            "B08XJG3KDX",
+            "B07BVHQRKY"
+          ],
+          "shown_titles": [
+            "Vlone European and American Fashion Brand Printed Men's and Women's Casual Short-Sleeved T-Shirt",
+            "INTO THE AM Mens T Shirt - Short Sleeve Crew Neck Soft Fitted Tees S - 4XL Fresh Classic Tshirts",
+            "Round Neck Tops 3/4 Long Sleeve Black tees Men's Stylish Raglan Sleeves Baseball tee for Van.1986 Halen Shirt",
+            "B Wear Sportswear Girl Dad Shirt Daughter Wife Men's Graphic Short Sleeve Tee",
+            "Teelocity Bob Ross Paint Drip Graphic T-Shirt",
+            "Have It Tall T Shirts for Men and Women | Cotton Short Sleeve | Sizes S - 6XL",
+            "Old School Hip HOP Rap Artists Tapes Unisex Tee Shirt T-Shirt, M, Red",
+            "Teelocity Mister Rogers Be The Good Graphic T-Shirt",
+            "Men's Insulated Snow Bibs Overalls, Winter Ski Bib for Men Black",
+            "Arnold Schwarzenegger Mr Olympia Bodybuilding T-Shirt"
+          ]
+        },
+        {
+          "turn": 4,
+          "customer": "No, these are all wrong. I want plain white shirts that come in a pack, with normal crew necks.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B016OT9D3K"
+          ],
+          "shown_titles": [
+            "Hanes Men\u2019s Short Sleeve Graphic T-shirt Collection"
+          ]
+        },
+        {
+          "turn": 5,
+          "customer": "No, these still have pictures on them. I just want simple white undershirts that stay tucked in.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B07HC5LL2H"
+          ],
+          "shown_titles": [
+            "Boys\u2019 Long Sleeve Cotton Tees \u2013 Tagless Undershirt Super Soft 3 pk Tee Shirts."
+          ]
+        },
+        {
+          "turn": 6,
+          "customer": "No, those are for boys, I need them for men. Also they need to be short sleeve.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B09ZV4VYM3",
+            "B09G6LDJXM",
+            "B09JWG3MXR",
+            "B07SVZTWP8",
+            "B097F2JXYB",
+            "B07Q451CJ2",
+            "B0BBZXJYQ3",
+            "B09HMQRZ69",
+            "B09BZ9JX6M",
+            "B0BGHFN87N"
+          ],
+          "shown_titles": [
+            "HOXINE American Flag Tshirt Dress for Women Summer 4th of July V Neck Cold Shoulder Tunic Tops Dresses Trendy ",
+            "Women Faux Suede Fringe Vest 70s Hippie Clothes Open-Front Sleeveless Tassel Cardigan Waistcoat Jacket Outwear",
+            "PHSHY Striped Leopard Printed Color Block Knitted Sweaters Women Crew Neck Long Sleeve Casual Pullover Jumper ",
+            "Slim Fit Linen Dress Shirts for Men, Men's Cotton Linen Button Down Dress Shirt Short Sleeve Casual Beach Tops",
+            "melupa Summer Pants for Women Casual Pockets Cotton Linen Wide Leg Trousers Loose Elastic Waist Capris Beach C",
+            "Rambling Women's Dress Rambling Women Dress Solid Midi Dress Party Beach Sundress",
+            "Halloween Hocus Pocus Dress for Women Vintage Lace Up Renaissance Gothic Cosplay Halloween Maxi Dresses Irish ",
+            "Oversized Denim Jacket Distressed Boyfriend Jean Coat Plus Size Long Sleeve Jeans Trucker Jackets with Vest fo",
+            "XXBR Sweater Cardigans for Mens Plus Size, Open Front Single Breasted Striped Rainbow Patchwork Tunic Coat Out",
+            "Sweater Cardigans for Women Autumn Solid Long Sleeve Knit Cardigan Slim fit Button Down Light Jacket Coat with"
+          ]
+        },
+        {
+          "turn": 7,
+          "customer": "No, those are dresses and jackets, not what I need. I am looking for basic white cotton undershirts for men.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B0B31JFX4H",
+            "B09Z6KDYT1",
+            "B01AUL4VQC",
+            "B09WMDYB5Z",
+            "B09NBF122K",
+            "B0BBM26QRP",
+            "B07XL8LC3G",
+            "B098GXBCTG",
+            "B07C2XPZ6D",
+            "B09799N7WQ"
+          ],
+          "shown_titles": [
+            "Women's Rainbow Striped Color Block Hoodie Sweater Long Sleeve V Neck Casual Hollow Out Knit Pullover Tops",
+            "Summer Tops for Women Ruffle Tiered Off Shoulder Tank Tops Lace Hollow Out Summer V Neck Spaghetti Strap Tshir",
+            "myglory77mall Mens Short Sleeve Basic Light Cotton 100% Hooded Tshirt Top Tee Hoody Hoodie",
+            "Women's Casual Blouse Elegant Office Chiffon Tops Fleece Sweatshirts Tshirts",
+            "Women's Front Slit Dovetail Long Sleeve Top Elegant Side Split Asymmetrical Blouse Casual V-Neck Dovetail Soft",
+            "Womens Tops and Blouses Summer Tops for Women 2022 Plus Size Shirts Tank Tops Casual Sleeveless Sport Workout ",
+            "HIRIRI Women Fashion Lace Floral Splicing O-Neck T-Shirt Tops Long Sleeve Tunic Shirt",
+            "EDENNAOMI Women's Casual Crop Top - Short Sleeve French Terry Elastic Hem Loose Fit Cropped T Shirt Pullover",
+            "Emmalise Women's Basic Casual Long Camisole Adjustable Strap Cami Layering Top",
+            "GXLONG Women's Plus Size Tunic Tops Summer Casual Solid Color Flowy Tshirts Summer Ruched Botton Up Short Slee"
+          ]
+        },
+        {
+          "turn": 8,
+          "customer": "No, these are mostly women clothes with hoods or long sleeves. I need a pack of plain white men crew neck tees, very soft and comfortable on the neck.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B0BZ3SGKRL",
+            "B09535Y4SG",
+            "B0836M3Q64",
+            "B07DHKDB5B",
+            "B08NVFQMZ9",
+            "B0765GJM8C",
+            "B082YN2GYP",
+            "B074M6M717",
+            "B095P8KSH3",
+            "B09BPSC7MV"
+          ],
+          "shown_titles": [
+            "GLIGLITTR Plus Size Women\u2019s Summer Sunflower T Shirt Flower Graphic Oversized Tee Crew Neck Short Sleeve Casua",
+            "EADMON Womens Tshirt - Casual V Neck Womens T Shirt - Tee Shirts Women's Side Pocket Tops",
+            "Fleur Wood Womens Summer Short Sleeve Lrregular Hem T-Shirts Casual Round Neck Solid Color Basic Tops Blouses",
+            "oodji Ultra Women's Short Sleeve Turtleneck Top",
+            "Hubery Women I Love Talking to Myself She Gets Me Printed Crew Neck T-Shirt Tops",
+            "RADIO Is My Life Passionate DJ Music Talk Hobby Lovers Tee",
+            "BTFBM Women Summer Short Sleeve Shirts Crew Neck Color Block Irregular Striped Print Loose Soft Casual Tee Top",
+            "DIBAOLONG Women\u2019s Casual Basic V Neck Tshirt Short Sleeve Loose Solid Comfy Tee Shirt Royal Blue L",
+            "BALENNZ Womens Short Sleeve Shirts - Athletic Crewneck Summer Casual Tops Loose Fit Basic Tee T-Shirt",
+            "BINWEN15 COLLECTION Women's Short Sleeve Crew-Neck Shirts Loose Casual Tee T-Shirt"
+          ]
+        },
+        {
+          "turn": 9,
+          "customer": "No, still showing women's shirts. I need men's simple white crew neck undershirts, sold in a multi-pack.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B0B8BGZ5KP",
+            "B07XZJPZS8",
+            "B08XW6S5LB",
+            "B08XW5YLN6",
+            "B08XM9C6NV",
+            "B09Q7GCPH6",
+            "B07VV1RV62",
+            "B08B4CVDQ4",
+            "B071RTD6WK",
+            "B08T8WGSZC"
+          ],
+          "shown_titles": [
+            "Women's Casual Long Sleeve Shirts 2022 Fashion Crew Neck Tie Dye Blouses Comfy Loose Fit Fall Pullover T-Shirt",
+            "Women Solid Color Casual Loose Long Sleeve Sweatshirt T-Shirts Tops Blouse Black M",
+            "GIBLY Womens Casual V Neck T Shirt Short Sleeve Basic Tee Tops Loose Summer Blouse",
+            "GIBLY Womens Casual V Neck T Shirt Short Sleeve Basic Tee Tops Loose Summer Blouse",
+            "GIBLY Womens Casual V Neck T Shirt Short Sleeve Basic Tee Tops Loose Summer Blouse",
+            "Godzilla Vs. Kong Black and White Godzilla Art Royal Blue T-Shirt-Large",
+            "STYLEIE Women Tale As Old As Time Tee Tops Letter Print Graphic Tees Vintage Tanks Tops",
+            "CUNLIN Womens T Shirts for Women Leopard Polka Dot Striped Color Block Plain Basic Tees Tops XS-3XL",
+            "Hustle 24/7 Business Entrepreneur",
+            "Jescakoo Womens V Neck Tshirts Short Sleeve Tops Casual Loose Fit"
+          ]
+        },
+        {
+          "turn": 10,
+          "customer": "No, these are still not right. I am looking for the six pack of plain white men undershirts made of cotton.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B08T8YBQ88",
+            "B0B2HX22PM",
+            "B0932WL69B",
+            "B0894QLSZR",
+            "B07BFNN3N4",
+            "B091BQP5RY",
+            "B08YTJ8HL7",
+            "B09T9NZT8Q",
+            "B0BXKXJMB5",
+            "B01N6V7WPZ"
+          ],
+          "shown_titles": [
+            "Jescakoo Womens V Neck Tshirts Short Sleeve Tops Casual Loose Fit",
+            "Laughing Giraffe The Unisex Baby 4-Pack Short Sleeve Sublimation White Bodysuit 100% Polyester Wholesale Bulk",
+            "zcdyn Womens Short Sleeve Raglan Crewneck T Shirts Tees Color Block Casual Loose Fit Tshirts Tops",
+            "THWEI Women Leopard Print Tshirt Short Leeve Shirts Twist Knot Top-Khaki-XL",
+            "Dellytop Womens V-Neck Short Sleeve Tops Draped Plain Ruched Casual T-Shirts Basic Tee Blouse",
+            "Adreamly Womens V Neck Rolled Sleeve Shirt Athletic T-Shirt Loose Casual Tunic Tops Tees with Pocket",
+            "Aaearefu Women Summer Sleeveless Vest V-Neck Basic Solid Color Casual Flowy Vest Tops",
+            "Retirement Gift T Shirt for Women Retired 2022 Not My Problem Anymore Shirt Retired Party Tee Tops",
+            "ForeFair Women Basic Fitted Short Sleeve Shirt Solid Crewneck Summer Cauasl Y2k Crop Tee",
+            "Collections Etc It's About The Lamb Novelty Tee"
+          ]
+        }
+      ]
+    },
+    {
+      "sample_id": "public_0121",
+      "scenario": "decisive",
+      "maps_to": "buying",
+      "style": "terse",
+      "target": "B08HS712ZB",
+      "hit": true,
+      "first_hit_turn": 3,
+      "best_rank": 5,
+      "reciprocal_rank": 0.2,
+      "aborted": null,
+      "transcript": [
+        {
+          "turn": 1,
+          "customer": "Lace bralette pack. Needs removable pads.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B07F71PP3S"
+          ],
+          "shown_titles": [
+            "GEEAD Fanny Packs for Women Fashion Waist Bag Leather Belt Bum Bag Waterproof"
+          ]
+        },
+        {
+          "turn": 2,
+          "customer": "That's a bag. I need a multi-pack of lace bralettes with removable pads.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B07MTQRY6M"
+          ],
+          "shown_titles": [
+            "BBuddyWear Slim Fit Stretchy Wide ADJUSTABLE Fanny Pack Running Belt - Spandex Waist Money Belt with Buckle Cl"
+          ]
+        },
+        {
+          "turn": 3,
+          "customer": "Still showing bags. Just want a multipack of lace bralettes.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B07MTQRY6M",
+            "B086TZW76K",
+            "B0784R28NL",
+            "B01002MKDM",
+            "B08HS712ZB",
+            "B06XJ1FCVR",
+            "B07F71PP3S",
+            "B01JWXXSX6",
+            "B08G18K2BG",
+            "B07XBZJCNK"
+          ],
+          "shown_titles": [
+            "BBuddyWear Slim Fit Stretchy Wide ADJUSTABLE Fanny Pack Running Belt - Spandex Waist Money Belt with Buckle Cl",
+            "URATOT 6 Pieces Lace Bralettes for Women Girls Lace Daily Cami Bra with Removable Pads",
+            "Amazon Brand - Mae Women's Longline Lace Bandeau Bralette with Removable Pads (for A-C cups)",
+            "Cabales Women's 100% Lace Full Coverage Wire Free Leisure Bra (2 Pack)",
+            "Duufin 5 Pcs Lace Bralettes for Women Bralette Padded Lace Bandeau Bra",
+            "Intimate Portal Melody Front Zip Wireless Pocketed Leisure Bra",
+            "GEEAD Fanny Packs for Women Fashion Waist Bag Leather Belt Bum Bag Waterproof",
+            "U.S. Polo Assn. Womens Multi Pack Lightly Padded Adjustable Straps Bralette Bra",
+            "Beauty Wear Sports Bras for Women with Removable Pads for Yoga Fitness",
+            "Allywit- Women Zip Front Sports Bra Wireless Post-Surgery Bra Flower Print Adjustable Active Yoga Sports Bras"
+          ],
+          "hit_rank": 5
+        }
+      ]
+    },
+    {
+      "sample_id": "public_0158",
+      "scenario": "use_case_led",
+      "maps_to": "browsing",
+      "style": "plain",
+      "target": "B012ZM6RGQ",
+      "hit": false,
+      "first_hit_turn": null,
+      "best_rank": null,
+      "reciprocal_rank": 0.0,
+      "aborted": null,
+      "transcript": [
+        {
+          "turn": 1,
+          "customer": "Hey, I need to find something fun to wear for a costume party coming up. Do you have any good animal head masks?",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B07SC8YX95"
+          ],
+          "shown_titles": [
+            "ifkoo Frog Mask Halloween Cosplay Costume Latex Animal Head Masks for Adults Party Decoration Props"
+          ]
+        },
+        {
+          "turn": 2,
+          "customer": "That frog is way too goofy for what I'm going for. I was thinking of something like a big jungle cat instead.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B0BZ3LQG8C"
+          ],
+          "shown_titles": [
+            "Feelin Good Tees mens T-shirt"
+          ]
+        },
+        {
+          "turn": 3,
+          "customer": "A t-shirt isn't a mask at all! I definitely need a full head mask, specifically a lion.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B09WRCJJBW"
+          ],
+          "shown_titles": [
+            "ariarly Straw Hat,Luffy Straw Hat with String Pirate Hat Anime Cosplay Costume Straw Hat Sun Hat for Kids Adul"
+          ]
+        },
+        {
+          "turn": 4,
+          "customer": "That's just a straw hat, not even close to a lion mask. I want something made of rubber or latex so it covers my whole head.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B09ZMJ5439"
+          ],
+          "shown_titles": [
+            "Women's Turtleneck Crop Tops"
+          ]
+        },
+        {
+          "turn": 5,
+          "customer": "That is definitely not a mask, it's just a top. I need a latex lion head mask for a costume party.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B075WWXZKN"
+          ],
+          "shown_titles": [
+            "SANGTREE Mommy & Me Rose Embroidery Outfit"
+          ]
+        },
+        {
+          "turn": 6,
+          "customer": "That is a matching outfit, not a mask. I really just need a latex lion head to wear to this party.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B07NDHRKLB",
+            "B06XNS8TP7",
+            "B0721DXHRP",
+            "B08SHM82WV",
+            "B07VV1RV62",
+            "B081CRJ17W",
+            "B09P3K35HC",
+            "B07CP61SL4",
+            "B08SLBH852",
+            "B09WRCJJBW"
+          ],
+          "shown_titles": [
+            "Laurel Burch Women's One Size Reversible",
+            "Scoots Kids Scrubs",
+            "Gerber baby-girls 3-piece Bodysuit, Legging and Cap Set",
+            "Abbrich Women's Tea Party Sun Hat Church Kentucky Derby Wide Brim Wedding Formal Hat",
+            "STYLEIE Women Tale As Old As Time Tee Tops Letter Print Graphic Tees Vintage Tanks Tops",
+            "Valentine's Day Shirt Women Plus Size Love Heart Arrow Print 3/4 Sleeve Raglan Baseball Tee Blouse",
+            "Plus Size Resting Beach Face Tank Tops for Women Summer Racerback Casual Loose Sleeveless Tee Shirt",
+            "lychee LED Light Up Gloves, 6 Adjust Modes Lights Toys Rave Gloves Party/Halloween/Christmas/Birthday Gift",
+            "Flovex Women's Motivational Tiger Graphic T-Shirts Vintage Casual Big Cat Short Sleeve Tops Funny Retro Animal",
+            "ariarly Straw Hat,Luffy Straw Hat with String Pirate Hat Anime Cosplay Costume Straw Hat Sun Hat for Kids Adul"
+          ]
+        },
+        {
+          "turn": 7,
+          "customer": "None of those are it, they are just hats and t-shirts. I'm looking for a rubber or latex lion head mask.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B07Y42STCX",
+            "B074JK39GR",
+            "B0773Y37XC",
+            "B0765GJM8C",
+            "B01HPD53DI",
+            "B073R6XYPQ",
+            "B07BVK6YJK",
+            "B074BZNFP5",
+            "B071JKBN2V",
+            "B0745WTXJQ"
+          ],
+          "shown_titles": [
+            "Womens There's A Little Witch in All of Us Tshirt Funny Halloween Tee",
+            "Crazy Cool Mad Kitty Cat With Glasses Sexy Mustache Whiskers",
+            "The Real Ghostbusters TV Series Aint Afraid White Youth Big Boys Tshirt Tee",
+            "RADIO Is My Life Passionate DJ Music Talk Hobby Lovers Tee",
+            "RC Radio Control Junkie",
+            "I mustache you a question",
+            "Winlee Women's Summer Beautiful Flowers Plants Trees Printed T-Shirts",
+            "I love my best friend with all my boobs tshirt",
+            "Nuclear Code is Covfefe | Funny & Cool Donald Trump tee",
+            "I'm The Crazy Camera Lady, Photography Tee For Photographer"
+          ]
+        },
+        {
+          "turn": 8,
+          "customer": "Those are all just t-shirts again. I really need a latex king lion mask for my costume.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B00DEJI6GE",
+            "B01N5HF8DG",
+            "B074QKG7BY",
+            "B0BJW2X35V",
+            "B0852WW7W1",
+            "B0BN5PTZP3",
+            "B01LXJ0UPX",
+            "B01M4QJS3Q",
+            "B07Q1GMV76",
+            "B099ZL6XXH"
+          ],
+          "shown_titles": [
+            "adidas Men's Contract Cap",
+            "Mission VaporActive Cooling Skull Cap",
+            "GEANBAYE Adult and Child Both Size Funny Baseball Style Multi-Color",
+            "Us Navy Aviation Machinist's Mate Ad Rating Unisex Sandwich Cap Denim Hats Baseball Cap",
+            "Waldeal womens Baseball",
+            "Pishovi Vintage 1983 Original Parts Funny Baseball Cap, 40th Birthday Vintage Baseball Adjustable Caps for Men",
+            "One Cat Short of Crazy - Cute Cat Lover TShirt",
+            "Fire And Ice Lion Face Tribal Lion Head T-shirt, Zany Brainy",
+            "Swyss Unisex Camouflage Casual Hat Trucker Special Tactical Operator Forces USA Flag Patch Baseball Cap,Black",
+            "Peace Love Pumpkin Shirt Women Leopard Heart Halloween T-Shirt Cute Short Sleeve Tshirts"
+          ]
+        },
+        {
+          "turn": 9,
+          "customer": "Those are still just caps and t-shirts, not a full head mask. I'm looking for that latex king lion head mask.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B07HSZLXCY",
+            "B0BQW5V4JB",
+            "B07SRFPDDT",
+            "B08KGS4F66",
+            "B09WB4HZMG",
+            "B0C3MGJTQ4",
+            "B09WRCJJBW",
+            "B01M23U3H3",
+            "B0768LS2JF",
+            "B077R1B4XN"
+          ],
+          "shown_titles": [
+            "Custom Ponycap Messy High Bun Ponytail Baseball Cap Adjustable Mesh Trucker Baseball Cap Hat for Women",
+            "OASCUVER Retired Since 2023 Hat, Adjustable Cotton Baseball Cap Distressed Washed for Retirees Men Women",
+            "Military Camo Hat Hunting Adjustable for Men All Cotton Made Low Profile Classic",
+            "adidas Originals Men's Originals Relaxed Color Reflective",
+            "DC Comics Batman Baseball Cap for Boys, Adjustable Baseball Hat with Stylish Batman Logo, Boys Hat, Kids Baseb",
+            "adidas Originals Men's Originals Icon Snapback 2.0",
+            "ariarly Straw Hat,Luffy Straw Hat with String Pirate Hat Anime Cosplay Costume Straw Hat Sun Hat for Kids Adul",
+            "Ford Mustang 50 Years V-Neck T-Shirt Anniversary Licensed",
+            "Distressed Ford Trucks Women's T-Shirt F150 American Pick Up",
+            "I Play Heavy Metal T-Shirt Funny Harmonica Band Music Blues"
+          ]
+        },
+        {
+          "turn": 10,
+          "customer": "Still nothing right, just more random hats and shirts. I give up on finding that lion mask here.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B01CKOBCVY",
+            "B09FSJMZJZ",
+            "B07Z3JPPV1",
+            "B075K4PJKJ",
+            "B0745CQ1FN",
+            "B09WRCJJBW",
+            "B08D6KDXWC",
+            "B016C0V5LO",
+            "B01GLBCFKY",
+            "B087BGS7ZW"
+          ],
+          "shown_titles": [
+            "ToBeInStyle Women\u2019s Fun Jester Pattern Polka Dot & Striped Thigh High Stockings",
+            "Unbound Classic Black Midi Dress Black Dress \u2013 One Shoulder Dresses for Women \u2013 Bodycon Midi Dress, Cocktail D",
+            "SOURBH Women's New Fancy All Over Flower Prints Saree With & Mirror Lace Border & Blouse Piece",
+            "Tuba Jubilee, Christmas Musician Fun Instrument TShirt",
+            "It Took Me 75 Years To Look This Good - 75th Birthday Gift",
+            "ariarly Straw Hat,Luffy Straw Hat with String Pirate Hat Anime Cosplay Costume Straw Hat Sun Hat for Kids Adul",
+            "Women Get in Losers We\u2019re Saving Halloween Town T-Shirt Funny Skeleton Pumpkin Halloween Graphic Shirt for Wom",
+            "TOOLOUD Camp Half Blood Cabin 5 Ares Hoodie Sweatshirt",
+            "Levi's Men's Corduroy Baseball Cap, Navy, One Size",
+            "Fun Doge Denim Cap Funny Chihuahua Baseball Dad Cap Adjustable Classic Sports for Men Women Hat, Navy, One Siz"
+          ]
+        }
+      ]
+    },
+    {
+      "sample_id": "public_0014",
+      "scenario": "decisive",
+      "maps_to": "buying",
+      "style": "terse",
+      "target": "B088QF5G58",
+      "hit": true,
+      "first_hit_turn": 2,
+      "best_rank": 2,
+      "reciprocal_rank": 0.5,
+      "aborted": null,
+      "transcript": [
+        {
+          "turn": 1,
+          "customer": "Need some new everyday briefs. Gotta stay dry and not get all sweaty.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B0BH113WW9"
+          ],
+          "shown_titles": [
+            "Hanes Boxer Briefs, Cool Dri Moisture-Wicking Underwear, Cotton No-Ride-up for Men, Multi-Packs Available"
+          ]
+        },
+        {
+          "turn": 2,
+          "customer": "Those are long, I want regular briefs. Needs to come in a multi-pack.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B0BH113WW9",
+            "B088QF5G58",
+            "B088Z1MZG5",
+            "B08YRW8M2R",
+            "B07QFWMJFW",
+            "B089M57PSQ",
+            "B08Z6KJT1W",
+            "B0735V67KT",
+            "B0846KWKVB",
+            "B07HBJG7QJ"
+          ],
+          "shown_titles": [
+            "Hanes Boxer Briefs, Cool Dri Moisture-Wicking Underwear, Cotton No-Ride-up for Men, Multi-Packs Available",
+            "Hanes Men's Underwear Briefs Pack, Mid-Rise, Moisture-Wicking, 6-Pack",
+            "FROLADA Men's Underwear 5 Pack Cotton Classics Briefs Mid Rise Soft Comfort Breathable Fly Front with Pouch Un",
+            "Newsywell Men's Cotton Briefs Pouch Bulge Bikini Tagless Elastic Low Rise Wide Waistband Underwear",
+            "YuKaiChen Men's Modal Bikini Underwear Bulge Briefs Low Rise",
+            "Boboking 100% Cotton Little Boys Briefs Soft Dinosaur Truck Toddler Underwear",
+            "Bamboo Sports Mens No Fly Bamboo Underwear Briefs- Super Soft & Comfortable Fit",
+            "Fruit of the Loom mens Cushioned Durable Cotton Work Gear With Moisture Wicking Casual Sock, White, 6-12 US(Pa",
+            "Hanes Boys' Tagless Super Soft Briefs 10-Pack",
+            "Amazon Essentials Men's Big & Tall 5-Pack Tag-Free Briefs fit by DXL"
+          ],
+          "hit_rank": 2
+        }
+      ]
+    },
+    {
+      "sample_id": "public_0065",
+      "scenario": "vague",
+      "maps_to": "browsing",
+      "style": "plain",
+      "target": "B0BSQ9TCYC",
+      "hit": true,
+      "first_hit_turn": 4,
+      "best_rank": 2,
+      "reciprocal_rank": 0.5,
+      "aborted": null,
+      "transcript": [
+        {
+          "turn": 1,
+          "customer": "Hi there! I'm just browsing around today, trying to find some warm snow pants for the winter.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B07XDRVQPW"
+          ],
+          "shown_titles": [
+            "BAOPTEIL Toddler Boys Girls Winter Outdoor Active Down Pants Warm Thick Down Trousers Windproof Snow Pants 2-6"
+          ]
+        },
+        {
+          "turn": 2,
+          "customer": "Those are way too small, I need adult women's sizes. Also, I definitely want something that comes up high on the chest like overalls.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B01LXG5PPZ"
+          ],
+          "shown_titles": [
+            "TIFENNY Cute Baby Kids Boys Girls Long Sleeve Fox Print T-Shirt Tops Outfits"
+          ]
+        },
+        {
+          "turn": 3,
+          "customer": "Those are baby shirts, not even close to what I'm looking for. I need women's ski bibs that are warm and comfortable to move around in.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B09QHWPHSM"
+          ],
+          "shown_titles": [
+            "XBTCLXEBCO Women's Snow Bibs Overalls Waterproof Insulated Sleeveless Zipper Ski Jumpsuit Men Winter Snowpants"
+          ]
+        },
+        {
+          "turn": 4,
+          "customer": "Those aren't quite right, and I'd prefer something lightweight that still keeps me really warm on the slopes.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B09QHWPHSM",
+            "B0BSQ9TCYC",
+            "B07JX6V7C3",
+            "B089B2TXZZ",
+            "B074BMLZTL",
+            "B08H1DHKPZ",
+            "B07VGG7XRZ",
+            "B08F2DMFNK",
+            "B08JHL1C9P",
+            "B083SSRZFJ"
+          ],
+          "shown_titles": [
+            "XBTCLXEBCO Women's Snow Bibs Overalls Waterproof Insulated Sleeveless Zipper Ski Jumpsuit Men Winter Snowpants",
+            "Arctix Women's Essential Insulated Bib Overalls",
+            "Aegend Balaclava Face Warmer Windproof Fleece for Winter Skiing Cold Weather for Men & Women",
+            "Face Scarf Cover Mask Bandana 3D Headwear Magic Headband Neck Gaiter for Dust Outdoor Sports Festival for Men ",
+            "Wantdo Men's Winter Insulated Ski Pants Waterproof Snow Bibs Cargo Overalls",
+            "686 Youth Girl's Sierra Insulated Bib",
+            "UPF 50+ Neck Gaiter Bandana Scarf UV Protection Balaclava Headband for Women Men",
+            "Unisex Floral Leopard Print Face Bandana Ear Loops Balaclava Rave Neck UV Gaiters Face Cover Headwear Headwrap",
+            "NCIS Gibbs' Rules Sun Uv Protection Neck Gaiter Mask,Dust Bandana Balaclava Black",
+            "Balaclava Face Mask - Cold Weather Protection for Motorcycle, Skiing, Snowboarding Scarf - Winter Face Cover f"
+          ],
+          "hit_rank": 2
+        }
+      ]
+    },
+    {
+      "sample_id": "public_0122",
+      "scenario": "indifferent",
+      "maps_to": "boundary",
+      "style": "plain",
+      "target": "B074KJ49F2",
+      "hit": true,
+      "first_hit_turn": 2,
+      "best_rank": 1,
+      "reciprocal_rank": 1.0,
+      "aborted": null,
+      "transcript": [
+        {
+          "turn": 1,
+          "customer": "Hi there, I'm looking for a new pair of pants to wear around. Can you help me find some comfortable leggings?",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B08HFHX3W2"
+          ],
+          "shown_titles": [
+            "VIV Collection Women's Brushed Buttery Soft High Waist Print Fashion Leggings | Capri & Full Length"
+          ]
+        },
+        {
+          "turn": 2,
+          "customer": "Those patterned ones aren't really my style, I just want a plain pair. I don't really mind the material, so you can pick whatever you think is best.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B074KJ49F2"
+          ],
+          "shown_titles": [
+            "Leggings Depot Premium Quality Women's Cotton Blend Stretch Pull-on Jeggings with Pockets"
+          ],
+          "hit_rank": 1
+        }
+      ]
+    },
+    {
+      "sample_id": "public_0087",
+      "scenario": "indifferent",
+      "maps_to": "boundary",
+      "style": "chatty",
+      "target": "B0BT158RRR",
+      "hit": true,
+      "first_hit_turn": 8,
+      "best_rank": 5,
+      "reciprocal_rank": 0.2,
+      "aborted": null,
+      "transcript": [
+        {
+          "turn": 1,
+          "customer": "Hi there! I'm just hoping to find a nice short-sleeve button-down shirt today for the hot weather we've been having lately.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B0B319PBVF"
+          ],
+          "shown_titles": [
+            "Bonbe\u0301be\u0301 Rat and The Hot Rod Story Hawaiian Shirts Aloha 3D Casual Button Down Hawaii Apparel Gift for Him Su"
+          ]
+        },
+        {
+          "turn": 2,
+          "customer": "Oh, those look a bit too wild with the big graphics for what I need. I'm really just looking for something with a simple all-over print, ideally.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B09WRNP5ZZ"
+          ],
+          "shown_titles": [
+            "NaRHbrg 80s 90s Aloha Hawaiian Shirts for Men Hipster Retro Button Down Shirt Short Sleeve Tropical Summer Bea"
+          ]
+        },
+        {
+          "turn": 3,
+          "customer": "Those are still way too loud and beachy for me, plus my dog just shed all over the living room rug so I'm a bit distracted. I don't really mind what material it's made of, you can just pick whatever you think works best.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B09WRNP5ZZ",
+            "B0B319PBVF",
+            "B07YTYW9N6",
+            "B09WMXSJX1",
+            "B07BK6Z4ZY",
+            "B07CB4N9B4",
+            "B07KJB1FTX",
+            "B07DNY6Q7C",
+            "B06XT714QP",
+            "B09MVF4SDH"
+          ],
+          "shown_titles": [
+            "NaRHbrg 80s 90s Aloha Hawaiian Shirts for Men Hipster Retro Button Down Shirt Short Sleeve Tropical Summer Bea",
+            "Bonbe\u0301be\u0301 Rat and The Hot Rod Story Hawaiian Shirts Aloha 3D Casual Button Down Hawaii Apparel Gift for Him Su",
+            "SATINIOR Men's Christmas Santa Claus Shirt Snowman Reindeer Long Sleeve 3D Printed Dress Shirt, Christmas Gree",
+            "Parks and Rec Recreation Novelty Short Sleeves Casual Button Down Funny Hawaiian Shirts for Men",
+            "ALLNTRENDS Men's T Shirt I'm Mary Poppins Y'all Trending Tees Cool Popular Top",
+            "Have It Tall T Shirts for Men and Women | Cotton Short Sleeve | Sizes S - 6XL",
+            "Men Shirt, Snowflake Santa Candy Men's Funny Christmas Print Slim Fit Long Sleeve Button Up Dress Shirt",
+            "Brooklyn Surf Men's American Flag T-Shirt Marl Jersey Stars N Stripes Tee Shirt",
+            "Tee Luv Men's Gold's Gym Strongman Logo Shirt",
+            "INTO THE AM Mens T Shirt - Short Sleeve Crew Neck Soft Fitted Tees S - 4XL Fresh Classic Tshirts"
+          ]
+        },
+        {
+          "turn": 4,
+          "customer": "None of these are quite right, since most of them are t-shirts or really loud holiday prints. I just need a normal everyday button-up with a subtle pattern on it.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B09WRNP5ZZ",
+            "B0B319PBVF",
+            "B07YTYW9N6",
+            "B09WMXSJX1",
+            "B0C2K7P94Y",
+            "B08FLD24NK",
+            "B0BBWJNL9X",
+            "B00E1ITZIA",
+            "B07KJB1FTX",
+            "B00H3K5DBG"
+          ],
+          "shown_titles": [
+            "NaRHbrg 80s 90s Aloha Hawaiian Shirts for Men Hipster Retro Button Down Shirt Short Sleeve Tropical Summer Bea",
+            "Bonbe\u0301be\u0301 Rat and The Hot Rod Story Hawaiian Shirts Aloha 3D Casual Button Down Hawaii Apparel Gift for Him Su",
+            "SATINIOR Men's Christmas Santa Claus Shirt Snowman Reindeer Long Sleeve 3D Printed Dress Shirt, Christmas Gree",
+            "Parks and Rec Recreation Novelty Short Sleeves Casual Button Down Funny Hawaiian Shirts for Men",
+            "OBICUM 2 Lounge Sets For Women - Wireless Comfort Bra Set Top and Shorts Waffle Lounge Set Women's Activewear",
+            "DailyShoes Women's Confortable Casual Slip-On Flat Loafers Sneakers Shoes",
+            "VenusCelia Women's Comfort Walking Boat Shoe",
+            "Crocs Men's Santa Cruz Loafer | Comfortable Men's Loafers | Slip On Shoes, Navy/Stucco, 10 US Men",
+            "Men Shirt, Snowflake Santa Candy Men's Funny Christmas Print Slim Fit Long Sleeve Button Up Dress Shirt",
+            "Yizzam- Street Puppy -New Ladies Womens 3/4 Sleeve-X-Large Multicolored"
+          ]
+        },
+        {
+          "turn": 5,
+          "customer": "Those are mostly women's shoes and loungewear now, which is definitely not going to fit me! I just want a comfortable everyday short-sleeve button-down that has a nice soft feel to it.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B09WRNP5ZZ",
+            "B09WMXSJX1",
+            "B0B319PBVF",
+            "B07YTYW9N6",
+            "B07KJB1FTX",
+            "B09P1XJ772",
+            "B01M07DGTM",
+            "B09SH7SS4K",
+            "B01KPCH4Q0",
+            "B07GY1DRVF"
+          ],
+          "shown_titles": [
+            "NaRHbrg 80s 90s Aloha Hawaiian Shirts for Men Hipster Retro Button Down Shirt Short Sleeve Tropical Summer Bea",
+            "Parks and Rec Recreation Novelty Short Sleeves Casual Button Down Funny Hawaiian Shirts for Men",
+            "Bonbe\u0301be\u0301 Rat and The Hot Rod Story Hawaiian Shirts Aloha 3D Casual Button Down Hawaii Apparel Gift for Him Su",
+            "SATINIOR Men's Christmas Santa Claus Shirt Snowman Reindeer Long Sleeve 3D Printed Dress Shirt, Christmas Gree",
+            "Men Shirt, Snowflake Santa Candy Men's Funny Christmas Print Slim Fit Long Sleeve Button Up Dress Shirt",
+            "Alexis Bendel Dorothy-224L Ladies Comfort Moccasin with Comfort Features",
+            "AC/DC Men's Back in Black Hooded Sweatshirt Black",
+            "Feidoog Toddler Baby Boys 2 Pack Sweatpants Solid Cotton Elastic Waist Trousers Active Jogger Pants",
+            "Earth Tangelo",
+            "7 ate 9 Apparel Baby Boy's Crawl Walk Surf Summer Onepiece"
+          ]
+        },
+        {
+          "turn": 6,
+          "customer": "Still seeing hoodies and baby clothes in that list, which is pretty funny. I just need a standard-fit men's shirt with short sleeves and a subtle print that won't break the bank.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B09WRNP5ZZ",
+            "B09WMXSJX1",
+            "B0B319PBVF",
+            "B07YTYW9N6",
+            "B07KJB1FTX",
+            "B01M23U3H3",
+            "B005BFDCGI",
+            "B07B495RGW",
+            "B0768LS2JF",
+            "B075RF8KN8"
+          ],
+          "shown_titles": [
+            "NaRHbrg 80s 90s Aloha Hawaiian Shirts for Men Hipster Retro Button Down Shirt Short Sleeve Tropical Summer Bea",
+            "Parks and Rec Recreation Novelty Short Sleeves Casual Button Down Funny Hawaiian Shirts for Men",
+            "Bonbe\u0301be\u0301 Rat and The Hot Rod Story Hawaiian Shirts Aloha 3D Casual Button Down Hawaii Apparel Gift for Him Su",
+            "SATINIOR Men's Christmas Santa Claus Shirt Snowman Reindeer Long Sleeve 3D Printed Dress Shirt, Christmas Gree",
+            "Men Shirt, Snowflake Santa Candy Men's Funny Christmas Print Slim Fit Long Sleeve Button Up Dress Shirt",
+            "Ford Mustang 50 Years V-Neck T-Shirt Anniversary Licensed",
+            "Amazon Collection Men's 14k Gold 1.28mm Figaro Chain Necklace",
+            "Tstars Copy Paste Dad and Son Matching Shirts Fathers Day Father & Daughter Shirt Set",
+            "Distressed Ford Trucks Women's T-Shirt F150 American Pick Up",
+            "adidas Men's Curated Crew Long Sleeve"
+          ]
+        },
+        {
+          "turn": 7,
+          "customer": "Those are mostly gold chains and graphic tees, so we're still missing the mark. I'm looking for a comfy, standard-fit short-sleeve button-down with a nice pattern that costs around twenty bucks.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B09WRNP5ZZ",
+            "B09WMXSJX1",
+            "B07YTYW9N6",
+            "B0B319PBVF",
+            "B07KJB1FTX",
+            "B09535Y4SG",
+            "B082YN2GYP",
+            "B098GXBCTG",
+            "B07YLBNF9R",
+            "B0772WZ6XV"
+          ],
+          "shown_titles": [
+            "NaRHbrg 80s 90s Aloha Hawaiian Shirts for Men Hipster Retro Button Down Shirt Short Sleeve Tropical Summer Bea",
+            "Parks and Rec Recreation Novelty Short Sleeves Casual Button Down Funny Hawaiian Shirts for Men",
+            "SATINIOR Men's Christmas Santa Claus Shirt Snowman Reindeer Long Sleeve 3D Printed Dress Shirt, Christmas Gree",
+            "Bonbe\u0301be\u0301 Rat and The Hot Rod Story Hawaiian Shirts Aloha 3D Casual Button Down Hawaii Apparel Gift for Him Su",
+            "Men Shirt, Snowflake Santa Candy Men's Funny Christmas Print Slim Fit Long Sleeve Button Up Dress Shirt",
+            "EADMON Womens Tshirt - Casual V Neck Womens T Shirt - Tee Shirts Women's Side Pocket Tops",
+            "BTFBM Women Summer Short Sleeve Shirts Crew Neck Color Block Irregular Striped Print Loose Soft Casual Tee Top",
+            "EDENNAOMI Women's Casual Crop Top - Short Sleeve French Terry Elastic Hem Loose Fit Cropped T Shirt Pullover",
+            "Thread Tank Go Ask Your Dad Women's Fashion Relaxed V-Neck T-Shirt Tee",
+            "Thread Tank Coffee Books and Rainy Days Women's Fashion Relaxed V-Neck T-Shirt Tee"
+          ]
+        },
+        {
+          "turn": 8,
+          "customer": "Those are all women's t-shirts, which definitely won't work! I'm just searching for a men's standard-fit short-sleeve printed poplin shirt that's nice and soft.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B09WRNP5ZZ",
+            "B07YTYW9N6",
+            "B07KJB1FTX",
+            "B07ZDF6525",
+            "B0BT158RRR",
+            "B09WMXSJX1",
+            "B0BKKL3ZQ3",
+            "B0B319PBVF",
+            "B06WLHD6PL",
+            "B09FDCBKYD"
+          ],
+          "shown_titles": [
+            "NaRHbrg 80s 90s Aloha Hawaiian Shirts for Men Hipster Retro Button Down Shirt Short Sleeve Tropical Summer Bea",
+            "SATINIOR Men's Christmas Santa Claus Shirt Snowman Reindeer Long Sleeve 3D Printed Dress Shirt, Christmas Gree",
+            "Men Shirt, Snowflake Santa Candy Men's Funny Christmas Print Slim Fit Long Sleeve Button Up Dress Shirt",
+            "Men Slim Fit Blouse Casual Plaid Long Sleeves Turn-Down Collar Shirt Autumn Fashion Button Top",
+            "Goodthreads Men's Standard-Fit Short-Sleeve Printed Poplin Shirt",
+            "Parks and Rec Recreation Novelty Short Sleeves Casual Button Down Funny Hawaiian Shirts for Men",
+            "Hawaiian Shirts for Men Short Sleeve Vintage Bowling Printed Button Down Aloha Shirts",
+            "Bonbe\u0301be\u0301 Rat and The Hot Rod Story Hawaiian Shirts Aloha 3D Casual Button Down Hawaii Apparel Gift for Him Su",
+            "Goodthreads Men's Standard-Fit Long-Sleeve Gingham Poplin Shirt",
+            "Rela Bota Men\u2019s Long Sleeve Button Down Shirts Cotton Casual Shirts Comfortable Soft Slim Fit Blue Shirt"
+          ],
+          "hit_rank": 5
+        }
+      ]
+    },
+    {
+      "sample_id": "public_0007",
+      "scenario": "mind_changer",
+      "maps_to": "intent_override",
+      "style": "terse",
+      "target": "B08PF98BV4",
+      "hit": false,
+      "first_hit_turn": null,
+      "best_rank": null,
+      "reciprocal_rank": 0.0,
+      "aborted": null,
+      "transcript": [
+        {
+          "turn": 1,
+          "customer": "Need something in blue.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B08FZ23LXP"
+          ],
+          "shown_titles": [
+            "Nite closet Sweet Lolita Dress Blue Pink Sleeveless Costume Maid Knee Length Cross Printed Outfit (Blue, 4/6)"
+          ]
+        },
+        {
+          "turn": 2,
+          "customer": "Not a costume. Needs to be cotton.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B0BBZXJYQ3"
+          ],
+          "shown_titles": [
+            "Halloween Hocus Pocus Dress for Women Vintage Lace Up Renaissance Gothic Cosplay Halloween Maxi Dresses Irish "
+          ]
+        },
+        {
+          "turn": 3,
+          "customer": "Still completely wrong. Actually, forget the cotton thing.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B07VFDW8CG"
+          ],
+          "shown_titles": [
+            "I Need Some Space Shirts for Women Funny Letters Graphic Short Sleeve Country Tee Tops (Blue, S)"
+          ]
+        },
+        {
+          "turn": 4,
+          "customer": "Not a graphic tee. Looking for a longer top with cutouts on the shoulders.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B07C2KNQR1"
+          ],
+          "shown_titles": [
+            "Threadrock Big Girls' Eat Sleep Cheer Repeat Fitted T-Shirt"
+          ]
+        },
+        {
+          "turn": 5,
+          "customer": "That's for a kid. I need plus size.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B08XJG3KDX"
+          ],
+          "shown_titles": [
+            "Men's Insulated Snow Bibs Overalls, Winter Ski Bib for Men Black"
+          ]
+        },
+        {
+          "turn": 6,
+          "customer": "Men's snow bibs? No way.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B0872J8KB1",
+            "B0888VX3PH",
+            "B0888WGM7M",
+            "B0BBZXJYQ3",
+            "B01EUPDDU4",
+            "B01M23U3H3",
+            "B0768LS2JF",
+            "B07FPS6WF7",
+            "B08TBDJBCG",
+            "B099ZL6XXH"
+          ],
+          "shown_titles": [
+            "Straight Outta Quarantine Class of 2020 Funny T-Shirt",
+            "Instant Message - Too Many Tabs Open - Women's Short Sleeve Graphic T-Shirt",
+            "Instant Message - Take The Road Less Traveled - Women's Short Sleeve Graphic T-Shirt",
+            "Halloween Hocus Pocus Dress for Women Vintage Lace Up Renaissance Gothic Cosplay Halloween Maxi Dresses Irish ",
+            "Robiear Women Workout T-Shirt - Gym Clothes Fitness Yoga Lift",
+            "Ford Mustang 50 Years V-Neck T-Shirt Anniversary Licensed",
+            "Distressed Ford Trucks Women's T-Shirt F150 American Pick Up",
+            "Say What Again - Classic Movie Quote Cult Classic T Shirt",
+            "VAIFTILNO Womens Dragonfly Shirts with Inspirational Saying They Whispered to Her You Cannot Withstand the Sto",
+            "Peace Love Pumpkin Shirt Women Leopard Heart Halloween T-Shirt Cute Short Sleeve Tshirts"
+          ]
+        },
+        {
+          "turn": 7,
+          "customer": "Still just graphic tees. Need a plus size top with short sleeves and shoulder cutouts.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B0813JZJVS",
+            "B0BBZXJYQ3",
+            "B09NC92ZY7",
+            "B07XZJPZS8",
+            "B07BVHQRKY",
+            "B09YM91L97",
+            "B083ZB8RH3",
+            "B07BSLVVD8",
+            "B07171ZGRW",
+            "B085LBDYCJ"
+          ],
+          "shown_titles": [
+            "Husband Wife Couple Matching Set Custom T-Shirt",
+            "Halloween Hocus Pocus Dress for Women Vintage Lace Up Renaissance Gothic Cosplay Halloween Maxi Dresses Irish ",
+            "UYISJ Native Indians Sweatshirts for Women Vintage Feather Graphic Shirts Long Sleeve Loose Fit Tees Crewneck ",
+            "Women Solid Color Casual Loose Long Sleeve Sweatshirt T-Shirts Tops Blouse Black M",
+            "Arnold Schwarzenegger Mr Olympia Bodybuilding T-Shirt",
+            "50th Birthday T Shirts for Women This Queen Makes 50 Look Fabulous Letter Print Retro Birthday Shirts Vintage ",
+            "Womens Tops Long Sleeve Round Neck Leopard Pocket Casual T Shirts Blouses Tunic Sweatshirt",
+            "Show Me Your TT's! - Street Racing Twin Turbo Men's T-Shirt",
+            "Haase Unlimited Fuck Cancer - Raise Awareness Fight Cure Men's T-Shirt",
+            "Mai Poetry Mens Hip Hop Longline Tshirt Rap Street Dance Short Sleeves T-Shirt"
+          ]
+        },
+        {
+          "turn": 8,
+          "customer": "None of these. Just want a casual plus size cold shoulder tunic.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B01MAYVQ68",
+            "B099JC3CDX",
+            "B07G347BQJ",
+            "B09721LJ61",
+            "B09KX2QR93",
+            "B078TFZ9G2",
+            "B09C7TT7JV",
+            "B071ZS1BTZ",
+            "B09W8QCYG7",
+            "B09SX4V4YK"
+          ],
+          "shown_titles": [
+            "CAMIXA Women's Gingham Shirt Checkered Casual Long Sleeve Button Down Plaid Top",
+            "HOLATOK Women's Retro World Map Geometric Pattern Lapel Casual Long Sleeve Button Down Shirt Loose Top Blouse",
+            "KFSO Women Off Shoulder Backless T-Shirts Top Puff Sleeve Bow Bandage Blouse (Blue, L)",
+            "Summer Women Lace Tshirt Tops Trendy Cute Loose Fit Crewneck Tunic Blouses Short Sleeve Casual Comfy Soft Pepl",
+            "Zkuisw Womens V Neck Shirts Trendy Plaid Christmas Reindeer Print Long Sleeve Pullover Irregular hem Tunic Top",
+            "Womens Floral Print Blouse Tops 3/4 Long Sleeves Casual Loose Floral Tunic Button Up Print Shirts Light Blue",
+            "Womens Summer Tops Dressy Casual, Shirts for Women, Womens Short Sleeve Tops, Women's Fashion V Neck Solid T S",
+            "Regna X Women Short Sleeves Flare Tunic Tops for Leggings Flowy Shirt (Maternity/Plus Size/Standard Sizes)",
+            "Womens Plus Size Tops Trendy Casual Crochet Lace Trim Blouses Summer Dressy Pleated Tunic Tops Short Sleeve Te",
+            "Personalized Grandma Shirt - Custom This Awesome Grandma Belongs to Grandkids Name, Christmas Mothers Day Shir"
+          ]
+        },
+        {
+          "turn": 9,
+          "customer": "Still not right. Needs the cutouts on the shoulders.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B08B14396X",
+            "B07ZX1QPRB",
+            "B01F50S8UI",
+            "B0B2Q82Y6M",
+            "B09LJ252D5",
+            "B0BW2Y7JNS",
+            "B07GXF4PGS",
+            "B084BYZSG2",
+            "B07M6MRJKG",
+            "B07D35CM3J"
+          ],
+          "shown_titles": [
+            "Womens Short Sleeves Button Down Shirt with Pocket V Neck Collared Blouse Tops Casual T-Shirt(S-3XL)",
+            "YOINS Cold Shoulder Tops for Women Long Bat Sleeves Rhinestone Casual Baggy Sequins Blouse T-shirts NEWVSN-Bla",
+            "Bepei Women Top V Neck Short Sleeves Front Pleated Tunic Shirts Blouses",
+            "Womens Hawaiian Short Sleeve Shirt Printed Button Down Blouse Summer Top",
+            "Zkuisw Ugly Christmas Sweater for Women Light Up Shiny Tree Print Long Sleeve Pullover Fall Novelty Xmas Crewn",
+            "MYHALF Plus Size American Flag Shirt Women 4th of July Shirts Patriotic Cold Shoulder T-Shirt Summer Short Sle",
+            "Snowfoller Women Plaid Shirts Fashion Turn-Down Collar Long Sleeve T-Shirt Side Button Decor Tunic Blouse Offi",
+            "Men's Tool T Shirts | This is Not a Drill | Sawdust is Man Glitter | Funny Novelty Tshirts Christmas",
+            "Aolakeke\u00a0Womens Casual Long Sleeve Cold Shoulder Tunic Tops Loose V Neck Blouse Shirts",
+            "Aro Lora Women's Casual Short Sleeve V Neck Cold Shoulder Tops T-Shirt"
+          ]
+        },
+        {
+          "turn": 10,
+          "customer": "None of those. Giving up.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B0795KN358",
+            "B07ZCM5S4X",
+            "B0B3MQ2L7B",
+            "B08ZT28D93",
+            "B091FNL5Q1",
+            "B0B31LR7G4",
+            "B09J1BXM7M",
+            "B07C96SK63",
+            "B01LVXOMXC",
+            "B0932JQ47J"
+          ],
+          "shown_titles": [
+            "LSAME Women's Blouse Short/Long Sleeve Floral Print Striped T-Shirt Casual Comfy Tunic Tops with Pocket",
+            "Miskely Women's Summer Short Sleeve Damask Blouse Floral Printed Irregular Hem Tunic Tops Casual Asymmetrical ",
+            "Womens Tops Casual, 3/4 Sleeve Shirts Tie Dye T Shirts Graphic Tees Comfy Hawaiian Tunic Blouses Lightweight H",
+            "Plus Size Tops for Womens Deep V Off Shoulder Blouse Asymmetric Hem T Shirts Solid Color Sexy Casual Loose Fit",
+            "HGWXX7 Womens Plus Size Short Sleeve Loose t-Shirts Colorful Retro Print V Neck Pullover Comfy Tee Shirts Blou",
+            "Women's Short Sleeve V Neck Lace T-Shirt Office Tunic Plus Size Tops Rockabilly Sweatshirt Tropical Tops Basic",
+            "Newshows Womens Summer Lace Tops Short Sleeve Crewneck Casual Shirts Loose Plain Tunic Blouse(Black, X-Large)",
+            "Yesfashion Women Halter Pleated Tank Top Blouse",
+            "Clothink Women Blue Off Shoulder Ruffle Plus Size Blouse",
+            "ONLYSHE Womens Casual Short Sleeve Shirts Tops Button Up Tunic Floral Ruffle Blouse"
+          ]
+        }
+      ]
+    },
+    {
+      "sample_id": "public_0068",
+      "scenario": "brand_led",
+      "maps_to": "buying",
+      "style": "informal",
+      "target": "B08SH8GF6K",
+      "hit": false,
+      "first_hit_turn": null,
+      "best_rank": null,
+      "reciprocal_rank": 0.0,
+      "aborted": null,
+      "transcript": [
+        {
+          "turn": 1,
+          "customer": "hey! i'm lookin for some new walking shoes from skechers, got any good ones?",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B01AHPD6TE"
+          ],
+          "shown_titles": [
+            "BOBS from Skechers Women's Cherish Bob-Sled Slipper"
+          ]
+        },
+        {
+          "turn": 2,
+          "customer": "nah, those are slippers, i need actual athletic walking shoes. and i really want something with a super comfy bouncy sole for long walks.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B0BN6CCHB7"
+          ],
+          "shown_titles": [
+            "Skechers Men's Go Max-Athletic Air Mesh Slip on Walking Shoe Sneaker"
+          ]
+        },
+        {
+          "turn": 3,
+          "customer": "those are mens, i need womens ones! but yeah keep that cushy bouncy vibe going.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B08G278PHB"
+          ],
+          "shown_titles": [
+            "Concept 3 by Skechers Women's Comfy Vibes Sneaker"
+          ]
+        },
+        {
+          "turn": 4,
+          "customer": "nah that's not right, i need the ones called big splash. got those?",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B011IN8USQ"
+          ],
+          "shown_titles": [
+            "Peppa Pig Toddler Girl's Light Up Clog, Size 7 - Pink"
+          ]
+        },
+        {
+          "turn": 5,
+          "customer": "lol wut, those are toddler shoes! i'm looking for the womens go walk 6 big splash sneakers.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B002MH3G46"
+          ],
+          "shown_titles": [
+            "Skechers Little Kid/Big Kid Untold - Degree Casual"
+          ]
+        },
+        {
+          "turn": 6,
+          "customer": "ugh those are kids shoes again. just show me the womens go walk 6 big splash, please!",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B0745J4H7Z",
+            "B008767DU4",
+            "B0B2MHYPXL",
+            "B09936P2DR",
+            "B07DP4YW96",
+            "B07S1BTNS3",
+            "B01J775PGK",
+            "B07NSSTH5C",
+            "B07NSP6RSZ",
+            "B07LB4TYS7"
+          ],
+          "shown_titles": [
+            "Skechers Unisex-Child Jumpin' Jams-Color Vision Sneaker",
+            "Skechers Unisex-Child 10266L",
+            "Skechers Unisex-Child TWI-Lites-Twinkle Starz Sneaker",
+            "Skechers Unisex-Child Mega-Craft 2.0 Sneaker",
+            "Plaka Yoga Mat Flip Flops for Women Splash",
+            "Skechers Unisex-Child Flex-Glow-Taren Sneaker",
+            "Skechers Unisex-Child Equalizer 2.0-Power Move Sneaker",
+            "Skechers Unisex-Child Turbo Spike 97914l Sneaker",
+            "Skechers Unisex-Child Lace Up Sneaker W/Rubber Outs",
+            "Skechers Unisex-Child Quick Kicks Sneaker"
+          ]
+        },
+        {
+          "turn": 7,
+          "customer": "still showing kids shoes and flip flops! i just want the womens go walk 6 big splash, can you find that exact one?",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B0864RBSD7",
+            "B08HY8Y88J",
+            "B004IARA4C",
+            "B008M5IO1C",
+            "B07146YSK4",
+            "B094G2PM8T",
+            "B004IARD2G",
+            "B00MVO87WQ",
+            "B0052ROLGK",
+            "B00AR4LKZI"
+          ],
+          "shown_titles": [
+            "Skechers Unisex-Child Casual Sneaker",
+            "Skechers Unisex-Child Microspec Sneaker",
+            "Skechers Kids 93780N Afterburn Super Z Sneaker",
+            "Skechers Kids 95460L X 2.0 Sneaker",
+            "Skechers Kids Boys' Erupters II-Lava Waves Sneaker,navy/lime,5 Medium US Big Kid",
+            "PUMA Cool Cat Camo PS Boys ToddlerYouth Sandal",
+            "Skechers Kids 82022L Bella Ballerina Prima Princess Sneaker",
+            "Skechers Kids Damager Game Kicks Light-Up Sneaker",
+            "Skechers Kids 83311L Bizzy Bunch Lace Up Sneaker",
+            "Skechers Kids 80882L Synergy - Kickety Kick Athletic Sneaker (Little Kid)"
+          ]
+        },
+        {
+          "turn": 8,
+          "customer": "seriously, why are you only showing kids shoes? i just need the skechers women's go walk 6-big splash sneaker.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B01B9WWUM8",
+            "B00B7FNXPG",
+            "B00HDB2O9O",
+            "B006U9GLH6",
+            "B008MLT2TO",
+            "B00ES9VX78",
+            "B08C5G7MZ6",
+            "B00T42GFKY",
+            "B07D49Z4Q2",
+            "B08PCCYRHF"
+          ],
+          "shown_titles": [
+            "Skechers Kids Juicy Smash Game Kicks 2 Sneaker (Little Kid)",
+            "Skechers Kids 90453L Galvanized - Lova Light-Up Sneaker (Little Kid)",
+            "Skechers Kids Tough Trax - Quads Athletic Sneaker",
+            "Skechers Kids 90405L Pillar Light-Up Sneaker (Little Kid)",
+            "Skechers Kids 95438L Blaster Sneaker",
+            "Skechers Twinkle Toes Shuffles Jumpin Jigsaw Light-Up Sneaker (Toddler/Little Kid)",
+            "Skechers Kids Girl's Dyna-Lite Shimmer 302456L (Little Kid/Big Kid)",
+            "Skechers Kids Skech Air Clear Day Athletic Sneaker (Little Kid/Big Kid)",
+            "Carter's Unisex-Child Blakey Girl's and Boy's Causal Sneaker",
+            "Saucony Jazz Original Sneaker, White/Pink/Multi, 4 US Unisex Big Kid"
+          ]
+        },
+        {
+          "turn": 9,
+          "customer": "still all kids stuff! i give up, i'll just look for the skechers women's go walk 6-big splash sneaker myself.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B08VDZ1TDR",
+            "B07YK3TB9Z",
+            "B00RMO0FYS",
+            "B08QJKQFQ5",
+            "B07KX33NDS",
+            "B01J9VUHA8",
+            "B0779HTH75",
+            "B00XQEABYW",
+            "B07LB4PSBL",
+            "B09HMQRZ69"
+          ],
+          "shown_titles": [
+            "DRYDOPE Clear Raincoats For Adults Women - Disposable Rain Ponchos For Adults Reusable - Eva Disney ponchos fo",
+            "Seranoma Women's Warm Winter Microsuede Mid Calf Boot | Anti Slip Footed Sole | Classic Casual Everyday Boot",
+            "Skechers Kids Tough Trax School Uniform Sneaker (Little Kid/Big Kid)",
+            "HEELYS Racer 20 Mid (Little Kid/Big Kid/Adult)",
+            "Skechers Kids Girls' Trainer LITE 2.0 Sneaker Light Blue/Multi 3.5 Medium US Big Kid",
+            "Skechers Kids Boys' Hypno-Flash-Tremblers Light Up Light up Loafer",
+            "Skechers Kids Boy's Turbo Spike Sneaker, Black/Blue/Lime, 4 Medium US Big Kid",
+            "Skechers Kids Twinkle Toes Heart and Sole Light Up Sneaker (Little Kid/Big Kid/Toddler)",
+            "Skechers Kids Girl's Glimmer Kicks Sneaker",
+            "Oversized Denim Jacket Distressed Boyfriend Jean Coat Plus Size Long Sleeve Jeans Trucker Jackets with Vest fo"
+          ]
+        },
+        {
+          "turn": 10,
+          "customer": "welp, none of these are it either. thanks anyway, i'll just go find that exact pair on my own.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B097F2JXYB",
+            "B0B3MQ2L7B",
+            "B08Z2Y76WS",
+            "B07Z8HNW29",
+            "B08KG2NMLH",
+            "B08WLNBX5B",
+            "B07D4KHYNC",
+            "B0B7X4XRWP",
+            "B08ZHYRZRW",
+            "B07LB11TDB"
+          ],
+          "shown_titles": [
+            "melupa Summer Pants for Women Casual Pockets Cotton Linen Wide Leg Trousers Loose Elastic Waist Capris Beach C",
+            "Womens Tops Casual, 3/4 Sleeve Shirts Tie Dye T Shirts Graphic Tees Comfy Hawaiian Tunic Blouses Lightweight H",
+            "Charles Albert Women's Open Toe Block Heel Gold Studded Strappy Sandal",
+            "JoJo Siwa Girls All Over Print High Top Fashion Sneakers (Toddler/Little Kid/Big Kid)",
+            "Women's 3 in 1 Fleece Hat, Scarf and Gloves Set - Neck Warmer, Hand Gloves and Beanie | Winter Scarf, Gloves, ",
+            "GLASS TWO High Waisted Leggings \u2013 Women's Yoga Active Workout Running Sports Casual Stretch Elastic Waist Slim",
+            "Stride Rite Unisex-Child Rosie Casual Sneakers",
+            "shoeslocker Girls Sneaker Low Top Slip On Fashion Sneakers",
+            "WINESTER & COMPANY Women's Top - Casual V-Neck Long Sleeve Slim Fit Workout Active Tunic T Shirt Tee Tshirt",
+            "Skechers Kids Girl's GO Run 600-RADIANT Runner Sneaker, Black/Multi, 1 Medium US Little Kid"
+          ]
+        }
+      ]
+    },
+    {
+      "sample_id": "public_0076",
+      "scenario": "use_case_led",
+      "maps_to": "browsing",
+      "style": "plain",
+      "target": "B07XT6PLTB",
+      "hit": true,
+      "first_hit_turn": 3,
+      "best_rank": 1,
+      "reciprocal_rank": 1.0,
+      "aborted": null,
+      "transcript": [
+        {
+          "turn": 1,
+          "customer": "Hi, I need something comfy to wear to a family gathering for my boyfriend who's in the National Guard. Do you have anything like that?",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B079P2ZYG1",
+            "B07D8FCZKP",
+            "B00JIOFB7G",
+            "B077DNXLP9",
+            "B07FB627KF",
+            "B07J4W3YPZ",
+            "B07SMPKSZH",
+            "B07KVZ8GQ5",
+            "B0BC1MJ64F",
+            "B07W6G2TM2"
+          ],
+          "shown_titles": [
+            "Men's Long Sleeve Sun Protection Shirt Quick Dry Safari Outdoor T-Shirt for Running, Fishing, Hiking,5052,Khak",
+            "Mens T Shirts Graphic Men Fashion Printing Shirts Short Sleeve T-Shirt Casual Blouse Tank Tops Beach Tees Shir",
+            "Burnside Mens Plaid Short Sleeve Shirt-B9202",
+            "Cooper James Men's Checked Casual Button Down Short Sleeved Shirt",
+            "BRU Active Premium Surfing, Kayaking, Outdoor & Surf Tee Shirt for Men - Athletic Fit Graphic Sports Hiking T ",
+            "Killing This Workout - Jason Mask Horror Men's Tank Top",
+            "KOOFIN GEAR Performance Fishing Hoodie UPF50 Sunblock Shirt Outdoor Quick-Dry Athletic Sweatshirt",
+            "NAVISKIN Men's 1/4 Zip Pullover Thermal Thumbholes Running Long Sleeve Shirts Workout Outdoor Tops",
+            "EndoraDore Men's Long Sleeve Polka Dot Print T Shirt Casual Slim Hawaiian Button Shirt Luxury Dress Shirt",
+            "Men's Shirt Workout Running Sports Hoodie Long Sleeve Quick Dry Gym Hoodie (workout/white, Small)"
+          ]
+        },
+        {
+          "turn": 2,
+          "customer": "Those are all men's shirts, but I'm looking for women's clothes. I really want a zip-up hoodie that shows support for my boyfriend.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B09FKW37P8"
+          ],
+          "shown_titles": [
+            "Fankle Women Casual Long Sleeve Hoodies Pullover, Womens Fall Rainbow Tie Dye Sweater Black Oversized Hooded S"
+          ]
+        },
+        {
+          "turn": 3,
+          "customer": "That tie-dye one isn't my style at all. I want something with an army theme, like camouflage or dog tags, so I can wear it proudly.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B07XT6PLTB"
+          ],
+          "shown_titles": [
+            "Proud Army Girlfriend US Flag Dog Tags Pride Military Lovers Zip Hoodie"
+          ],
+          "hit_rank": 1
+        }
+      ]
+    },
+    {
+      "sample_id": "public_0004",
+      "scenario": "indifferent",
+      "maps_to": "boundary",
+      "style": "plain",
+      "target": "B07C2XPZ6D",
+      "hit": true,
+      "first_hit_turn": 7,
+      "best_rank": 2,
+      "reciprocal_rank": 0.5,
+      "aborted": null,
+      "transcript": [
+        {
+          "turn": 1,
+          "customer": "Hi, I'm looking for a simple layering tank top to wear under some of my sweaters. Can you help me find one?",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B07HNXZG3M"
+          ],
+          "shown_titles": [
+            "Speedy Cat Ribbed Tank Tops for Women Racerback Scoop Neck Tight Workout"
+          ]
+        },
+        {
+          "turn": 2,
+          "customer": "No, those aren't quite right since I wanted something for layering rather than working out. I don't really mind the fabric or anything like that, so you can just pick.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B0873TPS7Y"
+          ],
+          "shown_titles": [
+            "Norma Kamali Women's Shirt"
+          ]
+        },
+        {
+          "turn": 3,
+          "customer": "That shirt is way too bulky for what I need underneath my sweaters. I'd really prefer a nice thin camisole instead.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B07Z9NPB25"
+          ],
+          "shown_titles": [
+            "Kalon Women's 4-Pack Racerback Shelf Bra Camisole Base Layer"
+          ]
+        },
+        {
+          "turn": 4,
+          "customer": "Those have built-in bras, but I just want a plain one without any extra support built into it.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B07Z9NPB25",
+            "B09P7W9WJR",
+            "B087NFXCDG",
+            "B0765GJM8C",
+            "B07V46HKPQ",
+            "B081WF64NM",
+            "B00UW53384",
+            "B08975T43L",
+            "B06ZZNRWF1",
+            "B00I53KUSG"
+          ],
+          "shown_titles": [
+            "Kalon Women's 4-Pack Racerback Shelf Bra Camisole Base Layer",
+            "Bluetime Women Adjustable Spaghetti Strap Tank Tops Basic Solid Stretchy Scoop Neck Camis Undershirts 2-3 Pack",
+            "V FOR CITY Women's Racerback Tanks Bamboo Viscose Wide Straps Camisole Pack",
+            "RADIO Is My Life Passionate DJ Music Talk Hobby Lovers Tee",
+            "RONDO Women's Bra Yoga Mini Cami Seamless Bralette Microfibr Stretch Bra Thin Strap Bralette (Orange_2, Small-",
+            "Vanity Fair Women's Seamless Tailored Camisole 17210",
+            "MB Trend Junior Size Seamless Spandex Bandeau Strapless Tube Top",
+            "V FOR CITY Women's Cotton Tank Top with Shelf Bra Adjustable Wider Strap Camisole Basic Cami Tanks",
+            "Shadowline Women's 2410 Princess Wide Strap Camisole, Beige,Black,Nude,White, 32,34,36,38,40,42,44,46,48,50",
+            "Foxers Hip Length Lace Camisole Chemise Nightie | See Through Lingerie | XS-XXL"
+          ]
+        },
+        {
+          "turn": 5,
+          "customer": "None of those look quite right because I'd like something with adjustable straps. I also want it to be a bit longer so it covers more.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B07Z9NPB25",
+            "B07PV6RXJ2",
+            "B07PZKKP8Q",
+            "B06Y1S3KM2",
+            "B08W1ZC2FY",
+            "B01DVBBZNA",
+            "B07N187D49",
+            "B082YN2GYP",
+            "B0B2P1QV35",
+            "B076JMS9G4"
+          ],
+          "shown_titles": [
+            "Kalon Women's 4-Pack Racerback Shelf Bra Camisole Base Layer",
+            "KIWI RATA Mini Camisole with Built-in Bra Adjustable Spaghetti Strap, Padded Short Cami Bra for Yoga, Comforta",
+            "KIWI RATA Mini Camisole with Built-in Bra Adjustable Spaghetti Strap, Padded Short Cami Bra for Yoga, Comforta",
+            "Maidenform Women's Long Length Tank",
+            "UIN Women's Walking Travel Shoes Slip On Canvas Casual Loafers Lightweight Comfort Fashion Sneaker Tahiti's Gi",
+            "MOPAS Tank Top - Women's Seamless Nylon Camisole Tank Top",
+            "Ruiyige Built-in Bra Tops Ladies Camisoles Comfortable Solid Shelf Cami Shirt,Tag L/US Size M White",
+            "BTFBM Women Summer Short Sleeve Shirts Crew Neck Color Block Irregular Striped Print Loose Soft Casual Tee Top",
+            "Padded Sports Bra for Women Model Comfy Camisole Spaghetti Strap Tank Tops with Built in Bras for Fitness Work",
+            "UNIQUE STYLES ASFOOR Women's Slimming Layering Tank Top, Seamless Stretchable Cami Undershirt (Large, 4PK-Blac"
+          ]
+        },
+        {
+          "turn": 6,
+          "customer": "Those still aren't hitting the mark, mostly because I want a simple cotton-blend fabric with skinny straps.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B07Z9NPB25",
+            "B08P28LYGX",
+            "B077T5B4HP",
+            "B08BC78Y59",
+            "B07ZX1QPRB",
+            "B07DHKDB5B",
+            "B00E1ITZIA",
+            "B00HNWD2DK",
+            "B08GJ7RG8D",
+            "B0932WL69B"
+          ],
+          "shown_titles": [
+            "Kalon Women's 4-Pack Racerback Shelf Bra Camisole Base Layer",
+            "Women Rave Festival Feather Crop Tops Faux Fur Spaghetti Straps Tube Top for Concert Club Party",
+            "DolphinBanana Women's Casual Colorful Velvet Flat Loafers Slip-Ons & Lace Closure Fashion Sneaker Prime Moccas",
+            "ALove Women Extra Long Tank Tops Racerback Basic Long Camisole with Shelf Bra XL",
+            "YOINS Cold Shoulder Tops for Women Long Bat Sleeves Rhinestone Casual Baggy Sequins Blouse T-shirts NEWVSN-Bla",
+            "oodji Ultra Women's Short Sleeve Turtleneck Top",
+            "Crocs Men's Santa Cruz Loafer | Comfortable Men's Loafers | Slip On Shoes, Navy/Stucco, 10 US Men",
+            "Zodiac Jandy Polaris Impeller R0536400 New Style A0185900 PB-60",
+            "Tank Tops for Women Camisole with Shelf Bra Basic Adjustable Strap Layering Undershirt Sleeveless Summer Top",
+            "zcdyn Womens Short Sleeve Raglan Crewneck T Shirts Tees Color Block Casual Loose Fit Tshirts Tops"
+          ]
+        },
+        {
+          "turn": 7,
+          "customer": "Those aren't what I need since they aren't the basic thin-strapped cotton style I'm looking for.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B07Z9NPB25",
+            "B07C2XPZ6D",
+            "B00AFTPRX6",
+            "B09BPSC7MV",
+            "B091FNL5Q1",
+            "B074M6M717",
+            "B0BZ3SGKRL",
+            "B07VV1RV62",
+            "B07XWJ23XB",
+            "B0BGY411F2"
+          ],
+          "shown_titles": [
+            "Kalon Women's 4-Pack Racerback Shelf Bra Camisole Base Layer",
+            "Emmalise Women's Basic Casual Long Camisole Adjustable Strap Cami Layering Top",
+            "Icebreaker Merino Women's Cold Weather Base Layer Thermal Camisole Top",
+            "BINWEN15 COLLECTION Women's Short Sleeve Crew-Neck Shirts Loose Casual Tee T-Shirt",
+            "HGWXX7 Womens Plus Size Short Sleeve Loose t-Shirts Colorful Retro Print V Neck Pullover Comfy Tee Shirts Blou",
+            "DIBAOLONG Women\u2019s Casual Basic V Neck Tshirt Short Sleeve Loose Solid Comfy Tee Shirt Royal Blue L",
+            "GLIGLITTR Plus Size Women\u2019s Summer Sunflower T Shirt Flower Graphic Oversized Tee Crew Neck Short Sleeve Casua",
+            "STYLEIE Women Tale As Old As Time Tee Tops Letter Print Graphic Tees Vintage Tanks Tops",
+            "Vintage 1969 Original Part Rock Legend T Shirt Women Funny Country Music Shirt Cute 50th Birthday Gift Tee Top",
+            "Remidoo Women's Lace Trim Open Front Self Tie Cami Crop Top"
+          ],
+          "hit_rank": 2
+        }
+      ]
+    },
+    {
+      "sample_id": "public_0095",
+      "scenario": "decisive",
+      "maps_to": "buying",
+      "style": "plain",
+      "target": "B09N78FT2W",
+      "hit": true,
+      "first_hit_turn": 5,
+      "best_rank": 9,
+      "reciprocal_rank": 0.1111111111111111,
+      "aborted": null,
+      "transcript": [
+        {
+          "turn": 1,
+          "customer": "I need some new workout leggings, but they absolutely have to be high-waisted.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B08WLNBX5B"
+          ],
+          "shown_titles": [
+            "GLASS TWO High Waisted Leggings \u2013 Women's Yoga Active Workout Running Sports Casual Stretch Elastic Waist Slim"
+          ]
+        },
+        {
+          "turn": 2,
+          "customer": "Those aren't quite right because they don't have any pockets. I really need pockets on the sides for my phone.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B08WLNBX5B",
+            "B07S6TDVQX",
+            "B0BN36K156",
+            "B00P03AMH8",
+            "B074RBSWLX",
+            "B092VT959N",
+            "B0BFS2LF46",
+            "B092Z8DN96",
+            "B0B89SD66J",
+            "B09SG49FWM"
+          ],
+          "shown_titles": [
+            "GLASS TWO High Waisted Leggings \u2013 Women's Yoga Active Workout Running Sports Casual Stretch Elastic Waist Slim",
+            "MMIW COLLECTION Seamless High Waisted Gym Leggings for Women Stretch Yoga Pants Ombre Workout Running Leggings",
+            "HYKEE Flare Leggings for Women - Yoga Pants - High Waisted Wide Leg Pants - Buttery Soft Flared Leggings for W",
+            "VIV Collection Solid Fleece Leggings for Regular and Plus Size",
+            "Sofra Women's Plus Sized Full Length Leggings-Black",
+            "QUEST NEW Leopard High Waisted Leggings for Women Soft Tummy Control Pants 4 Way Stretch Workout Leggings Pant",
+            "90 Degree By Reflex High Waist Tummy Control Interlink Squat Proof Ankle Length Leggings",
+            "SHAPEVIVA Women TIK TOK Bubble Butt Active Leggings - High-Waisted Booty Scrunched Muffin Control Skinny Worko",
+            "Leggings Depot High Waisted Floral & Space Print Leggings for Women - Regular, Plus, 1X3X, 3X5X",
+            "Beyond Yoga Spacedye All Day Flare High Waisted Pants for Women - High Rise Waistband with Flared Leg Opening,"
+          ]
+        },
+        {
+          "turn": 3,
+          "customer": "None of these have pockets either, and some are flared which I don't want.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B07HNZ2YN8"
+          ],
+          "shown_titles": [
+            "ZEALOTPOWER Women's Running Shorts, Athletic Shorts High Waist Sporty Shorts 2 in 1 Workout Shorts for Gym Jog"
+          ]
+        },
+        {
+          "turn": 4,
+          "customer": "Those are shorts, but I'm looking for full-length pants with side pockets.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B08WLNBX5B"
+          ],
+          "shown_titles": [
+            "GLASS TWO High Waisted Leggings \u2013 Women's Yoga Active Workout Running Sports Casual Stretch Elastic Waist Slim"
+          ]
+        },
+        {
+          "turn": 5,
+          "customer": "I already checked those and they still don't have pockets.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B08WLNBX5B",
+            "B074RBSWLX",
+            "B07S6TDVQX",
+            "B0BRPKSDCS",
+            "B0B89SD66J",
+            "B0BFS2LF46",
+            "B08VRN834Y",
+            "B00P03AMH8",
+            "B09N78FT2W",
+            "B092VT959N"
+          ],
+          "shown_titles": [
+            "GLASS TWO High Waisted Leggings \u2013 Women's Yoga Active Workout Running Sports Casual Stretch Elastic Waist Slim",
+            "Sofra Women's Plus Sized Full Length Leggings-Black",
+            "MMIW COLLECTION Seamless High Waisted Gym Leggings for Women Stretch Yoga Pants Ombre Workout Running Leggings",
+            "Sunzel Softmax Workout Leggings for Women, Tummy Control Compression Workout Gym Yoga Pants, High Waist & No F",
+            "Leggings Depot High Waisted Floral & Space Print Leggings for Women - Regular, Plus, 1X3X, 3X5X",
+            "90 Degree By Reflex High Waist Tummy Control Interlink Squat Proof Ankle Length Leggings",
+            "TNNZEET 7 Pack High Waisted Leggings for Women - Buttery Soft Workout Running Yoga Pants",
+            "VIV Collection Solid Fleece Leggings for Regular and Plus Size",
+            "Free Leaper High Waisted Yoga Pants with Pockets for Women-Comfortable Running Seamless Leggings",
+            "QUEST NEW Leopard High Waisted Leggings for Women Soft Tummy Control Pants 4 Way Stretch Workout Leggings Pant"
+          ],
+          "hit_rank": 9
+        }
+      ]
+    },
+    {
+      "sample_id": "public_0106",
+      "scenario": "vague",
+      "maps_to": "browsing",
+      "style": "esl",
+      "target": "B0776SVXW9",
+      "hit": true,
+      "first_hit_turn": 6,
+      "best_rank": 5,
+      "reciprocal_rank": 0.2,
+      "aborted": null,
+      "transcript": [
+        {
+          "turn": 1,
+          "customer": "Hello! I just look around for some socks for men, nothing too specific yet.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B07V6PKCCG"
+          ],
+          "shown_titles": [
+            "JAMES FIALLO Mens 12-Pairs Funny Funky Crazy Novelty Colorful Patterned Dress Socks"
+          ]
+        },
+        {
+          "turn": 2,
+          "customer": "These are too wild for me, I need something more for work with the diamond pattern.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B09JG91VWQ"
+          ],
+          "shown_titles": [
+            "Christmas Socks For Men, 6 Pack Mens Christmas Socks, Xmas Crew Socks US Size 6-13"
+          ]
+        },
+        {
+          "turn": 3,
+          "customer": "No, not Christmas time, just regular business socks. I want them mostly cotton too.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B0BCKY5Q5M"
+          ],
+          "shown_titles": [
+            "Black White Cat Crew Novelty Socks Casual Funny Crazy Athletic Dress Socks Unisex"
+          ]
+        },
+        {
+          "turn": 4,
+          "customer": "No cats, please! I just want simple cotton socks with the diamond design for my office clothes.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B09WR6D62H"
+          ],
+          "shown_titles": [
+            "Mens Big and Tall Tee Shirts, Summer Casual Retro Distressed Map Printed T-Shirt Vintage Crewneck Short Sleeve"
+          ]
+        },
+        {
+          "turn": 5,
+          "customer": "Wait, why you show me shirts? I need those cotton office socks with the diamond pattern.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B09PM4R9SC"
+          ],
+          "shown_titles": [
+            "Mens Unisex Crazy Funny Novelty 3D Colorful Athletic Sport Crew Tube Socks"
+          ]
+        },
+        {
+          "turn": 6,
+          "customer": "Still not right, those are too sporty and crazy. I want the classic diamond pattern socks made mostly of cotton for work.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B07523NHQP",
+            "B09WZZTFR9",
+            "B09PYF3T1V",
+            "B097F2JXYB",
+            "B0776SVXW9",
+            "B09DYKJSQ2",
+            "B09NQRPVCF",
+            "B01FEE78IS",
+            "B09Z34PD75",
+            "B08229VKYF"
+          ],
+          "shown_titles": [
+            "HISDERN Mens Ties Paisley Floral Tie Handkerchief Silk Necktie Pocket Square Formal Wedding",
+            "Womens Summer Boho High Waisted Skirt Ruffle Flowy Casual Drawstring Maxi Skirt Long Beach Skirt",
+            "Adult WOOSUNG Logo Pullover Hoodie Sweater for Women",
+            "melupa Summer Pants for Women Casual Pockets Cotton Linen Wide Leg Trousers Loose Elastic Waist Capris Beach C",
+            "Mens Socks Dress Cotton Socks Fashion Patterned Argyle Socks &Formal Business Socks Classic Cotton Dress Casua",
+            "Women Long Sleeve Plaid Shirt Button Down Blouse Retro Roll Up 3/4 Sleeve Tops Boyfriend Classic Cuffed Cardig",
+            "Womens Summer Tops Fashion Tank Tops Trendy Loose Fit Womens Tops with Cute Printing C-Purple",
+            "Modern Motif Men's Haberdashery Dress Socks ~ Mustache These Socks ~ Fun, Colorful & Funky",
+            "Cole Haan Women's Socks - Lightweight No Show Sneaker Liners (3 Pack)",
+            "Musen Men Cotton Plaid Long Sleeve Button Down Casual Dress Shirts"
+          ],
+          "hit_rank": 5
+        }
+      ]
+    },
+    {
+      "sample_id": "public_0030",
+      "scenario": "vague",
+      "maps_to": "browsing",
+      "style": "informal",
+      "target": "B09V5RTXG9",
+      "hit": true,
+      "first_hit_turn": 3,
+      "best_rank": 1,
+      "reciprocal_rank": 1.0,
+      "aborted": null,
+      "transcript": [
+        {
+          "turn": 1,
+          "customer": "hey, just browsin around today. looking for some comfy pants to wear around the house, u know?",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B00XL9II74"
+          ],
+          "shown_titles": [
+            "CandyHusky Men Women Summer Loose Baggy Hippie Boho Gypsy Harem Pants Plus Size"
+          ]
+        },
+        {
+          "turn": 2,
+          "customer": "nah, those look way too baggy and colorful for me. i'm thinking more like classic winter lounge pants with a checkerboard print.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B00XL9II74",
+            "B0C3VF4Y2F",
+            "B08P8JFWK9",
+            "B00JMTNEYY",
+            "B072SYYJ7S",
+            "B08R8DCSDH",
+            "B09LRRCD2Y",
+            "B0BDDXMB8G",
+            "B093337HYV",
+            "B093BVDGSK"
+          ],
+          "shown_titles": [
+            "CandyHusky Men Women Summer Loose Baggy Hippie Boho Gypsy Harem Pants Plus Size",
+            "Ganfancp Capris for Women Casual Summer Fashion Lightweight Stretch Skimmer Pants Drawstring Capri Pant Plus S",
+            "NEWCOSPLAY Women's Comfy Casual Stretch Floral Print High Waist Drawstring Palazzo Lounge Tie Dye Wide Leg Pan",
+            "Uptown Apparel Womens Fold Over Waist Wide Leg Palazzo Pants (Pink Tropical, L)",
+            "Adult Unisex Never Forget Funny Retro Guys Gift Idea Music Mens Novelty Funny T Shirt",
+            "Lavnis Men's Military Shorts Vintage Camouflage Camo Cagro Army Short Pants with Multi-Pockets",
+            "SLIM-SATION Women's Plus Size Pull on Solid Knit Flare Leg Pant with Tummy Panel",
+            "TAPULCO Men's Quick Dry Hiking Pants Elastic Waist Athletic Durable Casual Outdoor Daily Pants with Zipper Poc",
+            "elescat Boho Dresses for Women Summer Beach Sleeveless Sundress Pockets Swing Casual Loose Tshirt Dress(Boho B",
+            "Veatzaer Women Capri Pants Cotton High Waisted Cotton Soft Capris Casual Linen Pants with Pockets(Black,L)"
+          ]
+        },
+        {
+          "turn": 3,
+          "customer": "none of those are right at all, those are mostly women's stuff and wild prints. i just want some men's fleece sleep pants with pockets.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B09V5RTXG9"
+          ],
+          "shown_titles": [
+            "#followme Microfleece Men\u2019s Buffalo Plaid Pajama Pants with Pockets"
+          ],
+          "hit_rank": 1
+        }
+      ]
+    },
+    {
+      "sample_id": "public_0197",
+      "scenario": "decisive",
+      "maps_to": "buying",
+      "style": "terse",
+      "target": "B07FDNP55K",
+      "hit": false,
+      "first_hit_turn": null,
+      "best_rank": null,
+      "reciprocal_rank": 0.0,
+      "aborted": null,
+      "transcript": [
+        {
+          "turn": 1,
+          "customer": "Need a kit for fixing watch bands. Must have a little hammer included.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B001ENYS0K"
+          ],
+          "shown_titles": [
+            "Philip Stein 1-CB 18 Signature Small Band Watch Strap"
+          ]
+        },
+        {
+          "turn": 2,
+          "customer": "That's a strap, not a tool kit. And no hammer.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B017PGJBPG"
+          ],
+          "shown_titles": [
+            "18 Millimeters Replacement Rubber Band Fits Casio and Other Sport Watchbands 2R776NW"
+          ]
+        },
+        {
+          "turn": 3,
+          "customer": "Still just a strap. Need the actual repair set with the hammer.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B003OQ4SNC"
+          ],
+          "shown_titles": [
+            "Timex Women's Q7B857 Woven Leather 13mm Brown Replacement Watchband"
+          ]
+        },
+        {
+          "turn": 4,
+          "customer": "Stop showing bands. I need the tool set to fix links, with the little hammer.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B08FXQDLBD"
+          ],
+          "shown_titles": [
+            "Watch Hand Pusher, Multi Sizes Watch Hand Pusher Set, Watch Hand Presser, for Fitting Watch Hands for Watchmak"
+          ]
+        },
+        {
+          "turn": 5,
+          "customer": "Close, but that's for hands. I need the kit for taking out band links, with extra pins and the hammer.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B07MZH7FKD"
+          ],
+          "shown_titles": [
+            "MINGPINHUIUS Jewelry Box Organizer, Travel Jewelry Storage Double Sided Carrying Cases for Earrings, Necklaces"
+          ]
+        },
+        {
+          "turn": 6,
+          "customer": "That's a jewelry box. Where are the watch link tools?",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B0007X9F7O",
+            "B00JEWWG3E",
+            "B07FKTNZ59",
+            "B01HI8Z2SQ",
+            "B07ZWRZKQX",
+            "B0C6BL4RNN",
+            "B001AUGINM",
+            "B09L4KL4C9",
+            "B00OJ8BXGY",
+            "B089GMX1WH"
+          ],
+          "shown_titles": [
+            "Skagen Men's 233XLTMB Grenen Black Titanium Mesh Watch",
+            "Amazon Collection Sterling Silver Diamond Stick Necklace, 18\"",
+            "Gold Chain Necklace 5MM 18Kt Diamond Cut White Gold Miami Cuban Link with A Warranty USA Made!",
+            "Womens Chic Retro 50s Floral Halter High Waist Bikini Carnival Swimsuit Bathing Suit (X-Large, Black & Peony)",
+            "Y&G Men's Fashion Handmade Fabric 4 Pack Cotton Handkerchiefs Set Pretty Designer",
+            "Dearfoams Women's Rebecca Lightweight Cozy Memory Foam Closed Back Slipper with Wide Widths",
+            "Nixon Unisex Quatro",
+            "EBUTY Bracelet for Men Black",
+            "Bico 3mm Brown Braided Necklace (CL13 Brown)",
+            "VAVAER Gym Tote Bag Large Beach Bags Water Resistant Totes for Women Lightweight Travel Tote Bag with Zipper"
+          ]
+        },
+        {
+          "turn": 7,
+          "customer": "None of those. Just need that watch link tool bundle with the hammer.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B00APLPWFC",
+            "B00APLPSZ6",
+            "B07TQRX3BF",
+            "B00GN55U8S",
+            "B0085THRXG",
+            "B00BLZWMG8",
+            "B0B7KW687Z",
+            "B00ABPOXHA",
+            "B0046EC1NK",
+            "B09294Q9WZ"
+          ],
+          "shown_titles": [
+            "Saddleback Leather Co. Tow Belt Highest Quality Designed Leather Belts for Men Includes 100 Year Warranty",
+            "Saddleback Leather Co. Tow Belt Highest Quality Designed Leather Belts for Men Includes 100 Year Warranty",
+            "Kai Urns Crossing Paths Jeweled Stainless Steel with Pink Gems & Rose Tone Keepsake Memorial Urn Necklace",
+            "Skagen Women's SKW2187 Leonora Stainless Steel Rose Gold-Tone Watch",
+            "Carhartt Men's Washed Twill Dungaree Flannel Lined",
+            "Skagen Women's SKW2051 Asta Stainless Steel Mesh Watch",
+            "Momlovu Silver Chain Gold Chain for Men Boys, 18K Gold Plated Men's Necklaces Chain Cuban Link Chain for Men 4",
+            "Flower Girl Gift Boxed Bling Bag",
+            "Amazon Collection Sterling Silver Diamond Accent Lotus Flower Pendant Necklace, 18\"",
+            "WINCSPACE Dad Gifts from Daughter Father Day Keychain for Papa Daddy You Are My Super Hero If Dad Can't Fix it"
+          ]
+        },
+        {
+          "turn": 8,
+          "customer": "Still wrong. Need the link pin removal kit with the extra tips and hammer.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B09J27QKCW",
+            "B07PPJWVLS",
+            "B004WOZ5C8",
+            "B07GZQ6FHH",
+            "B08LQHMBN2",
+            "B08CKG1FN7",
+            "B07FXCTPYT",
+            "B00RDWZ2LU",
+            "B08CXZV73C",
+            "B005F58BLK"
+          ],
+          "shown_titles": [
+            "6 Pieces Evil Eye Bracelets Blue Evil Eye Bracelet Set Gold Silver Evil Eye Chain Bracelet Handmade String Evi",
+            "18K White Gold up to 20X More Real 14k Gold Plating Than Other Fashion Jewelry Necklaces, Resists Tarnishing, ",
+            "Amazon Collection Sterling Silver Oval Shaped Semi-Precious and White Topaz 4x6mm Bracelet, 7.25\"",
+            "Granny Chic Men Chain Boys Round Curb Cuban Link 316L Stainless Steel Bracelet 15mm 7-11inch",
+            "Miabella 18K Gold Over Sterling Silver Italian 3mm, 4mm Solid Diamond-Cut Mariner Link Chain Bracelet for Men ",
+            "YBMYCM 14K Gold Plated Beaded Bracelets Letter Stretch Dainty Stackable Bracelet for Women Girls",
+            "Men's Italian Two-Tone 14k Yellow and White Gold 7.83mm Long and Short Cable Link Bracelet 7.75 Inches",
+            "Mefell Men's Stainless Steel Buddha Head Punk Style Link Bracelet Silver Color",
+            "Black and Red Steel Matte Carbon Fiber and Link Sizeable Bracelet | Perfect for Men",
+            "Peora Mens Titanium Riveted Italian Style Bracelet"
+          ]
+        },
+        {
+          "turn": 9,
+          "customer": "Those are all bracelets. I need the tool kit with the little hammer to fix watch bands.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B08P3FP2HJ",
+            "B085KXLHJL",
+            "B07DYK213G",
+            "B08CD8SBXB",
+            "B07FSZY32K",
+            "B00378L0VK",
+            "B01FGU8NPM",
+            "B07YRGC1Q1",
+            "B07YNY57Z1",
+            "B08P3B3RLW"
+          ],
+          "shown_titles": [
+            "The Bling Factory Men's 14.6mm 14k Yellow Gold Plated Beveled Curb Chain Necklace",
+            "FLMG Artful Titanium Magnetic Bracelet For Men In Fashion Style 4 Colours",
+            "Divoti Stainless Steel Handmade Round Byzantine Chain Bracelet for Men - Size",
+            "SX Commerce Black Obsidian Stone Pixiu Pi Yao Bracelet Attract Wealth and Good Luck",
+            "Kooljewelry Mens 14k Yellow Gold Cuban Curb Link Bracelet (9.4 mm, 8.5 inch)",
+            "Amazon Collection Sterling Silver Marcasite Heart Bar Link Bracelet",
+            "Wellingsale 14k Two 2 Tone White and Yellow Gold Polished Heart Link Bracelet with Lobster Claw Clasp - 7.5\"",
+            "Feraco Mens Bikers Bracelet Stainless Steel Motorcycle Bike Chain Bracelets 8.4 Inch",
+            "Argento Reale 925 Sterling Silver Solid 6.25MM-12.25MM Miami Cuban Bracelet for Men - Sterling Silver Link Bra",
+            "6.5mm Solid .925 Sterling Silver Beveled Curb Chain Bracelet"
+          ]
+        },
+        {
+          "turn": 10,
+          "customer": "Still all bracelets. Give up.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B079YMKHCX",
+            "B00ZXWV2SY",
+            "B00APG8WV8",
+            "B09L6NMKDM",
+            "B00D2UIP2K",
+            "B07DPG4QDF",
+            "B08P3BMJ5V",
+            "B00J2R7A32",
+            "B07YC72GQ9",
+            "B08QGGTK8F"
+          ],
+          "shown_titles": [
+            "NOVICA .925 Sterling Silver Link Bracelet, 7.5\" 'Garden Orbs'",
+            "Sterling Silver 7.5\" Natural Larimar Oval Stone & Heart Link Bracelet",
+            "KONOV Leather Mens Bracelet Stainless Steel Clasp, Brown Silver - 8\", 8.5\", 9\"",
+            "Mens Camouflage Military BDU Pants Army Cargo Fatigues Camo Fashion Trousers",
+            "KONOV Heavy Stainless Steel Biker Men's Bracelet, Color Black Silver",
+            "Sterling Silver Engraved Inspirational Adjustable Bracelet \u201cShe Believed She Could So She Did\u201d Gift for Her, W",
+            "2mm 14k Yellow Gold Plated Twisted Singapore Chain Link Bracelet",
+            "jonline24h Stainless Steel Vintage Dragon Men's Bracelet Bangle- Black Silver - 8.66 Inch Gift",
+            "ESSIE ODILA Women 925 Sterling Silver Bracelet Boho Beach Dainty Dot Chain Silver Ball Bracelet for Christmas",
+            "4mm Solid .925 Sterling Silver Flat Figaro Chain Bracelet"
+          ]
+        }
+      ]
+    },
+    {
+      "sample_id": "public_0115",
+      "scenario": "vague",
+      "maps_to": "browsing",
+      "style": "informal",
+      "target": "B08VWZBYPY",
+      "hit": true,
+      "first_hit_turn": 5,
+      "best_rank": 1,
+      "reciprocal_rank": 1.0,
+      "aborted": null,
+      "transcript": [
+        {
+          "turn": 1,
+          "customer": "hey, just kinda browsing around today for some new sleep stuff. not really sure what i want yet.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B09FJSKBZL"
+          ],
+          "shown_titles": [
+            "Doctor Unicorn Soft Unicorn Hooded Bathrobe Sleepwear Matching Doll & Girls"
+          ]
+        },
+        {
+          "turn": 2,
+          "customer": "nah, that's way too fuzzy and definitely not what I'm looking for. i just want a simple short sleeve sleep dress that's super soft.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B0BKV4GGCX"
+          ],
+          "shown_titles": [
+            "Bloggerlove House Dresses for Women With Pockets Mumu Duster Housecoat Short Sleeve Patio Dress S-XXL"
+          ]
+        },
+        {
+          "turn": 3,
+          "customer": "no pockets on this one, just want a basic scoopneck nightshirt with some pleats in the front.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B08M43YMR9"
+          ],
+          "shown_titles": [
+            "Evanhome Nightgown for Women Button Down Nightshirt Boyfriend Sleep Tee Loose House Dress Soft Lounge Dress"
+          ]
+        },
+        {
+          "turn": 4,
+          "customer": "nope, that one has buttons down the front, but i want a scoopneck with pleats.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B08T7CRRKZ"
+          ],
+          "shown_titles": [
+            "SWOMOG Men's Modal Nightshirts Henley Nightgown Short Sleeve Sleepwear Dress Big&Tall Lounge Pajamas Shirt Sle"
+          ]
+        },
+        {
+          "turn": 5,
+          "customer": "ugh, that's a men's shirt, i need something for women.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B08VWZBYPY"
+          ],
+          "shown_titles": [
+            "PrinStory Womens Sleepwear Short Sleeve Nightgown Soft Sleepshirt Pleated Nightshirt Scoopneck Casual Loungewe"
+          ],
+          "hit_rank": 1
+        }
+      ]
+    },
+    {
+      "sample_id": "public_0026",
+      "scenario": "vague",
+      "maps_to": "browsing",
+      "style": "esl",
+      "target": "B093R14VP1",
+      "hit": false,
+      "first_hit_turn": null,
+      "best_rank": null,
+      "reciprocal_rank": 0.0,
+      "aborted": "TimeoutError('The read operation timed out')",
+      "transcript": [
+        {
+          "turn": 1,
+          "customer": "Hello! I just look around today, not really sure what I want yet. Maybe some shoes for walking outside?",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B08CTFPBN5"
+          ],
+          "shown_titles": [
+            "RockDove Women's Nomad Slipper with Memory Foam"
+          ]
+        },
+        {
+          "turn": 2,
+          "customer": "Ah no, those are just slippers for inside house, I need something for outdoor paths. Also these are for women, I am looking for men shoes.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B083451D3W"
+          ],
+          "shown_titles": [
+            "PepStep Slide Sandals for Men with Soft Cork Footbed and 2 Strap Buckle, Mens Fashion Platform Slide Sandals C"
+          ]
+        },
+        {
+          "turn": 2,
+          "customer_error": "TimeoutError('The read operation timed out')"
+        }
+      ]
+    },
+    {
+      "sample_id": "public_0129",
+      "scenario": "decisive",
+      "maps_to": "buying",
+      "style": "informal",
+      "target": "B0936ZJJ68",
+      "hit": false,
+      "first_hit_turn": null,
+      "best_rank": null,
+      "reciprocal_rank": 0.0,
+      "aborted": null,
+      "transcript": [
+        {
+          "turn": 1,
+          "customer": "hey, i'm looking for a comfy bodysuit and it *has* to have a square neckline.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B08P4DLWGG"
+          ],
+          "shown_titles": [
+            "MANGOPOP (A Coffee, X-Large"
+          ]
+        },
+        {
+          "turn": 2,
+          "customer": "nah, just the square neck is the main thing. those ones look a bit off though, i wanted short sleeves.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B08417XN9W"
+          ],
+          "shown_titles": [
+            "Dearlovers Womens Short Sleeve Tshirt Dresses Side Knot Mini Dress"
+          ]
+        },
+        {
+          "turn": 3,
+          "customer": "wait, that's a dress, i need a bodysuit!",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B00PKPMRJ2"
+          ],
+          "shown_titles": [
+            "Valair Full Slip Dress for Women \u2013 Cotton/Lycra Top, Nylon Bottom, Short Sleeves"
+          ]
+        },
+        {
+          "turn": 4,
+          "customer": "still a dress, ugh. i just want a simple top piece with snaps at the bottom, you know?",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B085LBDYCJ"
+          ],
+          "shown_titles": [
+            "Mai Poetry Mens Hip Hop Longline Tshirt Rap Street Dance Short Sleeves T-Shirt"
+          ]
+        },
+        {
+          "turn": 5,
+          "customer": "dude, that's a men's tee, way off. i need a women's bodysuit with short sleeves and that square neck.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B07DHKDB5B"
+          ],
+          "shown_titles": [
+            "oodji Ultra Women's Short Sleeve Turtleneck Top"
+          ]
+        },
+        {
+          "turn": 6,
+          "customer": "nope, that's got a high neck instead of the open square one i want.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B07CB4N9B4",
+            "B098GXBCTG",
+            "B07RW6ZNC3",
+            "B089ZZY1R6",
+            "B082YN2GYP",
+            "B07ZX1QPRB",
+            "B0795KN358",
+            "B0834D3VS4",
+            "B0B8BGZ5KP",
+            "B09SGYPW3M"
+          ],
+          "shown_titles": [
+            "Have It Tall T Shirts for Men and Women | Cotton Short Sleeve | Sizes S - 6XL",
+            "EDENNAOMI Women's Casual Crop Top - Short Sleeve French Terry Elastic Hem Loose Fit Cropped T Shirt Pullover",
+            "Movpct Women's Summer Twist Front Casual Tunic Tops Short Sleeve Blouses T Shirts Loose Fitted",
+            "Allegra K Women's Sequin Shiny Glitter Crop Top Short Sleeves Party Tassel T-Shirt",
+            "BTFBM Women Summer Short Sleeve Shirts Crew Neck Color Block Irregular Striped Print Loose Soft Casual Tee Top",
+            "YOINS Cold Shoulder Tops for Women Long Bat Sleeves Rhinestone Casual Baggy Sequins Blouse T-shirts NEWVSN-Bla",
+            "LSAME Women's Blouse Short/Long Sleeve Floral Print Striped T-Shirt Casual Comfy Tunic Tops with Pocket",
+            "Women's Mama Bear Shirt Funny Graphic Short Sleeve Tees Letter Print Tops Casual for Mom Mother's Gift",
+            "Women's Casual Long Sleeve Shirts 2022 Fashion Crew Neck Tie Dye Blouses Comfy Loose Fit Fall Pullover T-Shirt",
+            "OFEEFAN Womens Tops Ruffle Short Sleeve V Neck T-Shirts Casual Loose Fit"
+          ]
+        },
+        {
+          "turn": 7,
+          "customer": "none of those are bodysuits, they're all just regular shirts.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B0747V3945",
+            "B099JC3CDX",
+            "B0BBWJNL9X",
+            "B0873XGP72",
+            "B074PJ6LKS",
+            "B071RTD6WK",
+            "B08FXPZPBS",
+            "B0BMZ5THGR",
+            "B09ZJ1FC6T",
+            "B0BJPX2SCL"
+          ],
+          "shown_titles": [
+            "April Apparel Women's Basic TOP (Small, Baby Blue)",
+            "HOLATOK Women's Retro World Map Geometric Pattern Lapel Casual Long Sleeve Button Down Shirt Loose Top Blouse",
+            "VenusCelia Women's Comfort Walking Boat Shoe",
+            "YOINS Summer Top for Women Cold Shoulder Short Sleeve Blouse Loose Casual Cut Out T-Shirts",
+            "Sakkas Diane Short Sleeve Slim Top Blouse with Sequin Embroidery & Golden Print",
+            "Hustle 24/7 Business Entrepreneur",
+            "Ella Moss Women's Lyra Pintucked Woven Top",
+            "SMIDOW Women's casual tunic tops long sleeve cute sweatshirt shirts Crewneck Loose Thin Pullovers blouse fashi",
+            "BELLA MAMA MATERNITY Women's Summer Pregnancy Blouses Maternity T-Shirt Tops",
+            "Fengbay Corset Tops,Summer Mesh Sexy Bustier Tops for Women Lace Corset Top Y2k Spaghetti Strap Boned Going Ou"
+          ]
+        },
+        {
+          "turn": 8,
+          "customer": "still just regular tops, not bodysuits. come on, it needs the square neck and short sleeves.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B0862LXM9V",
+            "B07CXN3GF3",
+            "B007TWCCEY",
+            "B0B2XSL4QR",
+            "B074M6M717",
+            "B01M7S8RJ7",
+            "B01ETF09I4",
+            "B08D3FB7HV",
+            "B08XN3NTV9",
+            "B09Q7GCPH6"
+          ],
+          "shown_titles": [
+            "Lark & Ro Women's Crepe De Chine Half Sleeve Bateau Square Neck Top",
+            "For G and PL Womens Knot Tie Front Shirt",
+            "White Tshirt Fits Most 8\"-10\" Stuffed Animals",
+            "Lucky Brand Textured Long Sleeve Top",
+            "DIBAOLONG Women\u2019s Casual Basic V Neck Tshirt Short Sleeve Loose Solid Comfy Tee Shirt Royal Blue L",
+            "Chase Secret Womens Casual V Neck Summer Short Sleeve Blouse Top",
+            "Chase Secret Womens Casual V Neck Summer Short Sleeve Blouse Top",
+            "Feditch Women's Deep V Neck Open Flare Long Sleeves Front Bow Tie Crop Top Blouses",
+            "Kurve Women\u2019s Mock Neck Top \u2013 Long Sleeve Mesh Hollow Out Sleeves Ribbed T Shirt UV Protective Fabric UPF 50+ ",
+            "Godzilla Vs. Kong Black and White Godzilla Art Royal Blue T-Shirt-Large"
+          ]
+        },
+        {
+          "turn": 9,
+          "customer": "still missing the snaps at the bottom, those are just normal shirts.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B01CUJUHXS",
+            "B07GXF4PGS",
+            "B075R15X79",
+            "B00IIFWQ0Q",
+            "B09TKSBP9Y",
+            "B07RYXQHQV",
+            "B07J5SG8L1",
+            "B08GLZJPL7",
+            "B09BQ5QQT4",
+            "B077T5B4HP"
+          ],
+          "shown_titles": [
+            "Sakkas Gella Button Down Blouse Top with Bell Sleeves and Handkerchief Sides",
+            "Snowfoller Women Plaid Shirts Fashion Turn-Down Collar Long Sleeve T-Shirt Side Button Decor Tunic Blouse Offi",
+            "Splendid Women's Cerine Slub Stripe Button Back",
+            "eVogues Plus Size Color Block Cap Sleeve Top Black",
+            "Women's Notched V-Neck Short Sleeve Summer Solid Color Casual Cap Sleeve Tunic Knit Top",
+            "Jessica Simpson Women's Nia Short Sleeve Knit Lettuce Edge Top",
+            "ToBeInStyle Women's 3/4 Sleeve Relaxed Fit V-Neck Round Hem Top",
+            "UNIQUEONE Happy Camper Shirt Women Funny Camping Graphic Tee Long Sleeve Letter Print Casual T Shirts Blue Sma",
+            "Paitluc Blouses for Women Blouse Sleeveless Womens Work Blouses Swiss Dot Blouse for Women",
+            "DolphinBanana Women's Casual Colorful Velvet Flat Loafers Slip-Ons & Lace Closure Fashion Sneaker Prime Moccas"
+          ]
+        },
+        {
+          "turn": 10,
+          "customer": "none of those are it, still just regular tops.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B0768LS2JF",
+            "B09X1D4CV4",
+            "B01LXJ0UPX",
+            "B0161ZC8FW",
+            "B00H3K5DBG",
+            "B09B1P1PSG",
+            "B09T699F5X",
+            "B089N4SKGQ",
+            "B07BTHMMM8",
+            "B01N6V7WPZ"
+          ],
+          "shown_titles": [
+            "Distressed Ford Trucks Women's T-Shirt F150 American Pick Up",
+            "Verdusa Women Casual V Neck Scallop Edge Top Short Sleeve Blouse Cut Out Solid Tee",
+            "One Cat Short of Crazy - Cute Cat Lover TShirt",
+            "HOT FROM HOLLYWOOD Women's Loose Fit Cold Shoulder Top",
+            "Yizzam- Street Puppy -New Ladies Womens 3/4 Sleeve-X-Large Multicolored",
+            "Lucky Brand Women's Lucky Flower Classic Graphic Crew",
+            "We The People T Shirts for Women 4th of July Patriotic Shirt American Flag Graphic Tees Shirts",
+            "MYHALF Womens Happy Hiking Printed T-Shirt Summer Camping Graphic Tee Top Vacation Nature Short Sleeve Shirt",
+            "Blackwhitem Women's Mary Poppins V-Neck Slim T-Shirt",
+            "Collections Etc It's About The Lamb Novelty Tee"
+          ]
+        }
+      ]
+    },
+    {
+      "sample_id": "public_0002",
+      "scenario": "use_case_led",
+      "maps_to": "browsing",
+      "style": "plain",
+      "target": "B071X54486",
+      "hit": true,
+      "first_hit_turn": 3,
+      "best_rank": 1,
+      "reciprocal_rank": 1.0,
+      "aborted": null,
+      "transcript": [
+        {
+          "turn": 1,
+          "customer": "Hey there, I'm looking for a new belt I can wear every day. Do you have anything that feels well-made and goes with just about anything?",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B0BZWZSM7D"
+          ],
+          "shown_titles": [
+            "Steve Madden Men's Dress Casual Every Day Leather Belt"
+          ]
+        },
+        {
+          "turn": 2,
+          "customer": "That one's a bit too plain for me. I'd really like something with some nice stitching detail on it if you've got it.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B0BZWZSM7D",
+            "B07MB6TNJ8",
+            "B07PQS76MV",
+            "B07GDTGWX1",
+            "B07FCHJ9M5",
+            "B07RMDYG9G",
+            "B07RQSN383",
+            "B07RW633ZF",
+            "B0C4HGYDMF",
+            "B07VXNWQ85"
+          ],
+          "shown_titles": [
+            "Steve Madden Men's Dress Casual Every Day Leather Belt",
+            "Savile Row Men's Top Grain Leather Reversible Belt, Classic & Fashion Designs, Classic #713 - Updated Buckle, ",
+            "WERFORU Women's Metal Link Body Chain Belt Ladies Waist Chain Dress Belts",
+            "The Savile Row Company Mens Dress Belt Leather 35mm 1.35\" wide Tan Size 38",
+            "Belt for Dresses/womens belt leather/leather waist belt/Fashion Belt for Pant",
+            "Coffee Leather Belt for Western Men Jeans with Brass Roller Buckle 34-50 Inch",
+            "Timberland PRO Men's No-Scratch No Buckle Mechanic Belt",
+            "Timberland PRO Men's 38mm Boot Leather Belts",
+            "Belts for Men, High Quality Handmade Genuine Leather, 100% Cow Leather, Classic and Fashion Designs",
+            "Women's Belt Genuine Leather Belt with Single Prong Alloy Buckle Red Black Brown"
+          ]
+        },
+        {
+          "turn": 3,
+          "customer": "None of those are really hitting the mark, especially since a bunch of those are women's belts. I just want a rugged, handcrafted leather everyday belt with double rows of stitching.",
+          "agent": "Anything else about this that matters to you?",
+          "ask_attribute": "other",
+          "shown": [
+            "B071X54486"
+          ],
+          "shown_titles": [
+            "Hide & Drink, Rustic Handmade Full Grain Leather Men's Belt, Two Row Stitch Stylish Design - Everyday Belts fo"
+          ],
+          "hit_rank": 1
+        }
+      ]
+    }
+  ]
+}
