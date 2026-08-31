@@ -49,14 +49,19 @@ customer while relying almost entirely on matching its exact wording.
 | tier | scripted (200) | LLM customer (120) | requires |
 |---|---|---|---|
 | organiser BM25 baseline | 0.1067 | - | - |
-| **1 - lexical, graded config** | **0.9746** | not measured at n=120 | nothing |
+| **1 - lexical, graded config** | **0.9746** | **0.299** (n=54) | nothing |
 | 2 - + dense retrieval | 0.9724 | 0.7054 | numpy, onnxruntime, tokenizers |
 | 3 - + model extraction and listwise rerank | 0.8740 | **0.7903** | network + credential |
 
-The tiers move in opposite directions, and that is the central finding. Against a
-customer who quotes product text, exact-match machinery is near-optimal and every
-model-based layer can only overrule a correct answer. Against a customer who
-speaks naturally, those same layers are worth +0.085. **Tier 1 is submitted**,
+The tiers move in opposite directions, and that is the central finding. The
+submitted configuration scores **0.9746 against a quoting customer and 0.299
+against a paraphrasing one** — same agent, same targets, same metric. Against the
+quoting customer, exact-match machinery is near-optimal and every model-based
+layer can only overrule an answer that was already right. Against the
+paraphrasing one, those layers are worth the gap between 0.299 and 0.790.
+
+The tier-1 language-model figure is measured over 54 sessions; that run was
+stopped part-way to preserve API budget and is reported at its true sample size. **Tier 1 is submitted**,
 because the organiser confirmed that final results are generated exactly as the
 published local evaluator.
 

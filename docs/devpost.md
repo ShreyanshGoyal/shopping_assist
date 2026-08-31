@@ -99,10 +99,14 @@ retrieval has no clear leader, and paired with a hedge that shows both candidate
 when the model overrules a confident retrieval. **Worth +0.085 on the
 language-model customer**, taking rank-1 placement from 28/50 hits to 90/103.
 
-The tiers move in opposite directions, and that is the finding: the same layer
-worth +0.085 against a paraphrasing customer costs 0.098 against a quoting one.
-We submit the offline configuration, because the organiser confirmed final
-results are generated exactly as the published evaluator.
+The tiers move in opposite directions, and that is the finding. **The submitted
+configuration scores 0.9746 against a customer who quotes product text and 0.299
+against one who paraphrases** — the same agent, the same targets, the same
+metric. Dense retrieval alone more than doubles the second number; listwise
+reranking takes it to 0.790. We submit the offline configuration anyway, because
+the organiser confirmed final results are generated exactly as the published
+evaluator — but we report both columns, because only one of them is about
+understanding.
 
 ## 4. What we falsified
 

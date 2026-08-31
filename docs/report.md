@@ -148,14 +148,21 @@ frame rebuild.
 
 | tier | scripted (200) | LLM customer (120) | requires |
 |---|---|---|---|
-| **1 — lexical, submitted** | **0.9746** | not measured at n=120 | nothing |
+| **1 — lexical, submitted** | **0.9746** | **0.299** (n=54) | nothing |
 | 2 — + dense retrieval | 0.9724 | 0.7054 | numpy, onnxruntime, tokenizers |
 | 3 — + model extraction and listwise rerank | 0.8740 | **0.7903** | network, credential |
 
-**The tiers move in opposite directions, and that is the central finding.**
-Against a customer who quotes product text, exact-match machinery is near-optimal
-and every model-based layer can only overrule an answer that was already right.
-Against a customer who speaks naturally, those same layers are worth +0.085.
+**The tiers move in opposite directions, and that is the central finding.** The
+submitted configuration scores **0.9746 against a customer who quotes product
+text and 0.299 against one who paraphrases** — the same agent, the same targets,
+the same metric. Against the quoting customer, exact-match machinery is
+near-optimal and every model-based layer can only overrule an answer that was
+already right. Against the paraphrasing one, those layers are the difference
+between 0.299 and 0.790.
+
+The tier-1 language-model figure is measured over 54 sessions rather than 120:
+the run was stopped part-way to preserve remaining API budget, and the partial
+result is reported at its true sample size rather than extrapolated.
 
 Two components carry the generalisation result:
 
@@ -281,11 +288,13 @@ never reads it. We consider that a property of the benchmark rather than of
 conversational search, and it is the largest gap between what this task rewards
 and what a real shopping assistant needs.
 
-**The tier-1 cell of the language-model column is unmeasured** at n=120. It would
-cost one benchmark run and does not affect the submitted score, so it was left
-open rather than filled with an estimate from an earlier build.
+**The tier-1 language-model figure rests on 54 sessions, not 120.** The run was
+stopped part-way to stay inside the remaining API budget. The other two tiers are
+measured at n=119 and n=120, so the comparison is sound but that one cell is
+noisier than its neighbours.
 
-**With more time**, in order of expected value: measure that missing cell; port
+**With more time**, in order of expected value: complete the tier-1 measurement
+to 120 sessions; port
 listwise reranking to a local quantised model so the +0.085 survives without a
 network, completing the three-tier story with no external dependency; and index
 the demand side — precompute plausible customer phrasings per product, a
