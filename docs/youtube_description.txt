@@ -1,0 +1,28 @@
+Shopping Copilot — TechJam 2026, Track 4 (AI Conversational Search)
+
+A multi-turn shopping agent that finds one hidden product in a frozen
+50,000-item Amazon catalog within ten turns. Scores 0.9746 on the official
+evaluator against a 0.1067 baseline — running on the Python standard library
+alone, with zero tokens, no network and no API key.
+
+The second half of the video is about whether that number means anything. The
+official evaluator's "customer" is a deterministic program that quotes the
+target product's own description, so I built a second benchmark where the
+customer is a language model told never to quote the listing. The same agent
+scores 0.9746 against the first and 0.348 against the second.
+
+Captions are available (CC).
+
+Chapters
+0:00  The problem
+0:20  The score on the official evaluator
+1:05  One conversation, start to finish
+1:45  The catch — a customer who never quotes the catalog
+3:05  What that cost, and both benchmarks side by side
+3:40  Where the ceiling is
+
+Code and full write-up:
+https://github.com/ShreyanshGoyal/shopping_assist
+
+Includes the written report, the complete experimental record with nine
+measured negative results, and every result file behind the numbers shown here.

@@ -1,0 +1,41 @@
+Okay, so — someone's shopping, and they've got one specific product in mind. It's somewhere in a catalog of fifty thousand.
+
+They're not going to tell you which one. You just get ten turns of conversation to figure it out.
+
+The starter code they give you gets about ten percent of them. This is their evaluator, all two hundred sessions.
+
+Point nine seven. The baseline's point one one. And hit rate is one — it finds the product in every single session.
+
+The bit I'd point at though is down here. Zero tokens. No network. No API key. This is just the Python standard library. Whole thing runs in twenty seconds on a laptop. Here's what one session looks like.
+
+Customer says what kind of thing they want. Fifty thousand products, down to a bucket of three twenty-nine, down to one.
+
+And notice — it only shows one product. Not ten.
+
+That's deliberate. The way they score this, getting rank one matters about six times more than saving a turn. So padding your list out to look thorough actually costs you. It waits until it's sure.
+
+Turn one, rank one. Here's my problem with that score though.
+
+The customer in their evaluator isn't a person, and it isn't an AI. It's a little program — and it quotes the product's own description straight back at you.
+
+So point nine seven might just mean I got good at matching their wording. Which isn't the same as understanding anything.
+
+So I built a second one to check. Same products, same scoring — but this time the customer's a language model, and it's told never to quote the listing. So she says she's off to the beach with her cousins, and she wants — her words — wrist things that won't get ruined when they go swimming.
+
+None of that is in the catalog. Not one word.
+
+It shows her bracelets. She says no, too fancy, the metal would wreck in seawater. So it narrows. She asks for woven string ones, something beachy. Closer. Then she says — a pack, about twenty, ocean waves on them.
+
+Turn four. Rank one. Twenty-one piece surfer wave bracelet, waterproof. And this is what that second benchmark told me.
+
+Same agent. Point nine seven against the customer that quotes, point three five against the one that doesn't. So yeah — most of my score really was word matching.
+
+Adding proper search and reranking fixes it. Gets it up to point seven nine.
+
+But look at the two columns. They go in opposite directions. The stuff that helps a real customer actively costs me points on the thing that's actually being graded.
+
+So I ship the offline one, because that's what gets scored. But I'm reporting both. Only one of them's about understanding. That benchmark also killed nine of my own ideas. All measured, all with a reason they failed.
+
+And it showed me where the ceiling is. If I just hand the agent the right category, rank one nearly doubles. But you can only guess that category about half the time — because this catalog files a crew-neck t-shirt under Underwear Undershirts.
+
+That's not a search problem. That's the data. Runs offline, on a laptop, costs nothing. Point nine seven four six.
